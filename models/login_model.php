@@ -9,7 +9,7 @@ class login_model extends model {
 
     public function run() {
 
-        $sth = $this->db->prepare("SELECT id, name, role FROM users WHERE email=:email AND password=:password");
+        $sth = $this->db->prepare("SELECT id, name, role FROM boat_users WHERE email=:email AND password=:password");
         $sth->execute(array(
             ':email' => $_POST['email'],
             ':password' => hash::create('md5', $_POST['password'], HASH_KEY)

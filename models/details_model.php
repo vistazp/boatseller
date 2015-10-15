@@ -7,7 +7,7 @@ class details_model extends model {
     }
 
     public function postSingleList($id) {
-        return $this->db->select('SELECT * FROM post WHERE postid = :postid and userid= :userid', array(':postid' => $id,
+        return $this->db->select('SELECT * FROM boat_post WHERE postid = :postid and userid= :userid', array(':postid' => $id,
                                                                                                         ':userid' => $_SESSION['userId']    ));
         //$sth = $this->db->prepare('SELECT id, login, role FROM users WHERE id= :id');
         //$sth->execute(array(':id' => $id));
@@ -27,7 +27,7 @@ class details_model extends model {
             //'published'  => $data['published']
         );
 
-        $this->db->update('post', $postData, "`postid` = {$data['postid']}");
+        $this->db->update('boat_post', $postData, "`postid` = {$data['postid']}");
     }
 
 }

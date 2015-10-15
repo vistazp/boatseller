@@ -8,23 +8,23 @@ class feedback_model extends model {
 
     public function feedList() {
 
-        return $this->db->select('SELECT * FROM feedback');
+        return $this->db->select('SELECT * FROM boat_feedback');
     }
 
     public function payedList() {
 
-        return $this->db->select('SELECT * FROM post WHERE paid= :paid', array(':paid' => 'yes'));
+        return $this->db->select('SELECT * FROM boat_post WHERE paid= :paid', array(':paid' => 'yes'));
     }
      public function subList() {
-        return $this->db->select('SELECT * FROM subscriber');
+        return $this->db->select('SELECT * FROM boat_subscriber');
     }
 
     public function sitemapList() {
-        return $this->db->select('SELECT postid, date_create FROM post WHERE published= :published', array(':published' => 'yes'));
+        return $this->db->select('SELECT postid, date_create FROM boat_post WHERE published= :published', array(':published' => 'yes'));
     }
 
     public function feedSingleList($id) {
-        return $this->db->select('SELECT * FROM feedback WHERE feedid= :feedid', array(':feedid' => $id));
+        return $this->db->select('SELECT * FROM boat_feedback WHERE feedid= :feedid', array(':feedid' => $id));
         //$sth = $this->db->prepare('SELECT id, login, role FROM users WHERE id= :id');
         //$sth->execute(array(':id' => $id));
         //return $sth->fetch();
@@ -41,19 +41,19 @@ class feedback_model extends model {
             'comment' => $data['comment']
         );
 
-        $this->db->update('feedback', $postData, "`feedid` = {$data['feedid']}");
+        $this->db->update('boat_feedback', $postData, "`feedid` = {$data['feedid']}");
     }
 
     public function delete($id) {
-        $this->db->delete('feedback', "feedid = '$id'");
+        $this->db->delete('boat_feedback', "feedid = '$id'");
     }
     
     public function deleteSub($id) {
-        $this->db->delete('subscriber', "subid = '$id'");
+        $this->db->delete('boat_subscriber', "subid = '$id'");
     }
 
     public function publishPost($postid) {
-        $curPost = $this->db->select('SELECT * FROM post WHERE postid= :postid', array(':postid' => $postid));
+        $curPost = $this->db->select('SELECT * FROM boat_post WHERE postid= :postid', array(':postid' => $postid));
 
         //print_r($curPost);
         //echo $curPost[0]['published'];
@@ -76,14 +76,14 @@ class feedback_model extends model {
             $this->sendMailEachPost($postid);
         };
         
-        $this->db->update('post', $postData, "`postid` = {$postid}");            
+        $this->db->update('boat_post', $postData, "`postid` = {$postid}");            
     }
     
 public function sendMailEachPost($postid){
 
-    $postData = $this->db->select('SELECT * FROM post WHERE postid= :postid', array(':postid' => $postid));
+    $postData = $this->db->select('SELECT * FROM boat_post WHERE postid= :postid', array(':postid' => $postid));
     
-    $mailList = $this->db->select('SELECT email FROM subscriber WHERE notify= :notify', array(':notify' => '2'));
+    $mailList = $this->db->select('SELECT email FROM boat_subscriber WHERE notify= :notify', array(':notify' => '2'));
     
 //    print_r($postData);
 //    die;

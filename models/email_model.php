@@ -11,7 +11,7 @@ class email_model extends model {
 
         //$this->db->update('subscriber', $dataUpdate, "`email` = {$data['email']}");
         
-        $sth = $this->db->prepare('UPDATE subscriber SET notify = :notify WHERE email= :email');
+        $sth = $this->db->prepare('UPDATE boat_subscriber SET notify = :notify WHERE email= :email');
         $sth->execute(array(
                             ':notify' => $data['notify'],
                             ':email' => $data['email']

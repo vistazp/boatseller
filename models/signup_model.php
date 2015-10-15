@@ -7,7 +7,7 @@ class signup_model extends model {
     }
 
     public function create($data) {
-        $this->db->insert('subscriber', array(
+        $this->db->insert('boat_subscriber', array(
             'email' => $data['email'],
             'datesub' => date('Y-m-d H:i:s'),
             'notify' => '1'
@@ -15,7 +15,7 @@ class signup_model extends model {
     }
 
     public function addUser($data) {
-        $this->db->insert('users', array(
+        $this->db->insert('boat_users', array(
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => hash::create('md5', $data['password'], HASH_KEY),
@@ -25,7 +25,7 @@ class signup_model extends model {
 
     public function runReg($log, $pass) {
 
-        $sth = $this->db->prepare("SELECT id, name, role FROM users WHERE email=:email AND password=:password");
+        $sth = $this->db->prepare("SELECT id, name, role FROM boat_users WHERE email=:email AND password=:password");
         $sth->execute(array(
             ':email' => $log,
             ':password' => $pass
@@ -137,7 +137,7 @@ http://dotnetnow.com/updates/unsubscribe';
 //        die();
 
 //        $this->db->update('users', $postData, "`email` = {$email}");
-        $sth = $this->db->prepare('UPDATE users SET password = :password WHERE email= :email');
+        $sth = $this->db->prepare('UPDATE boat_users SET password = :password WHERE email= :email');
         $sth->execute(array(
                             ':password' => hash::create('md5', $newPassword, HASH_KEY),
                             ':email' => $email,

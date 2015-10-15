@@ -27,7 +27,7 @@ class dashboard_Model extends model {
     }
 
     public function currentUser() {
-        return $this->db->select('SELECT id, name, email FROM users WHERE id= :id', array(':id' => $_SESSION['userId']));
+        return $this->db->select('SELECT id, name, email FROM boat_users WHERE id= :id', array(':id' => $_SESSION['userId']));
         //$sth = $this->db->prepare('SELECT id, login, role FROM users WHERE id= :id');
         //$sth->execute(array(':id' => $id));
         //return $sth->fetch();
@@ -38,17 +38,17 @@ class dashboard_Model extends model {
             'name' => $data['name'],
             'password' => hash::create('md5', $data['password'], HASH_KEY));
 
-        $this->db->update('users', $postData, "`id` = {$data['id']}");
+        $this->db->update('boat_users', $postData, "`id` = {$data['id']}");
        }
        
        public function userPostList($userid) {
 
-        return $this->db->select('SELECT * FROM post WHERE userid= :id', array(':id' => $userid));
+        return $this->db->select('SELECT * FROM boat_post WHERE userid= :id', array(':id' => $userid));
         
     }
     
         public function deletePost($id) {
-        $this->db->delete('post', "postid = '$id' and userid = ".$_SESSION['userId']);
+        $this->db->delete('boat_post', "postid = '$id' and userid = ".$_SESSION['userId']);
     }
 
        

@@ -7,7 +7,7 @@ class contactus_model extends model {
     }
 
     public function create($data) {
-        $this->db->insert('feedback', array(
+        $this->db->insert('boat_feedback', array(
             'feedid' => $data['feedid'],
             'name' => $data['name'],
             'email' => $data['email'],

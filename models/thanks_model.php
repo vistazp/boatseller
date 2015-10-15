@@ -12,7 +12,7 @@ class thanks_model extends model{
             
                     );
 
-        $this->db->update('post', $postData, "`postid` = {$postid}");
+        $this->db->update('boat_post', $postData, "`postid` = {$postid}");
 
         
         

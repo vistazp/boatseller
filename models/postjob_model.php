@@ -20,7 +20,7 @@ class postjob_model extends model {
                 break;
         }
 
-        $this->db->insert('post', array(
+        $this->db->insert('boat_post', array(
             'title' => $data['title'],
             'city' => $data['city'],
             'country' => $data['country'],
@@ -31,7 +31,7 @@ class postjob_model extends model {
             'userid' => $data['userid']
         ));
 
-        return $this->db->lastInsertId("post");
+        return $this->db->lastInsertId("boat_post");
     }
 
     public function runReg($log, $pass) {
