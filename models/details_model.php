@@ -29,5 +29,18 @@ class details_model extends model {
 
         $this->db->update('boat_post', $postData, "`postid` = {$data['postid']}");
     }
-
+    
+    public function addpic($data) {
+         $this->db->insert('boat_img', array(
+            'userid' => $data['userId'],
+            'postid' => $data['postid'],
+            'path' => $data['path']
+        ));
+        
+        
+      
+        
+        
+        
+    }
 }

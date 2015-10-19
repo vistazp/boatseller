@@ -32,9 +32,10 @@ class details extends controller {
     }
 
     public function preview() {
-
-        $this->addStepTwo();
+        
         $this->sendpic();
+        $this->addStepTwo();
+        
 
         header('location: ' . URL . 'details/view/' . $_SESSION['postId']);
     }
@@ -55,19 +56,77 @@ class details extends controller {
     }
 
     public function sendpic() {
-        $imageinfo = getimagesize($_FILES['userfile']['tmp_name']);
-        if ($imageinfo['mime'] != 'image/gif' && $imageinfo['mime'] != 'image/jpeg') {
-            echo "Sorry, we only accept GIF and JPEG images\n";
-            exit;
+
+        function reArrayFiles(&$file_post) {
+
+            $file_ary = array();
+            $file_count = count($file_post['name']);
+            $file_keys = array_keys($file_post);
+
+            for ($i = 0; $i < $file_count; $i++) {
+                foreach ($file_keys as $key) {
+                    $file_ary[$i][$key] = $file_post[$key][$i];
+                }
+            }
+
+            return $file_ary;
         }
 
-        $uploaddir = 'uploads/';
-        $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+        function generate_name() {
+            $number = '12';
+            $arr = array('a', 'b', 'c', 'd', 'e', 'f',
+                'g', 'h', 'i', 'j', 'k', 'l',
+                'm', 'n', 'o', 'p', 'r', 's',
+                't', 'u', 'v', 'x', 'y', 'z',
+                'A', 'B', 'C', 'D', 'E', 'F',
+                'G', 'H', 'I', 'J', 'K', 'L',
+                'M', 'N', 'O', 'P', 'R', 'S',
+                'T', 'U', 'V', 'X', 'Y', 'Z',
+                '1', '2', '3', '4', '5', '6',
+                '7', '8', '9', '0');
+            // Генерируем пароль
+            $pass = "";
+            for ($i = 0; $i < $number; $i++) {
+                // Вычисляем случайный индекс массива
+                $index = rand(0, count($arr) - 1);
+                $pass .= $arr[$index];
+            }
+            return $pass;
+        }
+        
+        
+        $file_ary = reArrayFiles($_FILES['userfile']);
 
-        if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
-            echo "File is valid, and was successfully uploaded.\n";
-        } else {
-            echo "File uploading failed.\n";
+        foreach ($file_ary as $file) {
+
+            $imageinfo = getimagesize($file['tmp_name']);
+            $file['name'] = generate_name().'.jpg';
+            
+        
+          
+            //print_r($file['tmp_name']);
+            //print_r($imageinfo);
+            //die;
+            if ($imageinfo['mime'] != 'image/gif' && $imageinfo['mime'] != 'image/jpeg') {
+                echo "Sorry, we only accept GIF and JPEG images\n";
+                exit;
+            }
+
+            $uploaddir = 'uploads/';
+            $uploadfile = $uploaddir . basename($file['name']);
+
+            if (move_uploaded_file($file['tmp_name'], $uploadfile)) {
+                echo "File is valid, and was successfully uploaded.\n";
+            } else {
+                echo "File uploading failed.\n";
+            }
+            
+            $data = array();
+            $data['userId'] = session::get('userId');
+            $data['path'] = URL.$uploadfile;
+            $data['postid'] = $_SESSION['postId'];
+            $this->model->addpic($data);   
+
         }
     }
 

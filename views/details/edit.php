@@ -1,6 +1,6 @@
 <div id="steps" class="span-24 last">
 
-    <form accept-charset="UTF-8" action="<?php echo URL; ?>details/preview" class="form_step" id="form_step" method="post"><div style="margin:0;padding:0;display:inline"></div>
+    <form accept-charset="UTF-8" action="<?php echo URL; ?>details/preview" class="form_step" id="form_step" method="post" ENCTYPE="multipart/form-data"><div style="margin:0;padding:0;display:inline"></div>
         <!-- Step 2 -->
         <div id="step-2" class="span-24 last">
 
@@ -34,7 +34,8 @@
                     </div>
                     
                     <div class="span-21">
-                        Select the file to upload: <input type="file" name="userfile">
+                        
+                        Select the file to upload: <input type="file" name="userfile[]" multiple="multiple">
                     </div>
                     
                     <div class="span-21 last">
