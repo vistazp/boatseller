@@ -9,6 +9,7 @@
   </div>
   <div class="span-24 last">
     <h1 id="headline" >
+      
       <?php echo  $this->postPreview[0]['title']; ?>
       <span style="color:gray;">at</span> 
       <a href="<?php echo  htmlspecialchars($this->postPreview[0]['url']); ?>" target="_blank" rel="nofollow" ><?php echo  htmlspecialchars($this->postPreview[0]['company']); ?></a>
@@ -29,6 +30,12 @@
           
     </p>
   </div>
+    <div>
+        <?php for($i=0; $i < count($this->postPreview); $i++){
+        echo '<img src="'.$this->postPreview[$i]['path'].'" width="250" />';
+        }?>
+    </div>
+    
   <!--
   <div id="sidbar" class="span-5 last" style="font-size: 1.5em; color: gray;"/>
     <em>Here we will show developers ways to share your job on Facebook, Twitter, Google+ and more.</em>

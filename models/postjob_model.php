@@ -31,7 +31,9 @@ class postjob_model extends model {
             'userid' => $data['userid']
         ));
 
-        return $this->db->lastInsertId("boat_post");
+        return $this->db->select("select boat_post.postid
+                                FROM boat_post
+                                ORDER by boat_post.postid desc Limit 0,1");
     }
 
     public function runReg($log, $pass) {

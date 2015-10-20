@@ -28,7 +28,7 @@ class postjob extends controller {
             $pId = $this->addStepOne();
 // запускаем контролер step2
 
-            header('location: '.URL.'details/edit/'.$pId);
+            header('location: '.URL.'details/edit/'.$pId[0]['postid']);
         } 
         else 
         {

@@ -7,7 +7,7 @@ class details extends controller {
         Auth::HandleLogin();
         require "libs/mark/michelf/markdown.inc.php";
 
-        $this->view->js = array('details/js/jquery.min.js', 'details/js/default.js', 'details/js/jquery.fancybox-1.3.4.pack.js', 'details/js/jquery.validate.min.js', 'details/js/jquery.markitup.js', 'details/js/sets/markdown/set.js');
+        $this->view->js = array('details/js/jquery.min.js', 'details/js/default.js', 'details/js/jquery.fancybox-1.3.4.pack.js', 'details/js/jquery.validate.min.js', 'details/js/jquery.markitup.js', 'details/js/sets/markdown/set.js', 'details/js/pic.js');
 
         $this->view->css_custom = array('details/css/skins/simple/style.css', 'details/js/sets/markdown/style.css');
     }
@@ -26,8 +26,11 @@ class details extends controller {
 
         $this->view->titl = 'Post a new job on dotnetnow.com';
         $this->view->canon = 'details/edit' . $id;
-
+        
         $this->view->post = $this->model->postSingleList($id);
+        
+        
+        
         (count($this->view->post) == 0) ? $this->view->render('error/index') : $this->view->render('details/edit', TRUE);
     }
 
@@ -132,7 +135,7 @@ class details extends controller {
 
     public function view($id) {
 
-        $this->view->postPreview = $this->model->postSingleList($id);
+        $this->view->postPreview = $this->model->postSingleBoat($id);
         if (count($this->view->postPreview) > 0)
             $this->view->titl = $this->view->postPreview[0]['title'];
         (count($this->view->postPreview) == 0) ? header('location:' . URL . 'error') : $this->view->render('details/view', TRUE);

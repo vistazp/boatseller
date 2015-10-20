@@ -14,6 +14,11 @@ class details_model extends model {
         //return $sth->fetch();
     }
 
+    public function postSingleBoat($id) {
+        return $this->db->select('SELECT * FROM boat_post as t, boat_img as t1 WHERE t.postid = :postid and t.userid= :userid and t1.postid=t.postid', array(':postid' => $id,
+                                                                                                        ':userid' => $_SESSION['userId']    ));
+    }
+
     public function addStepTwo($data) {
 
         $postData = array(
