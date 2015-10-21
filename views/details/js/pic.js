@@ -6,16 +6,16 @@ $(function () {
     $('.fileinput').change(function(){
 
         var url = $(this).attr('data-url');
-        a = $(this.files);
-        var data = $(this).serialize();
-        alert(a);
+        a = this.files[0];
+        var data = $(this);
+        //alert(a);
         //console.log('aaaaasss');
         //console.log(data);
 
-        $.post(url, data, function(o) {
+        //$.post(url, data, function(o) {
 
         //        $('#listInsert').append('<div>' + o.text + '<a class="del" rel="'+ o.id +'" href="#">X</a></div>');		
-        }, 'json');
+        //}, 'json');
 
 
         return false;  
@@ -31,7 +31,7 @@ $(function () {
 //        url: send_url,
 //        type: "POST",
 //        data: fd,
-        //processData: false,
+//        processData: false,
 //        contentType: false
 //    });
     });

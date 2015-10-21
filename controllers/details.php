@@ -36,7 +36,7 @@ class details extends controller {
 
     public function preview() {
         
-        $this->sendpic();
+        
         $this->addStepTwo();
         
 
@@ -144,6 +144,6 @@ class details extends controller {
     public function getPicList() {}
     
     public function insertPicList() {
-        
+        $this->sendpic();
     }
 }
