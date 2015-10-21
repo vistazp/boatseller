@@ -5,7 +5,20 @@ $(function () {
     
     $('.fileinput').change(function(){
 
-  alert('1');
+        var url = $(this).attr('data-url');
+        a = $(this.files);
+        var data = $(this).serialize();
+        alert(a);
+        //console.log('aaaaasss');
+        //console.log(data);
+
+        $.post(url, data, function(o) {
+
+        //        $('#listInsert').append('<div>' + o.text + '<a class="del" rel="'+ o.id +'" href="#">X</a></div>');		
+        }, 'json');
+
+
+        return false;  
   
 //    var send_url = $(this).attr('data-url');
 //    var fd = new FormData();

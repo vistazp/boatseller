@@ -140,5 +140,10 @@ class details extends controller {
             $this->view->titl = $this->view->postPreview[0]['title'];
         (count($this->view->postPreview) == 0) ? header('location:' . URL . 'error') : $this->view->render('details/view', TRUE);
     }
-
+    
+    public function getPicList() {}
+    
+    public function insertPicList() {
+        
+    }
 }
