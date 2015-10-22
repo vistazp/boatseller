@@ -26,19 +26,20 @@ class details extends controller {
 
         $this->view->titl = 'Post a new job on dotnetnow.com';
         $this->view->canon = 'details/edit' . $id;
-        
+
         $this->view->post = $this->model->postSingleList($id);
-        
-        
-        
+
+
+
         (count($this->view->post) == 0) ? $this->view->render('error/index') : $this->view->render('details/edit', TRUE);
     }
 
     public function preview() {
-        
+
+
         $this->sendpic();
         $this->addStepTwo();
-        
+
 
         header('location: ' . URL . 'details/view/' . $_SESSION['postId']);
     }
@@ -96,17 +97,16 @@ class details extends controller {
             }
             return $pass;
         }
-        
-        
+
         $file_ary = reArrayFiles($_FILES['userfile']);
 
         foreach ($file_ary as $file) {
 
             $imageinfo = getimagesize($file['tmp_name']);
-            $file['name'] = generate_name().'.jpg';
-            
-        
-          
+            $file['name'] = generate_name() . '.jpg';
+
+
+
             //print_r($file['tmp_name']);
             //print_r($imageinfo);
             //die;
@@ -123,13 +123,17 @@ class details extends controller {
             } else {
                 echo "File uploading failed.\n";
             }
-            
+
             $data = array();
             $data['userId'] = session::get('userId');
-            $data['path'] = URL.$uploadfile;
-            $data['postid'] = $_SESSION['postId'];
-            $this->model->addpic($data);   
+            $data['path'] = URL . $uploadfile;
+            $data['postid'] = session::get('postId');
+            echo $data['postid'];
+            die;
 
+
+
+            $this->model->addpic($data);
         }
     }
 
@@ -140,10 +144,13 @@ class details extends controller {
             $this->view->titl = $this->view->postPreview[0]['title'];
         (count($this->view->postPreview) == 0) ? header('location:' . URL . 'error') : $this->view->render('details/view', TRUE);
     }
-    
-    public function getPicList() {}
-    
+
+    public function getPicList() {
+        
+    }
+
     public function insertPicList() {
         
     }
+
 }
