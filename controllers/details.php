@@ -147,12 +147,9 @@ class details extends controller {
     
     public function getPicList() {}
     
-    public function insertPicList() {
-        $this->sendpic();
-    }
 
     public function insertPicList() {
-        $this->sendpic();
+        
     }
 
 }
