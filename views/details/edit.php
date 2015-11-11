@@ -1,3 +1,17 @@
+<input id="kuku" type="submit" />
+<h1>Mocoron 2</h1>
+<ul>
+    <li>Джони</li>
+    <li>Джони</li>
+    <li>Джони</li>
+    <li>Джони</li>
+</ul>
+<ul>
+    <li>Джони</li>
+    <li>Джони</li>
+    <li>Джони</li>
+    <li>Джони</li>
+</ul>
 <div id="steps" class="span-24 last">
 
     <form accept-charset="UTF-8" action="<?php echo URL; ?>details/preview" class="form_step" id="form_step" method="post" ENCTYPE="multipart/form-data"><div style="margin:0;padding:0;display:inline"></div>

@@ -31,11 +31,13 @@ class login_model extends model {
             session::set('userId', $data['id']);
             session::set('userEmail', $_POST['email']);
             session::set('loggedIn', TRUE);
+
             header('location: ../dashboard');
         } else {
             //error
             header('location: ../login');
         }
+
     }
     
     

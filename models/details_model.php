@@ -3,6 +3,8 @@
 class details_model extends model {
 
     function __construct() {
+        
+
         parent::__construct();
     }
 
@@ -15,7 +17,8 @@ class details_model extends model {
     }
 
     public function postSingleBoat($id) {
-        return $this->db->select('SELECT * FROM boat_post as t, boat_img as t1 WHERE t.postid = :postid and t.userid= :userid and t1.postid=t.postid', array(':postid' => $id,
+        
+        return $this->db->select('SELECT * FROM boat_post as t, boat_img as t1 WHERE t.postid = :postid and t.userid= :userid and t.postid=t1.postid', array(':postid' => $id,
                                                                                                         ':userid' => $_SESSION['userId']    ));
     }
 
@@ -41,11 +44,16 @@ class details_model extends model {
             'postid' => $data['postid'],
             'path' => $data['path']
         ));
+    }    
         
+    public function getPicList($id){
         
+        return $this->db->select('SELECT * FROM boat_post as t, boat_img as t1 WHERE t.postid = :postid and t.userid= :userid and t.postid=t1.postid', array(':postid' => $id,
+                                                                                                        ':userid' => $_SESSION['userId']    ));
+    }
       
         
         
         
-    }
+    
 }

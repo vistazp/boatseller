@@ -3,43 +3,58 @@
 class details extends controller {
 
     function __construct() {
+        
         parent::__construct();
+        
+        
         Auth::HandleLogin();
+        
+        
         require "libs/mark/michelf/markdown.inc.php";
 
-        $this->view->js = array('details/js/jquery.min.js', 'details/js/default.js', 'details/js/jquery.fancybox-1.3.4.pack.js', 'details/js/jquery.validate.min.js', 'details/js/jquery.markitup.js', 'details/js/sets/markdown/set.js', 'details/js/pic.js');
+        $this->view->js = array('details/js/jquery-1.11.3.min.js', 'details/js/default.js', 'details/js/jquery.fancybox-1.3.4.pack.js', 'details/js/jquery.validate.min.js', 'details/js/jquery.markitup.js', 'details/js/sets/markdown/set.js', 'details/js/pit.js');
+        //$this->view->js = array('details/js/jquery-1.11.3.min.js');
 
+        
         $this->view->css_custom = array('details/css/skins/simple/style.css', 'details/js/sets/markdown/style.css');
+        
     }
 
     function index() {
+        
 //        echo 'inside index index';
         $this->view->titl = 'Job details page';
 
         $this->view->canon = 'details';
+
         $this->view->render('error/index');
+        
+        
     }
 
     public function edit($id) {
-
+        
         session::set('postId', $id);
+        session::set('boatId', $id);
+        session::set('boatIdddd', 'macFly');
 
+        
         $this->view->titl = 'Post a new job on dotnetnow.com';
         $this->view->canon = 'details/edit' . $id;
 
         $this->view->post = $this->model->postSingleList($id);
 
-
-
         (count($this->view->post) == 0) ? $this->view->render('error/index') : $this->view->render('details/edit', TRUE);
+        
+
     }
 
     public function preview() {
 
 
         $this->sendpic();
-        $this->addStepTwo();
 
+        $this->addStepTwo();
 
         header('location: ' . URL . 'details/view/' . $_SESSION['postId']);
     }
@@ -60,7 +75,8 @@ class details extends controller {
     }
 
     public function sendpic() {
-
+        //if (empty($file['tmp_name'])) return false;
+                
         function reArrayFiles(&$file_post) {
 
             $file_ary = array();
@@ -128,8 +144,8 @@ class details extends controller {
             $data['userId'] = session::get('userId');
             $data['path'] = URL . $uploadfile;
             $data['postid'] = session::get('postId');
-            echo $data['postid'];
-            die;
+            
+            
 
 
 
@@ -138,14 +154,19 @@ class details extends controller {
     }
 
     public function view($id) {
-
+        
         $this->view->postPreview = $this->model->postSingleBoat($id);
+        
+        //print_r($this->view->postPreview);
+        //die;
         if (count($this->view->postPreview) > 0)
             $this->view->titl = $this->view->postPreview[0]['title'];
         (count($this->view->postPreview) == 0) ? header('location:' . URL . 'error') : $this->view->render('details/view', TRUE);
     }
     
-    public function getPicList() {}
+    public function getPicList() {
+        $this->model->getPicList($_SESSION['postId']);
+    }
     
 
     public function insertPicList() {
