@@ -1,5 +1,5 @@
 $(function () {
-            $.get('uuuuuuuuuuuu', function(o) {
+            $.get('/boatseller/details/getPicList', function(o) {
 		alert(1);
 		//for (var i = 0; i < o.length; i++)
 		//{

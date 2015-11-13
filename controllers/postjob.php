@@ -28,7 +28,7 @@ class postjob extends controller {
             // добавляем в бд данные из step1
             $pId = $this->addStepOne();
 // запускаем контролер step2
-            session::set('VVV', $tip);
+
             header('location: '.URL.'details/edit/'.$pId[0]['postid']);
         } 
         else 

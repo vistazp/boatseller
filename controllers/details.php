@@ -27,7 +27,8 @@ class details extends controller {
 
         $this->view->canon = 'details';
 
-        $this->view->render('error/index');
+        //$this->view->render('error/index');
+        $this->view->render('details/index');
         
         
     }
@@ -35,8 +36,6 @@ class details extends controller {
     public function edit($id) {
         
         session::set('postId', $id);
-        session::set('boatId', $id);
-        session::set('boatIdddd', 'macFly');
 
         
         $this->view->titl = 'Post a new job on dotnetnow.com';
