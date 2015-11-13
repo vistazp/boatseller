@@ -164,7 +164,8 @@ class details extends controller {
     }
     
     public function getPicList() {
-        $this->model->getPicList($_SESSION['postId']);
+       
+     $this->model->getPicList($_SESSION['postId']);
     }
     
 
