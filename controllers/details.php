@@ -75,8 +75,7 @@ class details extends controller {
 
     public function sendpic() {
         //if (empty($file['tmp_name'])) return false;
-                
-        function reArrayFiles(&$file_post) {
+            function reArrayFiles(&$file_post) {
 
             $file_ary = array();
             $file_count = count($file_post['name']);
@@ -145,9 +144,6 @@ class details extends controller {
             $data['postid'] = session::get('postId');
             
             
-
-
-
             $this->model->addpic($data);
         }
     }
