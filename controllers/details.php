@@ -168,8 +168,9 @@ class details extends controller {
     }
     
 
-    public function DelPic() {
-        $this->model->DelPic();
+    public function delPicList() {
+        $id = (int) $_POST['id'];
+        $this->model->DelPic($id);
     }
 
 }
