@@ -168,8 +168,8 @@ class details extends controller {
     }
     
 
-    public function insertPicList() {
-        
+    public function DelPic() {
+        $this->model->DelPic();
     }
 
 }

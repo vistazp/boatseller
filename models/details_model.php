@@ -47,8 +47,14 @@ class details_model extends model {
     }    
         
     public function getPicList($id){
-      echo (json_encode($this->db->select('SELECT * FROM boat_post as t, boat_img as t1 WHERE t.postid = :postid and t.userid= :userid and t.postid=t1.postid', array(':postid' => $id,':userid' => $_SESSION['userId']))));
+     echo (json_encode($this->db->select('SELECT * FROM boat_post as t, boat_img as t1 WHERE t.postid = :postid and t.userid= :userid and t.postid=t1.postid', array(':postid' => $id,':userid' => $_SESSION['userId']))));
      // return print_r($this->db->select('SELECT * FROM boat_post as t, boat_img as t1 WHERE t.postid = :postid and t.userid= :userid and t.postid=t1.postid', array(':postid' => $id,':userid' => $_SESSION['userId'])));
+    }
+     public function DelPic($id){
+        $id = (int) $_POST['id'];
+        $this->db->delete('boat_img',"id = '$id'");
+        echo json_encode(1);
+        // return print_r($this->db->select('SELECT * FROM boat_post as t, boat_img as t1 WHERE t.postid = :postid and t.userid= :userid and t.postid=t1.postid', array(':postid' => $id,':userid' => $_SESSION['userId'])));
     }
       
         
