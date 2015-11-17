@@ -35,7 +35,7 @@ $(function () {
     $('.fileinput').change(function () {
 
         var url = $(this).attr('data-url');
-        a = this.files[0];
+      //  a = this.files[0];
         var data = $(this);
         //alert(a);
         //console.log('aaaaasss');

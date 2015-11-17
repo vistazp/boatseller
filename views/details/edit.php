@@ -51,7 +51,7 @@
                     <div class="span-21">
                         
                         Select the file to upload: 
-                        <input type="file" class="fileinput" data-url="<?php echo URL; ?>details/insertPicList" name="userfile[]" multiple="multiple">
+                        <input type="file" class="fileinput" data-url="<?php echo URL; ?>details/sendpic" name="userfile[]" multiple="multiple">
                     </div>
                     <div class="getPicList">
                         
