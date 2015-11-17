@@ -1,17 +1,3 @@
-<input id="kuku" type="submit" />
-<h1>Mocoron 2</h1>
-<ul>
-    <li>Джони</li>
-    <li>Джони</li>
-    <li>Джони</li>
-    <li>Джони</li>
-</ul>
-<ul>
-    <li>Джони</li>
-    <li>Джони</li>
-    <li>Джони</li>
-    <li>Джони</li>
-</ul>
 <div id="picinsert"></div>
 <div id="steps" class="span-24 last">
 
