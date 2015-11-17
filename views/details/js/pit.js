@@ -13,7 +13,7 @@ $(function () {
                      $(document).on("click", ".del", function() {
                         delItem = $(this);
 			var id = $(this).attr('rel');
-			//var upl = $(this).attr('rev');
+			var upl = $(this).attr('rev');
                     
 			$.post('/boatseller/details/delPicList', {'id':id, 'upl':upl}, function(o) {
                              delItem.parent().remove();

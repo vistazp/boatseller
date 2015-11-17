@@ -138,6 +138,7 @@ class details extends controller {
             $data = array();
             $data['userId'] = session::get('userId');
             $data['path'] = URL . $uploadfile;
+            $data['name'] = $uploadfile;
             $data['postid'] = session::get('postId');
             
             
@@ -164,8 +165,13 @@ class details extends controller {
     
 
     public function delPicList() {
+      //  print_r($_POST);
+     //   die();
+        unlink($_POST['upl']);
         $id = (int) $_POST['id'];
         $this->model->DelPic($id);
+        //unlink($_POST['upl']);
+               
     }
 
 }
