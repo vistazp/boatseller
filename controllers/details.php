@@ -50,10 +50,7 @@ class details extends controller {
 
     public function preview() {
 
-
-        $this->sendpic();
-
-        $this->addStepTwo();
+       $this->addStepTwo();
 
         header('location: ' . URL . 'details/view/' . $_SESSION['postId']);
     }
