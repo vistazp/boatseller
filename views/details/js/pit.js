@@ -7,17 +7,17 @@ $(function () {
 		for (var i = 0; i < v.length; i++)
 		{
                   // <img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
-		$('#picinsert').append('<div><img src=' + v[i].path + ' style="width:250px;"> <a class="del" rel="'+v[i].id+'" href="#">X</a></div>');
-              //   alert(v[i].path);
+		$('#picinsert').append('<div><img src=' + v[i].path + ' style="width:250px;"> <a class="del" rel="'+v[i].id+'" rev='+v[i].name+' href="#">X</a></div>');
+        
 		}
                      $(document).on("click", ".del", function() {
                         delItem = $(this);
 			var id = $(this).attr('rel');
-			
-			$.post('/boatseller/details/delPicList', {'id': id}, function(o) {
-				delItem.parent().remove();
-                                
-			}, 'json');
+			//var upl = $(this).attr('rev');
+                    
+			$.post('/boatseller/details/delPicList', {'id':id, 'upl':upl}, function(o) {
+                             delItem.parent().remove();
+                           }, 'json');
 			return false;
 		});
             });  
@@ -50,9 +50,9 @@ $(document).ready(function(){
 		
 		for (var i = 0; i < v.length; i++)
 		{
-                  // <img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
-		$('#picinsert').append('<div><img src=' + v[i].path + ' style="width:250px;"> <a class="del" rel="'+v[i].id+'" href="#">X</a></div>');
-              //   alert(v[i].path);
+               
+		$('#picinsert').append('<div><img src=' + v[i].path + ' style="width:250px;"> <a class="del" rel="'+v[i].id+'" rev='+v[i].name+' href="#">X</a></div>');
+            
 		}
                   return false;
 		});
