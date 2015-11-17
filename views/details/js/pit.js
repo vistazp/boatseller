@@ -43,7 +43,9 @@ $(document).ready(function(){
             processData: false,
             contentType: false,
             success: function(){
+              
                 $.get('/boatseller/details/getPicList', function(data) {
+                $('#picinsert').empty();
                 v = JSON.parse(data);
 		
 		for (var i = 0; i < v.length; i++)
