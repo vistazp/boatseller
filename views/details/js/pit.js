@@ -1,5 +1,6 @@
+
+
 $(function () {
-      
        $.get('/boatseller/details/getPicList', function(data) {
                 v = JSON.parse(data);
 		
@@ -20,31 +21,20 @@ $(function () {
 			return false;
 		});
             });  
-            
-            
-            
-});
-
-
-$.fn.Pipi = function (str){
-    alert(str);
-};
-
-$.fn.Kamar = function(){
-    return $(this).css('background', 'red');
-};
+    });
 
 $(document).ready(function(){
-    
            
     $('.fileinput').change(function () {
 
            // return false;
    var send_url = $(this).attr('data-url');
    var fd = new FormData();
-
-        fd.append("userpic", this.files[0]);
-       
+ 
+ for (var i = 0; i <= this.files.length; i++)
+ {
+      fd.append("userfile[]", this.files[i]);
+  }      
   
     $.ajax({
         url: send_url,
@@ -53,12 +43,9 @@ $(document).ready(function(){
         data: fd,
         processData: false,
         contentType: false,
-        success: function (data) {
-            alert(data);
-        }
+     
            });
      
-        
-    });   
-    
-});
+    });
+       
+        });
