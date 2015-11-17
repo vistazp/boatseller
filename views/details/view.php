@@ -31,9 +31,13 @@
     </p>
   </div>
     <div>
-        <?php for($i=0; $i < count($this->postPreview); $i++){
-        echo '<img src="'.$this->postPreview[$i]['path'].'" width="250" />';
-        }?>
+        <?php 
+        if (isset($this->postPreview[0]['path'])) 
+        {
+        for($i=0; $i < count($this->postPreview); $i++){
+        echo '<img src="'.$this->postPreview[$i]['path'].'" width="250" />'; }
+        }
+        ?>
     </div>
     
   <!--

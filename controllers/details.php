@@ -49,9 +49,9 @@ class details extends controller {
     }
 
     public function preview() {
-
-       $this->addStepTwo();
-
+        //$this->sendpic();
+      
+        $this->addStepTwo();
         header('location: ' . URL . 'details/view/' . $_SESSION['postId']);
     }
 
@@ -146,13 +146,15 @@ class details extends controller {
     }
 
     public function view($id) {
+       // $this->view->count = $this->model->postSingleBoat($id);
         
-        $this->view->postPreview = $this->model->postSingleBoat($id);
-        
+         (count($this->view->count = $this->model->postSingleBoat($id)) == 0) ? $this->view->postPreview = $this->model->postSingleList($id) : $this->view->postPreview = $this->model->postSingleBoat($id);
+              
         //print_r($this->view->postPreview);
-        //die;
-        if (count($this->view->postPreview) > 0)
+        //die
+       if (count($this->view->postPreview) > 0)
             $this->view->titl = $this->view->postPreview[0]['title'];
+       
         (count($this->view->postPreview) == 0) ? header('location:' . URL . 'error') : $this->view->render('details/view', TRUE);
     }
     
