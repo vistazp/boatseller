@@ -103,8 +103,16 @@ Job = {
  //   }
 };
 
+function setInformation(lat, lng) {
+                                    document.getElementById('lat').value=lat;
+                                    document.getElementById('lng').value=lng;
+                                          };
 
 
 $(document).ready(function() {
     Job.setup(); 
-});
+    $(".fancybox").fancybox({
+
+                                              });
+                                     });
+

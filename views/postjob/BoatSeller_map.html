@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accessing arguments in UI events</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+     #floating-panel {
+               position: absolute;
+               top: 10px;
+               left: 25%;
+               z-index: 5;
+               background-color: #fff;
+               padding: 5px;
+               border: 1px solid #999;
+               text-align: center;
+               font-family: 'Roboto','sans-serif';
+               line-height: 30px;
+               padding-left: 10px;
+            }
+      #map {
+        height:100%;
+        width:100%;
+      }
+    </style>
+   </head>
+  <body>
+  <div id="floating-panel">
+      <label>Latitude </label>
+      <input id="Lat" type="text" size="17" value="" disabled>
+      <label>Longitude </label>
+      <input id="Lng" type="text" size="17" value="" disabled>
+    <!--<a href="javascript:parent.$.fancybox.open({href : fos.js});">Open something</a>  -->
+  </div>
+ <div id="map"></div>
+
+</div>
+ <script>
+    var markers = [];
+            function initMap() {
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 4,
+                  center: {lat: -25.363882, lng: 131.044922 },
+                  draggableCursor: 'url(http://vista.zp.ua/boatsell/anchor2.png), crosshair',
+                  //draggableCursor: 'crosshair',
+				  draggingCursor: 'url(http://vista.zp.ua/boatsell/compass.png), move'
+
+
+                  });
+
+          map.addListener('click', function(e) {
+                            deleteMarkers();
+                            placeMarkerAndPanTo(e.latLng, map);
+
+                            var Lat = document.getElementById('Lat');
+                            var Lng = document.getElementById('Lng');
+                            Lat.value = e.latLng.lat();
+                            Lng.value = e.latLng.lng();
+                            window.parent.setInformation(Lat.value, Lng.value);
+                            });
+
+}
+
+function setMapOnAll(map) {
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(map);
+  }
+}
+function clearMarkers() {
+  setMapOnAll(null);
+}
+function showMarkers() {
+  setMapOnAll(map);
+}
+function deleteMarkers() {
+  clearMarkers();
+  markers = [];
+}
+
+function placeMarkerAndPanTo(latLng, map) {
+               var marker = new google.maps.Marker({
+                   animation: google.maps.Animation.DROP,
+                   position: latLng,
+                   map: map
+                    });
+            markers.push(marker);
+            map.panTo(latLng);
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjofg8qryC2eU79J5pAc2ZuRK7rVUcBSk&signed_in=false&callback=initMap" async defer></script>
+  </body>
+</html>

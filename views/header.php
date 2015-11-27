@@ -27,8 +27,9 @@
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/screen.css" media="screen" type="text/css"/>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/formtastic.css" media="screen" type="text/css"/>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/jquery.fancybox-1.3.4.css" media="screen" type="text/css"/>
+        <link rel="stylesheet" href="<?php echo URL; ?>public/css/jquery.fancybox.css?v=2.1.5" media="screen" type="text/css"/>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/error.css" media="screen" type="text/css"/>
-		<link rel="stylesheet" href="<?php echo URL; ?>public/css/media.css" media="screen" type="text/css"/>
+	<link rel="stylesheet" href="<?php echo URL; ?>public/css/media.css" media="screen" type="text/css"/>
         
         
 
