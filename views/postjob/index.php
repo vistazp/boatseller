@@ -1105,18 +1105,19 @@
                                     </select>
                                 </div>
                                 <div class="span-6">
-                                    
-                                    <a class="fancybox fancybox.iframe button15" href="<?php echo URL; ?>BoatSeller_map.html">Please set the current location of the boat >></a>
-                                    <input id="lat" type="text" size="17" value="0" disabled>
-                                    <input id="lng" type="text" size="17" value="0" disabled>
-                                    
-                                    
-                                    <br/>
-                                    
-                                    
-                                    
-                                    
+                                    </br>
+                                   <a class="fancybox fancybox.iframe button15" href="<?php echo URL; ?>BoatSeller_map.html">Please set the current location of the boat >></a>
                                 </div>
+                                   <div class="span-6 last">
+                                    <label for="lat">Latitude</label><br/><input id="lat" type="text"  value="0" disabled>
+                                    <label for="lng">Longitude</label><br/><input id="lng" type="text"  value="0" disabled>
+                                </div>               
+                                    
+                                    
+                                    
+                                    
+                                    
+                               
                                 
                                 
                                 
