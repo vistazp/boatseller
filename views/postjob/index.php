@@ -117,6 +117,7 @@
                         <div class="intro span-24 last">
                             <h2>Step 2: Get Started:</h2>
                             <hr/>
+                            <h2>Common data </h2>
                         </div>
                         <!-- errors -->
 
@@ -125,13 +126,13 @@
 
                             <div class="span-12 last">
                                 <strong>Boat name</strong><span class="hint"></span>
-                                <input class="required" id="job_headline" name="headline" size="50" title="Please enter a Boat Name" type="text" />
+                                <input class="css_input" id="job_headline" name="headline" size="50" title="Please enter a Boat Name" type="text" />
                             </div>
                             <div id="job-where" class="span-12 last">
                                 <div class="span-6">
                                     <label for="job_country">Boat Type</label>
                                     <br/>
-                                    <select>      
+                                    <select class="css_input">      
                                         <option value="1">Catamaran</option>
                                         <option value="2">Motorboat</option>
                                         <option value="3">Sailboat</option>
@@ -140,12 +141,12 @@
                                 <div class="span-6 last">
                                     <label for="job_country">Construction year</label><span class="hint"></span>
                                     <br/>
-                                    <input class="required" id="job_city" name="city" size="4" title="Please enter a construction year" type="text" />
+                                    <input class="css_input required" id="job_city" name="city" size="4" title="Please enter a construction year" type="text" />
                                 </div>
                                 <div class="span-6">
                                     <label for="job_country">CE category</label>
                                     <br/>
-                                    <select>      
+                                    <select class="css_input">      
                                         <option value="A">A. Ocean</option>
                                         <option value="B">B. Offshore</option>
                                         <option value="C">C. Inshore</option>
@@ -155,12 +156,12 @@
                                 <div class="span-6">
                                     <label for="job_country">Model</label><span class="hint"></span>
                                     <br/>
-                                    <input class="required" id="job_city" name="city" size="4" title="Please enter a model" type="text" />
+                                    <input class="css_input required" id="job_city" name="city" size="4" title="Please enter a model" type="text" />
                                 </div>
                                 <div class="span-6 last">
                                     <label for="job_country">Yard</label>
                                     <br/>
-                                    <select>      
+                                    <select class="css_input">      
                                         <option value="9999">Other / Unknown</option>
                                         <option value="939">3000 Marine</option>
                                         <option value="940">A.Mostes-IT</option>
@@ -1109,33 +1110,15 @@
                                    <a class="fancybox fancybox.iframe button15" href="<?php echo URL; ?>BoatSeller_map.html">Please set the current location of the boat >></a>
                                 </div>
                                    <div class="span-6 last">
-                                    <label for="lat">Latitude</label><br/><input id="lat" type="text"  value="0" disabled>
-                                    <label for="lng">Longitude</label><br/><input id="lng" type="text"  value="0" disabled>
+                                    <label for="lat">Latitude</label></br><input class="css_input2" id="lat" type="text"  value="0" disabled>
+                                    <label for="lng">Longitude</label></br><input class="css_input2" id="lng" type="text"  value="0" disabled>
                                 </div>               
-                                    
-                                    
-                                    
-                                    
-                                    
-                               
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-
                             </div>
                             <div class="span-12 last">
                                 <input name="telecomute" type="hidden" value="no" /><input hint="Check here if this is a telecommute job" id="job_telecomute" label="Telecommute:" name="telecomute" type="checkbox" value="yes" />
                                 <label for="job_telecomute">This is a full telecommute job</label>
                                 <hr class="space"/>
-
-                            </div>
+                           </div>
 
                         </div>
 
@@ -1146,7 +1129,7 @@
 
                         <?php else: ?>   
 
-                            <div id="loginForm" style="display:  block ">
+                            <div id="loginForm" style="display:  block;">
                                 <label for="user_login">Email:</label><br />
                                 <input id="user_login" class="required email" title="Please enter email" name="login" size="45" type="text" value="" /><br />
 
@@ -1157,8 +1140,354 @@
                             </div>
 
 
-                        <?php endif; ?>   
+                        <?php endif; ?>  
+                         
+                       <hr> 
+                                    
+                       <div  class="span-6" align="right">
+                            <h2 align="left">Ship dimensions</h2>
+                               </br>
+                                <label>Length</label>
+                                <div contenteditable="true" id="div_length" class="css_input3" dimension="length" data-ph="0.00"></div>
+                                <div class="css_input_m">m</div>
+                                <input id="length" type="hidden" value="0.00">
+                                <br/>
+                                 <label>Width</label>
+                                 <div contenteditable="true" id="div_width" class="css_input3" dimension="width" data-ph="0.00"></div> 
+                                 <div class="css_input_m">m</div>
+                                <input id="width" type="hidden" value="0.00">
+                                <br/>
+                                <label>Bridge Clearance</label>
+                                 <div contenteditable="true" id="div_clearance" class="css_input3" dimension="clearance" data-ph="0.00"></div>
+                                 <div class="css_input_m">m</div>
+                                <input id="clearance" type="hidden" value="0.00">
+                                <br/>
+                                <label>Draft</label>
+                                 <div contenteditable="true" id="div_draft" class="css_input3" dimension="draft" data-ph="0.00"></div> 
+                                 <div class="css_input_m">m</div>
+                                <input id="draft" type="hidden" value="0.00">
+                                <br/>
+                                <label>Weight</label>
+                                <div contenteditable="true" id="div_weight" class="css_input3" dimension="weight" data-ph="0.00"></div> 
+                                <div class="css_input_m">kg</div>
+                                <input id="weight" type="hidden" value="0.00">
+                          </div>
+                        
+                         <div  class="span-9" align="right">
+                               <h2 align="left">Places and accommodation</h2>
+                               </br>
+                                <label>Max. Persons/Passengers</label>
+                                <div contenteditable="true" id="div_length" class="css_input4" dimension="passengers" data-ph="Enter passengers"></div>
+                                <input id="passengers" type="hidden" value="0">
+                                <br/>
+                                 <label>Cabins</label>
+                                 <div contenteditable="true" id="div_width" class="css_input4" dimension="cabins" data-ph="Enter cabins"></div> 
+                                <input id="cabins" type="hidden" value="0">
+                                <br/>
+                                <label>Berth</label>
+                                 <div contenteditable="true" id="div_clearance" class="css_input4" dimension="births" data-ph="Enter count of berths"></div>
+                                 <input id="births" type="hidden" value="0">
+                                <br/>
+                        </div>
+                      <div class="span-7" align="right">
+                             <h2 align="left">Appearance and texture</h2>
+                               </br>
+          <label style="margin-right: 30px;">Color of the deck</label>
+       <div contenteditable="false" id="color" class="fox_body3" dimension="color" data-ph="color"></div>
+<div class="dropdown"> 
+<ul id="col" class="dropdown-menu">
+  <li><a class="color-btn" href="#col" data-color="#ffffff" data-value="1" title="White" style="background-color: rgb(255, 255, 255);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#f8f8ff" data-value="2" title="Ghost White" style="background-color: rgb(248, 248, 255);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#dcdcdc" data-value="3" title="Gainsboro" style="background-color: rgb(220, 220, 220);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#d3d3d3" data-value="4" title="Light Grey" style="background-color: rgb(211, 211, 211);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#a7a7a7" data-value="5" title="Dark Grey" style="background-color: rgb(167, 167, 167);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#bebebe" data-value="6" title="Gray" style="background-color: rgb(190, 190, 190);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#000000" data-value="7" title="Black" style="background-color: rgb(0, 0, 0);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#b0e0e6" data-value="8" title="Powder Blue" style="background-color: rgb(176, 224, 230);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#add8e6" data-value="9" title="Light Blue" style="background-color: rgb(173, 216, 230);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#87ceeb" data-value="10" title="Sky Blue" style="background-color: rgb(135, 206, 235);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#00bfff" data-value="11" title="Deep Sky Blue" style="background-color: rgb(0, 191, 255);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#1e90ff" data-value="12" title="Dodger Blue" style="background-color: rgb(30, 144, 255);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#4169e1" data-value="13" title="Royal Blue" style="background-color: rgb(65, 105, 225);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#0000ff" data-value="14" title="Blue" style="background-color: rgb(0, 0, 255);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#191970" data-value="15" title="Midnight Blue" style="background-color: rgb(25, 25, 112);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#00fa9a" data-value="16" title="Medium Spring Green" style="background-color: rgb(0, 250, 154);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#00ff7f" data-value="17" title="Spring Green" style="background-color: rgb(0, 255, 127);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#3cb371" data-value="18" title="Medium Sea Green" style="background-color: rgb(60, 179, 113);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#2e8b57" data-value="19" title="Sea Green" style="background-color: rgb(46, 139, 87);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#228b22" data-value="20" title="Forest Green" style="background-color: rgb(34, 139, 34);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#008000" data-value="21" title="Green" style="background-color: rgb(0, 128, 0);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#6b8e23" data-value="22" title="Olive Drab" style="background-color: rgb(107, 142, 35);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#006400" data-value="23" title="Dark Green" style="background-color: rgb(0, 100, 0);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#f5f5dc" data-value="24" title="Beige" style="background-color: rgb(245, 245, 220);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#fafad2" data-value="25" title="Light Golden Rod Yellow" style="background-color: rgb(250, 250, 210);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#eee8aa" data-value="26" title="Pale Golden Rod" style="background-color: rgb(238, 232, 170);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ffff00" data-value="27" title="Yellow" style="background-color: rgb(255, 255, 0);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ffd700" data-value="28" title="Gold" style="background-color: rgb(255, 215, 0);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ffa500" data-value="29" title="Orange" style="background-color: rgb(255, 165, 0);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ff8c00" data-value="30" title="Dark Orange" style="background-color: rgb(255, 140, 0);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#b8860b" data-value="31" title="Dark Golden Rod" style="background-color: rgb(184, 134, 11);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ffe4c4" data-value="32" title="Bisque" style="background-color: rgb(255, 228, 196);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ffe4b5" data-value="33" title="Moccasin" style="background-color: rgb(255, 228, 181);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ffa07a" data-value="34" title="Light Salmon" style="background-color: rgb(255, 160, 122);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#fa8072" data-value="35" title="Salmon" style="background-color: rgb(250, 128, 114);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#f08080" data-value="36" title="Light Coral" style="background-color: rgb(240, 128, 128);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#cd5c5c" data-value="37" title="Indian Red" style="background-color: rgb(205, 92, 92);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#a52a2a" data-value="38" title="Brown" style="background-color: rgb(165, 42, 42);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#b22222" data-value="39" title="Fire Brick" style="background-color: rgb(178, 34, 34);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ffdab9" data-value="40" title="Peach Puff" style="background-color: rgb(255, 218, 185);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#f5deb3" data-value="41" title="Wheat" style="background-color: rgb(245, 222, 179);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#f4a460" data-value="42" title="Sandy Brown" style="background-color: rgb(244, 164, 96);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ff6347" data-value="43" title="Tomato" style="background-color: rgb(255, 99, 71);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ff4500" data-value="44" title="Orange Red" style="background-color: rgb(255, 69, 0);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ff0000" data-value="45" title="Red" style="background-color: rgb(255, 0, 0);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#d2691e" data-value="46" title="Chocolate" style="background-color: rgb(210, 105, 30);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#800000" data-value="47" title="Maroon" style="background-color: rgb(128, 0, 0);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ffc0cb" data-value="48" title="Pink" style="background-color: rgb(255, 192, 203);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ffb6c1" data-value="49" title="Light Pink" style="background-color: rgb(255, 182, 193);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#db7093" data-value="50" title="Pale Violet Red" style="background-color: rgb(219, 112, 147);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ff00ff" data-value="51" title="Magenta" style="background-color: rgb(255, 0, 255);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ff69b4" data-value="52" title="Hot Pink" style="background-color: rgb(255, 105, 180);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ff1493" data-value="53" title="Deep Pink" style="background-color: rgb(255, 20, 147);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#d02090" data-value="54" title="Violet Red" style="background-color: rgb(208, 32, 144);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#8b008b" data-value="55" title="Dark Magenta" style="background-color: rgb(139, 0, 139);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#e6e6fa" data-value="56" title="Lavender" style="background-color: rgb(230, 230, 250);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#d8bfd8" data-value="57" title="Thistle" style="background-color: rgb(216, 191, 216);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#dda0dd" data-value="58" title="Plum" style="background-color: rgb(221, 160, 221);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#da70d6" data-value="59" title="Orchid" style="background-color: rgb(218, 112, 214);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#ba55d3" data-value="60" title="Medium Orchid" style="background-color: rgb(186, 85, 211);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#8a2be2" data-value="61" title="Blue Violet" style="background-color: rgb(138, 43, 226);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#9932cc" data-value="62" title="Dark Orchid" style="background-color: rgb(153, 50, 204);"></a></li>
+  <li><a class="color-btn" href="#col" data-color="#800080" data-value="63" title="Purple" style="background-color: rgb(128, 0, 128);"></a></li>
+</ul>
+</div>  
+      
+                            <select style="display:none">
+                                   <option value="1" data-color="#ffffff">White</option>
+                                   <option value="2" data-color="#f8f8ff">Ghost White</option>
+                                   <option value="3" data-color="#dcdcdc">Gainsboro</option>
+                                   <option value="4" data-color="#d3d3d3">Light Grey</option>
+                                   <option value="5" data-color="#a7a7a7">Dark Grey</option>
+                                   <option value="6" data-color="#bebebe">Gray</option>
+                                   <option value="7" data-color="#000000">Black</option>
+                                   <option value="8" data-color="#b0e0e6">Powder Blue</option>
+                                   <option value="9" data-color="#add8e6">Light Blue</option>
+                                   <option value="10" data-color="#87ceeb">Sky Blue</option>
+                                   <option value="11" data-color="#00bfff">Deep Sky Blue</option>
+                                   <option value="12" data-color="#1e90ff">Dodger Blue</option>
+                                   <option value="13" data-color="#4169e1">Royal Blue</option>
+                                   <option value="14" data-color="#0000ff">Blue</option>
+                                   <option value="15" data-color="#191970">Midnight Blue</option>
+                                   <option value="16" data-color="#00fa9a">Medium Spring Green</option>
+                                   <option value="17" data-color="#00ff7f">Spring Green</option>
+                                   <option value="18" data-color="#3cb371">Medium Sea Green</option>
+                                   <option value="19" data-color="#2e8b57">Sea Green</option>
+                                   <option value="20" data-color="#228b22">Forest Green</option>
+                                   <option value="21" data-color="#008000">Green</option>
+                                   <option value="22" data-color="#6b8e23">Olive Drab</option>
+                                   <option value="23" data-color="#006400">Dark Green</option>
+                                   <option value="24" data-color="#f5f5dc">Beige</option>
+                                   <option value="25" data-color="#fafad2">Light Golden Rod Yellow</option>
+                                   <option value="26" data-color="#eee8aa">Pale Golden Rod</option>
+                                   <option value="27" data-color="#ffff00">Yellow</option>
+                                   <option value="28" data-color="#ffd700">Gold</option>
+                                   <option value="29" data-color="#ffa500">Orange</option>
+                                   <option value="30" data-color="#ff8c00">Dark Orange</option>
+                                   <option value="31" data-color="#b8860b">Dark Golden Rod</option>
+                                   <option value="32" data-color="#ffe4c4">Bisque</option>
+                                   <option value="33" data-color="#ffe4b5">Moccasin</option>
+                                   <option value="34" data-color="#ffa07a">Light Salmon</option>
+                                   <option value="35" data-color="#fa8072">Salmon</option>
+                                   <option value="36" data-color="#f08080">Light Coral</option>
+                                   <option value="37" data-color="#cd5c5c">Indian Red</option>
+                                   <option value="38" data-color="#a52a2a">Brown</option>
+                                   <option value="39" data-color="#b22222">Fire Brick</option>
+                                   <option value="40" data-color="#ffdab9">Peach Puff</option>
+                                   <option value="41" data-color="#f5deb3">Wheat</option>
+                                   <option value="42" data-color="#f4a460">Sandy Brown</option>
+                                   <option value="43" data-color="#ff6347">Tomato</option>
+                                   <option value="44" data-color="#ff4500">Orange Red</option>
+                                   <option value="45" data-color="#ff0000">Red</option>
+                                   <option value="46" data-color="#d2691e">Chocolate</option>
+                                   <option value="47" data-color="#800000">Maroon</option>
+                                   <option value="48" data-color="#ffc0cb">Pink</option>
+                                   <option value="49" data-color="#ffb6c1">Light Pink</option>
+                                   <option value="50" data-color="#db7093">Pale Violet Red</option>
+                                   <option value="51" data-color="#ff00ff">Magenta</option>
+                                   <option value="52" data-color="#ff69b4">Hot Pink</option>
+                                   <option value="53" data-color="#ff1493">Deep Pink</option>
+                                   <option value="54" data-color="#d02090">Violet Red</option>
+                                   <option value="55" data-color="#8b008b">Dark Magenta</option>
+                                   <option value="56" data-color="#e6e6fa">Lavender</option>
+                                   <option value="57" data-color="#d8bfd8">Thistle</option>
+                                   <option value="58" data-color="#dda0dd">Plum</option>
+                                   <option value="59" data-color="#da70d6">Orchid</option>
+                                   <option value="60" data-color="#ba55d3">Medium Orchid</option>
+                                   <option value="61" data-color="#8a2be2">Blue Violet</option>
+                                   <option value="62" data-color="#9932cc">Dark Orchid</option>
+                                   <option value="63" data-color="#800080">Purple</option>
+                                  </select>
+                                <br/>   
+                           
+                                 <label>Deck Material</label>
+                                    <select class="css_input">      
+                                        <option value="A">Aluminium</option>
+                                        <option value="B">Cement</option>
+                                        <option value="C">CRP-glass-fibre reinforced plastic</option>
+                                        <option value="D">Steel</option> 
+                                        <option value="E">Unknown</option> 
+                                        <option value="F">Wood</option> 
+                                    </select>
+                                <br/>
+                                   <br/>
+                                      <br/>
+<label style="margin-right: 30px;">Color of the hull</label>                                                             
+<div contenteditable="false" id="color2" class="fox_body4" dimension="color" data-ph="color"></div>
+<div class="dropdown"> 
+<ul id="col2" class="dropdown-menu">
+  <li><a class="color-btn1" href="#col2" data-color="#ffffff" data-value="1" title="White" style="background-color: rgb(255, 255, 255);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#f8f8ff" data-value="2" title="Ghost White" style="background-color: rgb(248, 248, 255);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#dcdcdc" data-value="3" title="Gainsboro" style="background-color: rgb(220, 220, 220);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#d3d3d3" data-value="4" title="Light Grey" style="background-color: rgb(211, 211, 211);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#a7a7a7" data-value="5" title="Dark Grey" style="background-color: rgb(167, 167, 167);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#000000" data-value="7" title="Black" style="background-color: rgb(0, 0, 0);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#b0e0e6" data-value="8" title="Powder Blue" style="background-color: rgb(176, 224, 230);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#add8e6" data-value="9" title="Light Blue" style="background-color: rgb(173, 216, 230);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#87ceeb" data-value="10" title="Sky Blue" style="background-color: rgb(135, 206, 235);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#00bfff" data-value="11" title="Deep Sky Blue" style="background-color: rgb(0, 191, 255);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#1e90ff" data-value="12" title="Dodger Blue" style="background-color: rgb(30, 144, 255);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#4169e1" data-value="13" title="Royal Blue" style="background-color: rgb(65, 105, 225);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#0000ff" data-value="14" title="Blue" style="background-color: rgb(0, 0, 255);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#191970" data-value="15" title="Midnight Blue" style="background-color: rgb(25, 25, 112);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#00fa9a" data-value="16" title="Medium Spring Green" style="background-color: rgb(0, 250, 154);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#00ff7f" data-value="17" title="Spring Green" style="background-color: rgb(0, 255, 127);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#3cb371" data-value="18" title="Medium Sea Green" style="background-color: rgb(60, 179, 113);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#2e8b57" data-value="19" title="Sea Green" style="background-color: rgb(46, 139, 87);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#228b22" data-value="20" title="Forest Green" style="background-color: rgb(34, 139, 34);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#008000" data-value="21" title="Green" style="background-color: rgb(0, 128, 0);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#6b8e23" data-value="22" title="Olive Drab" style="background-color: rgb(107, 142, 35);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#006400" data-value="23" title="Dark Green" style="background-color: rgb(0, 100, 0);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#f5f5dc" data-value="24" title="Beige" style="background-color: rgb(245, 245, 220);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#fafad2" data-value="25" title="Light Golden Rod Yellow" style="background-color: rgb(250, 250, 210);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#eee8aa" data-value="26" title="Pale Golden Rod" style="background-color: rgb(238, 232, 170);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ffff00" data-value="27" title="Yellow" style="background-color: rgb(255, 255, 0);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ffd700" data-value="28" title="Gold" style="background-color: rgb(255, 215, 0);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ffa500" data-value="29" title="Orange" style="background-color: rgb(255, 165, 0);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ff8c00" data-value="30" title="Dark Orange" style="background-color: rgb(255, 140, 0);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#b8860b" data-value="31" title="Dark Golden Rod" style="background-color: rgb(184, 134, 11);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ffe4c4" data-value="32" title="Bisque" style="background-color: rgb(255, 228, 196);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ffe4b5" data-value="33" title="Moccasin" style="background-color: rgb(255, 228, 181);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ffa07a" data-value="34" title="Light Salmon" style="background-color: rgb(255, 160, 122);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#fa8072" data-value="35" title="Salmon" style="background-color: rgb(250, 128, 114);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#f08080" data-value="36" title="Light Coral" style="background-color: rgb(240, 128, 128);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#cd5c5c" data-value="37" title="Indian Red" style="background-color: rgb(205, 92, 92);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#a52a2a" data-value="38" title="Brown" style="background-color: rgb(165, 42, 42);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#b22222" data-value="39" title="Fire Brick" style="background-color: rgb(178, 34, 34);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ffdab9" data-value="40" title="Peach Puff" style="background-color: rgb(255, 218, 185);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#f5deb3" data-value="41" title="Wheat" style="background-color: rgb(245, 222, 179);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#f4a460" data-value="42" title="Sandy Brown" style="background-color: rgb(244, 164, 96);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ff6347" data-value="43" title="Tomato" style="background-color: rgb(255, 99, 71);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ff4500" data-value="44" title="Orange Red" style="background-color: rgb(255, 69, 0);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ff0000" data-value="45" title="Red" style="background-color: rgb(255, 0, 0);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#d2691e" data-value="46" title="Chocolate" style="background-color: rgb(210, 105, 30);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#800000" data-value="47" title="Maroon" style="background-color: rgb(128, 0, 0);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ffc0cb" data-value="48" title="Pink" style="background-color: rgb(255, 192, 203);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ffb6c1" data-value="49" title="Light Pink" style="background-color: rgb(255, 182, 193);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#db7093" data-value="50" title="Pale Violet Red" style="background-color: rgb(219, 112, 147);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ff00ff" data-value="51" title="Magenta" style="background-color: rgb(255, 0, 255);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ff69b4" data-value="52" title="Hot Pink" style="background-color: rgb(255, 105, 180);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ff1493" data-value="53" title="Deep Pink" style="background-color: rgb(255, 20, 147);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#d02090" data-value="54" title="Violet Red" style="background-color: rgb(208, 32, 144);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#8b008b" data-value="55" title="Dark Magenta" style="background-color: rgb(139, 0, 139);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#e6e6fa" data-value="56" title="Lavender" style="background-color: rgb(230, 230, 250);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#d8bfd8" data-value="57" title="Thistle" style="background-color: rgb(216, 191, 216);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#dda0dd" data-value="58" title="Plum" style="background-color: rgb(221, 160, 221);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#da70d6" data-value="59" title="Orchid" style="background-color: rgb(218, 112, 214);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#ba55d3" data-value="60" title="Medium Orchid" style="background-color: rgb(186, 85, 211);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#8a2be2" data-value="61" title="Blue Violet" style="background-color: rgb(138, 43, 226);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#9932cc" data-value="62" title="Dark Orchid" style="background-color: rgb(153, 50, 204);"></a></li>
+  <li><a class="color-btn1" href="#col2" data-color="#800080" data-value="63" title="Purple" style="background-color: rgb(128, 0, 128);"></a></li>
+</ul>
+</div>  
+  <select style="display:none">
+                                   <option value="1" data-color="#ffffff">White</option>
+                                   <option value="2" data-color="#f8f8ff">Ghost White</option>
+                                   <option value="3" data-color="#dcdcdc">Gainsboro</option>
+                                   <option value="4" data-color="#d3d3d3">Light Grey</option>
+                                   <option value="5" data-color="#a7a7a7">Dark Grey</option>
+                                   <option value="6" data-color="#bebebe">Gray</option>
+                                   <option value="7" data-color="#000000">Black</option>
+                                   <option value="8" data-color="#b0e0e6">Powder Blue</option>
+                                   <option value="9" data-color="#add8e6">Light Blue</option>
+                                   <option value="10" data-color="#87ceeb">Sky Blue</option>
+                                   <option value="11" data-color="#00bfff">Deep Sky Blue</option>
+                                   <option value="12" data-color="#1e90ff">Dodger Blue</option>
+                                   <option value="13" data-color="#4169e1">Royal Blue</option>
+                                   <option value="14" data-color="#0000ff">Blue</option>
+                                   <option value="15" data-color="#191970">Midnight Blue</option>
+                                   <option value="16" data-color="#00fa9a">Medium Spring Green</option>
+                                   <option value="17" data-color="#00ff7f">Spring Green</option>
+                                   <option value="18" data-color="#3cb371">Medium Sea Green</option>
+                                   <option value="19" data-color="#2e8b57">Sea Green</option>
+                                   <option value="20" data-color="#228b22">Forest Green</option>
+                                   <option value="21" data-color="#008000">Green</option>
+                                   <option value="22" data-color="#6b8e23">Olive Drab</option>
+                                   <option value="23" data-color="#006400">Dark Green</option>
+                                   <option value="24" data-color="#f5f5dc">Beige</option>
+                                   <option value="25" data-color="#fafad2">Light Golden Rod Yellow</option>
+                                   <option value="26" data-color="#eee8aa">Pale Golden Rod</option>
+                                   <option value="27" data-color="#ffff00">Yellow</option>
+                                   <option value="28" data-color="#ffd700">Gold</option>
+                                   <option value="29" data-color="#ffa500">Orange</option>
+                                   <option value="30" data-color="#ff8c00">Dark Orange</option>
+                                   <option value="31" data-color="#b8860b">Dark Golden Rod</option>
+                                   <option value="32" data-color="#ffe4c4">Bisque</option>
+                                   <option value="33" data-color="#ffe4b5">Moccasin</option>
+                                   <option value="34" data-color="#ffa07a">Light Salmon</option>
+                                   <option value="35" data-color="#fa8072">Salmon</option>
+                                   <option value="36" data-color="#f08080">Light Coral</option>
+                                   <option value="37" data-color="#cd5c5c">Indian Red</option>
+                                   <option value="38" data-color="#a52a2a">Brown</option>
+                                   <option value="39" data-color="#b22222">Fire Brick</option>
+                                   <option value="40" data-color="#ffdab9">Peach Puff</option>
+                                   <option value="41" data-color="#f5deb3">Wheat</option>
+                                   <option value="42" data-color="#f4a460">Sandy Brown</option>
+                                   <option value="43" data-color="#ff6347">Tomato</option>
+                                   <option value="44" data-color="#ff4500">Orange Red</option>
+                                   <option value="45" data-color="#ff0000">Red</option>
+                                   <option value="46" data-color="#d2691e">Chocolate</option>
+                                   <option value="47" data-color="#800000">Maroon</option>
+                                   <option value="48" data-color="#ffc0cb">Pink</option>
+                                   <option value="49" data-color="#ffb6c1">Light Pink</option>
+                                   <option value="50" data-color="#db7093">Pale Violet Red</option>
+                                   <option value="51" data-color="#ff00ff">Magenta</option>
+                                   <option value="52" data-color="#ff69b4">Hot Pink</option>
+                                   <option value="53" data-color="#ff1493">Deep Pink</option>
+                                   <option value="54" data-color="#d02090">Violet Red</option>
+                                   <option value="55" data-color="#8b008b">Dark Magenta</option>
+                                   <option value="56" data-color="#e6e6fa">Lavender</option>
+                                   <option value="57" data-color="#d8bfd8">Thistle</option>
+                                   <option value="58" data-color="#dda0dd">Plum</option>
+                                   <option value="59" data-color="#da70d6">Orchid</option>
+                                   <option value="60" data-color="#ba55d3">Medium Orchid</option>
+                                   <option value="61" data-color="#8a2be2">Blue Violet</option>
+                                   <option value="62" data-color="#9932cc">Dark Orchid</option>
+                                   <option value="63" data-color="#800080">Purple</option>
+                                  </select>
 
+                                <br/>
+                                <label>Hull Material</label>
+                                    <select class="css_input">      
+                                        <option value="A">Aluminium</option>
+                                        <option value="B">Cement</option>
+                                        <option value="C">CRP-glass-fibre reinforced plastic</option>
+                                        <option value="D">Steel</option> 
+                                        <option value="E">Unknown</option> 
+                                        <option value="F">Wood</option>  
+                                    </select>
+                                                      
+                               
+                        </div>
                     </div>
 
                     <div class="span-23 errorForsteps">
@@ -1167,6 +1496,7 @@
 
                     <!-- end - right column -->
                     <div class="step-nav span-24 last">
+                         <br/>  <br/> 
                         <div class="next-step last">
                             <input class="button" id="next-step-job-detail" name="commit" type="submit" value="Next Step: Job Details &gt;&gt;" />
                         </div>

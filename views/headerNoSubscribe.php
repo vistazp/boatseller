@@ -69,7 +69,7 @@
     </head>
     <?php session::init(); ?>
     <body>       
-        <div class="container">
+        <div class="container" >
             <div id="header" class="span-24">
                 <div id="logo" class="span-7">
                     <a href="http://dotnetnow.com/"></a>
