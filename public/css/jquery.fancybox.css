@@ -436,8 +436,7 @@ a.button15:active {
 
  .open {
   display: block!important;
-   
-}
+ }
  .open>.dropdown-menu {
     display: block;
 }
@@ -476,7 +475,6 @@ a.button15:active {
    -webkit-transition: all ease .1s;
     transition: all ease .1s;
 }  
-
 
 .dropdown-menu {
     display: none;

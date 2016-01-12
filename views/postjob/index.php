@@ -18,7 +18,7 @@
 
                             <div class="span-24">&nbsp;</div>
 
-                            <div id="standard" class="span-7 append-1">
+                            <div id="standard" class="span-8 append-1">
                                 <div class="tier-box">
                                     <div class="header">
                                         <h3>Standard</h3>
@@ -43,7 +43,7 @@
                             </div><!-- end standard-->
 
 
-                            <div id="premium" class="span-7 append-1">
+                            <div id="premium" class="span-8 append-1">
                                 <div class="tier-box">
                                     <div class="header">
 
@@ -74,7 +74,7 @@
                             </div> <!-- end - premium -->
 
 
-                            <div id="expert" class="span-7 last">
+                            <div id="expert" class="span-8 last">
                                 <div class="tier-box">
                                     <div class="header">
 
@@ -113,7 +113,7 @@
 
                     </div>
                     <hr class="space"/>
-                    <div id="get-started" class="span-24 last">
+                    
                         <div class="intro span-24 last">
                             <h2>Step 2: Get Started:</h2>
                             <hr/>
@@ -126,27 +126,32 @@
 
                             <div class="span-12 last">
                                 <strong>Boat name</strong><span class="hint"></span>
-                                <input class="css_input" id="job_headline" name="headline" size="50" title="Please enter a Boat Name" type="text" />
+                              <!--id="job_headline"-->
+                                <input class="css_input required" id="boat_name" name="headline" size="50" title="Please enter a Boat Name" type="text" />
                             </div>
                             <div id="job-where" class="span-12 last">
                                 <div class="span-6">
-                                    <label for="job_country">Boat Type</label>
+                                    <!--for="job_country"-->
+                                    <label for="boat_type">Boat Type</label>
                                     <br/>
-                                    <select class="css_input">      
+                                    <select class="css_input" id="boat_type">      
                                         <option value="1">Catamaran</option>
                                         <option value="2">Motorboat</option>
                                         <option value="3">Sailboat</option>
                                     </select>
                                 </div>
                                 <div class="span-6 last">
-                                    <label for="job_country">Construction year</label><span class="hint"></span>
+                                 <!--for="job_country"-->
+                                    <label for="boat_year">Construction year</label><span class="hint"></span>
                                     <br/>
-                                    <input class="css_input required" id="job_city" name="city" size="4" title="Please enter a construction year" type="text" />
+                                    <!--id="job_city" name="city"-->  
+                                    <input class="css_input required" id="boat_year" name="year" size="4" title="Please enter a construction year" type="text" />
                                 </div>
                                 <div class="span-6">
-                                    <label for="job_country">CE category</label>
+                                     <!--id="job_country"--> 
+                                    <label for="boat_category">CE category</label>
                                     <br/>
-                                    <select class="css_input">      
+                                    <select class="css_input" id="boat_category">      
                                         <option value="A">A. Ocean</option>
                                         <option value="B">B. Offshore</option>
                                         <option value="C">C. Inshore</option>
@@ -154,14 +159,14 @@
                                     </select>
                                 </div>
                                 <div class="span-6">
-                                    <label for="job_country">Model</label><span class="hint"></span>
+                                    <label for="boat_model">Model</label><span class="hint"></span>
                                     <br/>
-                                    <input class="css_input required" id="job_city" name="city" size="4" title="Please enter a model" type="text" />
+                                    <input class="css_input required" id="boat_model" name="boat_model" size="4" title="Please enter a model" type="text" />
                                 </div>
                                 <div class="span-6 last">
-                                    <label for="job_country">Yard</label>
+                                    <label for="boat_yard">Yard</label>
                                     <br/>
-                                    <select class="css_input">      
+                                    <select class="css_input" id="boat_yard">      
                                         <option value="9999">Other / Unknown</option>
                                         <option value="939">3000 Marine</option>
                                         <option value="940">A.Mostes-IT</option>
@@ -1144,7 +1149,7 @@
                          
                        <hr> 
                                     
-                       <div  class="span-6" align="right">
+                       <div class="span-6" align="right">
                             <h2 align="left">Ship dimensions</h2>
                                </br>
                                 <label>Length</label>
@@ -1189,11 +1194,11 @@
                                  <input id="births" type="hidden" value="0">
                                 <br/>
                         </div>
-                      <div class="span-7" align="right">
+                  <div class="span-7" align="right">
                              <h2 align="left">Appearance and texture</h2>
                                </br>
-          <label style="margin-right: 30px;">Color of the deck</label>
-       <div contenteditable="false" id="color" class="fox_body3" dimension="color" data-ph="color"></div>
+<label style="margin-right: 30px;">Color of the deck</label>
+<div contenteditable="false" id="color" class="fox_body3" dimension="color" data-ph="color"></div>
 <div class="dropdown"> 
 <ul id="col" class="dropdown-menu">
   <li><a class="color-btn" href="#col" data-color="#ffffff" data-value="1" title="White" style="background-color: rgb(255, 255, 255);"></a></li>
@@ -1262,7 +1267,7 @@
 </ul>
 </div>  
       
-                            <select style="display:none">
+                            <select id="select1" style="display:none">
                                    <option value="1" data-color="#ffffff">White</option>
                                    <option value="2" data-color="#f8f8ff">Ghost White</option>
                                    <option value="3" data-color="#dcdcdc">Gainsboro</option>
@@ -1409,7 +1414,7 @@
   <li><a class="color-btn1" href="#col2" data-color="#800080" data-value="63" title="Purple" style="background-color: rgb(128, 0, 128);"></a></li>
 </ul>
 </div>  
-  <select style="display:none">
+  <select id="select2" style="display:none">
                                    <option value="1" data-color="#ffffff">White</option>
                                    <option value="2" data-color="#f8f8ff">Ghost White</option>
                                    <option value="3" data-color="#dcdcdc">Gainsboro</option>
@@ -1488,7 +1493,7 @@
                                                       
                                
                         </div>
-                    </div>
+                    
 
                     <div class="span-23 errorForsteps">
 
@@ -1498,7 +1503,7 @@
                     <div class="step-nav span-24 last">
                          <br/>  <br/> 
                         <div class="next-step last">
-                            <input class="button" id="next-step-job-detail" name="commit" type="submit" value="Next Step: Job Details &gt;&gt;" />
+                            <input class="button" id="next-step-job-detail" name="commit" type="submit" value="Next Step: Boat Details &gt;&gt;" />
                         </div>
                     </div>
                 </div>

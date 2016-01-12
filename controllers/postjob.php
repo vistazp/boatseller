@@ -20,9 +20,9 @@ class postjob extends controller {
         $this->view->render('postjob/index', TRUE);
     }
 
-    public function nextStep($tip) {
+    public function nextStep() {
         
-        
+      
         if (session::get('loggedIn') == TRUE) 
             {
             // добавляем в бд данные из step1
@@ -51,13 +51,23 @@ class postjob extends controller {
 
             $data = array();
             
-            $data['title'] = $_POST['headline'];
-            $data['city'] = $_POST['city'];
-            $data['country'] = $_POST['country'];
-            $data['telec'] = $_POST['telecomute'];
+            $data['boat_name'] = $_POST['headline'];
+            $data['boat_type'] = $_POST['boat_type'];
+            $data['construction_year'] = $_POST['year'];
+            $data['ce_category'] = $_POST['boat_category'];
+            $data['yard'] = $_POST['boat_yard'];
+           // $data['ce_category'] = $_POST['boat_category'];
+            
             $data['type'] = $_POST['featured_status'];
             $data['userid'] = session::get('userId');
             
+          // $data['title'] = $_POST['headline'];
+          // $data['city'] = $_POST['city'];
+          // $data['country'] = $_POST['country'];
+          // $data['telec'] = $_POST['telecomute'];
+          // $data['type'] = $_POST['featured_status'];
+          // $data['userid'] = session::get('userId');
+                    
             return $this->model->addStepOne($data);
             
     }

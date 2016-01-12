@@ -20,25 +20,26 @@ class postjob_model extends model {
                 break;
         }
 
-        $this->db->insert('boat_post', array(
-            'title' => $data['title'],
-            'city' => $data['city'],
-            'country' => $data['country'],
-            'telec' => $data['telec'],
+        $this->db->insert('boat_post_new', array(
+            'boat_name' => $data['boat_name'],
+            'boat_type' => $data['boat_type'],
+            'construction_year' => $data['construction_year'],
+            'ce_category' => $data['ce_category'],
+            'yard' => $data['yard'],
             'type' => $data['type'],
             'price' => $_price,
             'date_create' => date('Y-m-d H:i:s'),
             'userid' => $data['userid']
         ));
 
-        return $this->db->select("select boat_post.postid
-                                FROM boat_post
-                                ORDER by boat_post.postid desc Limit 0,1");
+        return $this->db->select("select boat_post_new.postid
+                                FROM boat_post_new
+                                ORDER by boat_post_new.postid desc Limit 0,1");
     }
 
     public function runReg($log, $pass) {
 
-        $sth = $this->db->prepare("SELECT id, name, role FROM users WHERE email=:email AND password=:password");
+        $sth = $this->db->prepare("SELECT id, name, role FROM boat_users WHERE email=:email AND password=:password");
         $sth->execute(array(
             ':email' => $log,
             ':password' => $pass

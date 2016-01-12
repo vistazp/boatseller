@@ -174,13 +174,15 @@ $(document).ready(function() {
   
    $('.color-btn').click(function() {
       var value=$(this).attr("data-color");
-        $('.fox_body3').css('background', value);   
+        $('.fox_body3').css('background', value);
+         $('#select1').val($(this).attr("data-value")).selected;  
           $('#col').toggleClass("open",false);
            });
    
     $('.color-btn1').click(function() {
       var value=$(this).attr("data-color");
-        $('.fox_body4').css('background', value);   
+        $('.fox_body4').css('background', value); 
+         $('#select2').val($(this).attr("data-value")).selected;  
           $('#col2').toggleClass("open",false);
            });
 
