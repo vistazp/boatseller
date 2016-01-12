@@ -9,7 +9,7 @@ class details_model extends model {
     }
 
     public function postSingleList($id) {
-        return $this->db->select('SELECT * FROM boat_post WHERE postid = :postid and userid= :userid', array(':postid' => $id,
+        return $this->db->select('SELECT * FROM boat_post_new WHERE postid = :postid and userid= :userid', array(':postid' => $id,
                                                                                                         ':userid' => $_SESSION['userId']    ));
         //$sth = $this->db->prepare('SELECT id, login, role FROM users WHERE id= :id');
         //$sth->execute(array(':id' => $id));
@@ -18,7 +18,7 @@ class details_model extends model {
 
     public function postSingleBoat($id) {
         
-        return $this->db->select('SELECT * FROM boat_post as t, boat_img as t1 WHERE t.postid = :postid and t.userid= :userid and t.postid=t1.postid', array(':postid' => $id,
+        return $this->db->select('SELECT * FROM boat_post_new as t, boat_img as t1 WHERE t.postid = :postid and t.userid= :userid and t.postid=t1.postid', array(':postid' => $id,
                                                                                                         ':userid' => $_SESSION['userId']    ));
     }
 
