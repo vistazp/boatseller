@@ -22,7 +22,7 @@ class postjob_model extends model {
 
         $this->db->insert('boat_post_new', array(
             'boat_name' => $data['boat_name'],
-            'boat_type' => $data['boat_type'],
+           // 'boat_type' => $data['boat_type'],
             'construction_year' => $data['construction_year'],
             'ce_category' => $data['ce_category'],
             'yard' => $data['yard'],
