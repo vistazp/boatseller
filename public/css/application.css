@@ -585,10 +585,10 @@ div.ui-dialog form#new_account label.error {
     width: 470px;
 }
 
-#step-1 #job-where input[type="text"],
+#step-1 #job-where input[type="text"]:not(.css_input2),
 #step-1 #job-where select
 {
-    float: left;
+  //  float: left;
     margin-right: 10px;
     width: 230px;
 

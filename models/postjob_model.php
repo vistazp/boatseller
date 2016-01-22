@@ -26,6 +26,25 @@ class postjob_model extends model {
             'construction_year' => $data['construction_year'],
             'ce_category' => $data['ce_category'],
             'yard' => $data['yard'],
+            'boat_model' => $data['boat_model'],
+            'latitude' => $data['latitude'],
+            'longitude' => $data['longitude'],
+            
+            'length' => $data['length'],
+            'width' => $data['width'],
+            'clearance' => $data['clearance'],
+            'draft' => $data['draft'],
+            'weight' => $data['weight'],
+            
+            'passengers' => $data['passengers'],
+            'cabins' => $data['cabins'],
+            'berth' => $data['berth'],
+            
+            'deck_color' => $data['deck_color'],
+            'hull_color' => $data['hull_color'],
+            'deck_material' => $data['deck_mat'],
+            'hull_material' => $data['hull_mat'],
+            
             'type' => $data['type'],
             'price' => $_price,
             'date_create' => date('Y-m-d H:i:s'),

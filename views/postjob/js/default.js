@@ -165,7 +165,8 @@ $(document).ready(function() {
     
   function getEndPos(element, $len) {
   var range = document.createRange();
-             range.setStart(element.childNodes[0]/* Это же textNode? */, $(element).text().length-$len);
+             range.setStart(element.childNodes[0]/* Это же textNode? */, $(element).text
+().length-$len);
              range.collapse(true);// совмещаем конец и начало в стартовой позиции
              var sel= window.getSelection();
              sel.removeAllRanges();
@@ -175,14 +176,14 @@ $(document).ready(function() {
    $('.color-btn').click(function() {
       var value=$(this).attr("data-color");
         $('.fox_body3').css('background', value);
-         $('#select1').val($(this).attr("data-value")).selected;  
+         $('#select1').val($(this).attr("data-color")).selected;  
           $('#col').toggleClass("open",false);
            });
    
     $('.color-btn1').click(function() {
       var value=$(this).attr("data-color");
         $('.fox_body4').css('background', value); 
-         $('#select2').val($(this).attr("data-value")).selected;  
+         $('#select2').val($(this).attr("data-color")).selected;  
           $('#col2').toggleClass("open",false);
            });
 
@@ -218,11 +219,14 @@ $(document).ready(function() {
    });  
     
        
-    $('.css_input3').bind("paste", function(e) {
+    $('.css_input3, .css_input4').bind("paste", function(e) {
      return false;
      });
      
-
+  $('.css_input2').keypress(function(e) {
+    return false;  
+    });
+    
   $('.css_input3').keypress(function(e) {
 
    var pos=getCaretPos(this);
@@ -313,5 +317,70 @@ if (/\.(?=\d{2})/.test(value)) {
 
      document.getElementById($(this).attr("dimension")).value=$(this).text();
      });
-  });
+     
+     
+    $('.css_input4').keypress(function(e) {
 
+   var pos=getCaretPos(this);
+
+     if (e.keyCode < 46 || e.keyCode > 57)
+           {return false;}
+
+     if (e.keyCode == 48) {  //  0
+     var value = $(this).text();
+     if (/^0{1}(?!\.)/.test(value)) {return false;}
+      }
+
+     if (e.keyCode == 47){    //  ,
+     return false;}
+
+     if (e.keyCode == 46){     //  .
+     return false;
+     }
+     var value = $(this).text();
+
+          //alert(value);
+          //    if (/^\d{4}/.test(value)) {$(this).text(value.replace(/\d$/,''));}
+          if (/^\d{2}/.test(value)) {$(this).text(value.replace(/\d$/,''));}
+          getEndPos(this,0);
+           
+        });
+        
+     $('.css_input4').bind('input keyup change', function() {
+     var value = $(this).text();
+    // var pos = getCaretPos(this);
+        // alert(pos);
+        
+    if (/^0{1}\d/.test(value)) {$(this).text(value.replace(/^\d/,''));}
+
+     document.getElementById($(this).attr("dimension")).value=$(this).text();
+     });
+    
+      $('.button1').bind("click",function() {  
+                      $('.btn1').toggleClass("btn-default btn-primary active");
+                      $('.btn2').removeClass("btn-default btn-primary active").addClass("btn-default");
+                      $('.button2').removeClass("clic2");
+
+                      $('.clic').prop('checked', false);
+                      $('.button1').toggleClass("clic");
+                       });
+      $('.button2').bind("click",function() {
+                      $('.btn2').toggleClass("btn-default btn-primary active");
+                      $('.btn1').removeClass("btn-default btn-primary active").addClass("btn-default");
+                      $('.button1').removeClass("clic");
+
+                      $('.clic2').prop('checked', false);
+                      $('.button2').toggleClass("clic2");
+                    });
+                    
+       $('#engine_no').bind("click",function() {
+                  $('.engine').hide();
+
+       });
+         $('#engine_yes').bind("click",function() {
+                  $('.engine').show();
+
+       });               
+                    
+                    
+  });

@@ -134,28 +134,29 @@
                                     <!--for="job_country"-->
                                     <label for="boat_type">Boat Type</label>
                                     <br/>
-                                    <select class="css_input" id="boat_type">      
-                                        <option value="1">Catamaran</option>
-                                        <option value="2">Motorboat</option>
-                                        <option value="3">Sailboat</option>
+                                    <select class="css_input" name="boat_type">      
+                                        <option value="Catamaran">Catamaran</option>
+                                        <option value="Motorboat">Motorboat</option>
+                                        <option value="Sailboat">Sailboat</option>
                                     </select>
                                 </div>
-                                <div class="span-6 last">
+                                <div class="span-6 last" style="margin-top:25px;">
                                  <!--for="job_country"-->
                                     <label for="boat_year">Construction year</label><span class="hint"></span>
-                                    <br/>
+                               
                                     <!--id="job_city" name="city"-->  
-                                    <input class="css_input required" id="boat_year" name="year" size="4" title="Please enter a construction year" type="text" />
+                                   <!--  <input class="css_input required" id="boat_year" name="year" size="4" title="Please enter a construction year" pattern="\d{4}" type="text"/>--> 
+                                    <input  class="css_input required" id="boat_year" name="year" min="1901" max="2155" title="Please enter a construction year" type="number" step="1"/>
                                 </div>
                                 <div class="span-6">
                                      <!--id="job_country"--> 
                                     <label for="boat_category">CE category</label>
                                     <br/>
-                                    <select class="css_input" id="boat_category">      
-                                        <option value="A">A. Ocean</option>
-                                        <option value="B">B. Offshore</option>
-                                        <option value="C">C. Inshore</option>
-                                        <option value="D">D. Sheltered Waters</option> 
+                                    <select class="css_input" name="boat_category">      
+                                        <option value="A. Ocean">A. Ocean</option>
+                                        <option value="B. Offshore">B. Offshore</option>
+                                        <option value="C. Inshore">C. Inshore</option>
+                                        <option value="D. Sheltered Waters">D. Sheltered Waters</option> 
                                     </select>
                                 </div>
                                 <div class="span-6">
@@ -166,957 +167,957 @@
                                 <div class="span-6 last">
                                     <label for="boat_yard">Yard</label>
                                     <br/>
-                                    <select class="css_input" id="boat_yard">      
-                                        <option value="9999">Other / Unknown</option>
-                                        <option value="939">3000 Marine</option>
-                                        <option value="940">A.Mostes-IT</option>
-                                        <option value="941">Abbate, Bruno (IT)</option>
-                                        <option value="942">Abbate, Tullio (IT)</option>
-                                        <option value="943">Abeking &amp; Rasmussen</option>
-                                        <option value="944">ABIM-NL</option>
-                                        <option value="945">Absolute</option>
-                                        <option value="946">ACM Dufour (FR)</option>
-                                        <option value="947">Adagio (CN)</option>
-                                        <option value="948">Adec (SE)</option>
-                                        <option value="949">Adler Storebro (SE)</option>
-                                        <option value="950">Admiral (GB)</option>
-                                        <option value="951">Admirality Shipyards (RU)</option>
-                                        <option value="952">Adria Event (SLO)</option>
-                                        <option value="953">Agder (NO)</option>
-                                        <option value="954">Agronaut (FI)</option>
-                                        <option value="955">AICON Yachts - IT</option>
-                                        <option value="956">Airfoil (DE)</option>
-                                        <option value="957">Airon Marine (IT)</option>
-                                        <option value="958">Akerboom</option>
-                                        <option value="959">Albemarle (USA)</option>
-                                        <option value="960">Albica (FI)</option>
-                                        <option value="961">Albin (SE)</option>
-                                        <option value="962">Albin Marine (USA)</option>
-                                        <option value="963">alcan</option>
-                                        <option value="964">Alden (USA)</option>
-                                        <option value="965">Alfamarine (IT)</option>
-                                        <option value="966">Ali Craft (NO)</option>
-                                        <option value="967">Allermohe Bootswerft (DE)</option>
-                                        <option value="968">Allround (DE)</option>
-                                        <option value="969">Almarine (BE)</option>
-                                        <option value="970">Alpha Marine (GR)</option>
-                                        <option value="971">Alphacraft (GB)</option>
-                                        <option value="972">Alstom (FR)</option>
-                                        <option value="973">Altena (NL)</option>
-                                        <option value="974">Aluminium Schiffswerft (DE)</option>
-                                        <option value="975">Amerglass (NL)</option>
-                                        <option value="976">American Marine (SG)</option>
-                                        <option value="977">AMT(FI)</option>
-                                        <option value="978">Ancora (DE)</option>
-                                        <option value="979">Angel Marine (TW)</option>
-                                        <option value="980">Antago (IT)</option>
-                                        <option value="981">Antaris (NL)</option>
-                                        <option value="982">Aprea Mare (IT)</option>
-                                        <option value="983">Aprem (DE)</option>
-                                        <option value="984">Aqua Star (GB)</option>
-                                        <option value="985">Aquador (FI)</option>
-                                        <option value="986">Aqualine</option>
-                                        <option value="987">Aquamar (IT)</option>
-                                        <option value="988">Aquamarine Yachts (CH)</option>
-                                        <option value="989">Aquanaut (NL)</option>
-                                        <option value="990">Aquatron (USA)</option>
-                                        <option value="991">Aquaviva (IT)</option>
-                                        <option value="992">Aquawatt - AT</option>
-                                        <option value="993">Aquileia (IT)</option>
-                                        <option value="994">Arcoa (FR)</option>
-                                        <option value="995">Armada Yacht - TR</option>
-                                        <option value="996">Aronow (USA)</option>
-                                        <option value="997">Arredomar (IT)</option>
-                                        <option value="998">Arriva (USA)</option>
-                                        <option value="999">Arvor (BE)</option>
-                                        <option value="1000">Askeladden (NO)</option>
-                                        <option value="1001">Assos (TR)</option>
-                                        <option value="1002">Astilleros Med. (ES)</option>
-                                        <option value="1003">Astilleros Menorca (ES)</option>
-                                        <option value="1004">Astinor (ES)</option>
-                                        <option value="1005">Astondoa (ES)</option>
-                                        <option value="1006">Astor (TW)</option>
-                                        <option value="1007">Astromar (ES)</option>
-                                        <option value="1008">Atlantic (GR)</option>
-                                        <option value="1009">Atlantic (NL)</option>
-                                        <option value="1010">Atlantis (IT)</option>
-                                        <option value="1011">ATP (PL)</option>
-                                        <option value="1012">Azimut (IT)</option>
-                                        <option value="1013">Azimut 36 Fly</option>
-                                        <option value="1014">Azure (USA)</option>
-                                        <option value="1015">B2 marine</option>
-                                        <option value="1016">Baensch (DE)</option>
-                                        <option value="1017">Baess (DK)</option>
-                                        <option value="1018">Baha cruiser</option>
-                                        <option value="1019">Baja (USA)</option>
-                                        <option value="1020">Bakker (NL)</option>
-                                        <option value="1021">Baltic Products (DE)</option>
-                                        <option value="1022">Baltic Trawler</option>
-                                        <option value="1023">BANDIDO</option>
-                                        <option value="1024">Barakuda (DE)</option>
-                                        <option value="1025">Barkas</option>
-                                        <option value="1026">Barro (DE)</option>
-                                        <option value="1027">Bartex (PL)</option>
-                                        <option value="1028">Bateaux Ocqueteau (F)</option>
-                                        <option value="1029">Bavaria (DE)</option>
-                                        <option value="1030">Bayerische Schiffbau GmbH</option>
-                                        <option value="1031">Bayerische Schiffbau GmbH Erlenbach a. Main</option>
-                                        <option value="1032">Bayliner (USA)</option>
-                                        <option value="1033">Bayside (USA)</option>
-                                        <option value="1034">Beachcraft</option>
-                                        <option value="1035">Beekmann (NL)</option>
-                                        <option value="1036">Beelitz (DE)</option>
-                                        <option value="1037">Bekro (BE)</option>
-                                        <option value="1038">Bella (FI)</option>
-                                        <option value="1039">Beluga (DE)</option>
-                                        <option value="1040">Benecci (IT)</option>
-                                        <option value="1041">Beneteau (FR)</option>
-                                        <option value="1042">Benetti (IT)</option>
-                                        <option value="1043">Bertram (USA)</option>
-                                        <option value="1044">Besmer (DE)</option>
-                                        <option value="1045">Best (GR)</option>
-                                        <option value="1046">BESTEVAER (NL)</option>
-                                        <option value="1047">Biam (NO)</option>
-                                        <option value="1048">BijkoJachtbouw - NL</option>
-                                        <option value="1049">Birchwood (GB)</option>
-                                        <option value="1050">Birenheide (DE)</option>
-                                        <option value="1051">Blauwe Hand (NL)</option>
-                                        <option value="1052">Blohm + Voss (DE)</option>
-                                        <option value="1053">BLUEGAME - IT</option>
-                                        <option value="1054">Blum (DE)</option>
-                                        <option value="1055">Boarncruiser</option>
-                                        <option value="1056">Boesch (CH)</option>
-                                        <option value="1057">Bond Yachts - PL</option>
-                                        <option value="1058">Bonum (SE)</option>
-                                        <option value="1059">Boote-Korpal (DE)</option>
-                                        <option value="10005">Bootsbau &quot;Rugen&quot; GmbH (DE)</option>
-                                        <option value="1060">Bootswerft Bad Zwischenahn (DE)</option>
-                                        <option value="1061">Bootswerft Bucher (CH)</option>
-                                        <option value="1062">Bossems (GB)</option>
-                                        <option value="1063">Boston Whaler (USA)</option>
-                                        <option value="1064">Botec (DE)</option>
-                                        <option value="1065">Botnia Marin (FI)</option>
-                                        <option value="1066">Brandaris</option>
-                                        <option value="1067">Brandsma (NL)</option>
-                                        <option value="1068">Brekken Kruiser (NL)</option>
-                                        <option value="1069">Broekmeulen (NL)</option>
-                                        <option value="1070">Brooke (NZ)</option>
-                                        <option value="1071">Broom (GB)</option>
-                                        <option value="1072">Broward (USA)</option>
-                                        <option value="1073">Bruijs Jachtbouw (NL)</option>
-                                        <option value="1074">Bryant Boats (USA)</option>
-                                        <option value="1075">Bucher (CH)</option>
-                                        <option value="1076">Buetzfleth (DE)</option>
-                                        <option value="1077">Bugari (IT)</option>
-                                        <option value="1078">Burger (USA)</option>
-                                        <option value="1079">Buster (FI)</option>
-                                        <option value="1080">BUTZFLETH (DE)</option>
-                                        <option value="1081">C.N.A. (IT)</option>
-                                        <option value="1082">C.R.N. (IT)</option>
-                                        <option value="1083">Cabo (USA)</option>
-                                        <option value="1084">Cadorette/Thundercraft (CA)</option>
-                                        <option value="1085">Campion (CA)</option>
-                                        <option value="1086">Camuffo</option>
-                                        <option value="1087">Can. del Canale (IT)</option>
-                                        <option value="1088">Canados (IT)</option>
-                                        <option value="1089">Canaventura (CA)</option>
-                                        <option value="1090">Cant. Capelli (IT)</option>
-                                        <option value="1091">Cant. di Baia (IT)</option>
-                                        <option value="1092">Cant. di Sarnico (IT)</option>
-                                        <option value="1093">Cant. Diano - IT</option>
-                                        <option value="1094">Cant. Nautico VZ - IT</option>
-                                        <option value="1095">Cant. Solare - IT</option>
-                                        <option value="1096">Cantiere di tirreno</option>
-                                        <option value="1097">Cantiere Landsneer</option>
-                                        <option value="1098">Cantieri Navali (IT)</option>
-                                        <option value="1099">Capelli (IT)</option>
-                                        <option value="1100">Carat (DE)</option>
-                                        <option value="1101">Caravelle (USA)</option>
-                                        <option value="1102">Carnevali (IT)</option>
-                                        <option value="1103">Carolina Skiff (USA)</option>
-                                        <option value="1104">Carver (USA)</option>
-                                        <option value="1105">Cascaruda (NL)</option>
-                                        <option value="1106">Catana (FR)</option>
-                                        <option value="1107">Celebrity (CA)</option>
-                                        <option value="1108">CenturyBoats - USA</option>
-                                        <option value="1109">Challenger (DE)</option>
-                                        <option value="1110">Chaparral (USA)</option>
-                                        <option value="1111">Chauson (TW)</option>
-                                        <option value="1112">Chavanne (CH)</option>
-                                        <option value="1113">Check Marine (GB)</option>
-                                        <option value="1114">Checkmate (USA)</option>
-                                        <option value="1115">Cheer Men Marine (TW)</option>
-                                        <option value="1116">Cheoy Lee (HK)</option>
-                                        <option value="1117">Chin Hwa 35 Trawler</option>
-                                        <option value="1118">Chris Craft (USA)</option>
-                                        <option value="1119">Cigala &amp; Bertini (IT)</option>
-                                        <option value="1120">Cigarette (USA)</option>
-                                        <option value="1121">Citation (USA)</option>
-                                        <option value="1122">Clark (GB)</option>
-                                        <option value="1123">Coastal Commander</option>
-                                        <option value="1124">Cobalt (USA)</option>
-                                        <option value="1125">Cobalt Marine Electric Boats - USA</option>
-                                        <option value="1126">Cobia (USA)</option>
-                                        <option value="1127">Cobrey Boats (PL)</option>
-                                        <option value="1128">Codecasa (IT)</option>
-                                        <option value="1129">Colombo (IT)</option>
-                                        <option value="1130">Colvic (GB)</option>
-                                        <option value="1131">Comar (IT)</option>
-                                        <option value="1132">Comarine Int. (NL)</option>
-                                        <option value="1133">Comet-Plast (NO)</option>
-                                        <option value="1134">Comitti - IT</option>
-                                        <option value="1135">Comtec (EE)</option>
-                                        <option value="1136">Conam (IT)</option>
-                                        <option value="1137">Conavroegh (NL)</option>
-                                        <option value="1138">concord</option>
-                                        <option value="1139">Condor Yachting (NL)</option>
-                                        <option value="1140">Conquest (USA)</option>
-                                        <option value="1141">Consonant (NL)</option>
-                                        <option value="1142">Cornish Crabbers (GB)</option>
-                                        <option value="1143">Coronet (DK)</option>
-                                        <option value="1144">Correct Craft (USA)</option>
-                                        <option value="1145">Costa Blanca (ES)</option>
-                                        <option value="1146">Cougar (GB)</option>
-                                        <option value="1147">Cover (IT)</option>
-                                        <option value="1148">Coverline (IT)</option>
-                                        <option value="1149">CraigCat (USA)</option>
-                                        <option value="1150">Cranchi (IT)</option>
-                                        <option value="1151">Cremo (SE)</option>
-                                        <option value="1152">Crestar (GB)</option>
-                                        <option value="1153">Crestliner (USA)</option>
-                                        <option value="1154">Crisline (DE)</option>
-                                        <option value="1155">Crown</option>
-                                        <option value="1156">Crownline (USA)</option>
-                                        <option value="1157">Crowther (AU)</option>
-                                        <option value="1158">Cruisers Yachts (USA)</option>
-                                        <option value="1159">Cutter (CA)</option>
-                                        <option value="1160">Cytra (DE)</option>
-                                        <option value="1161">Dacapo (NO)</option>
-                                        <option value="1162">Dalla Pieta (IT)</option>
-                                        <option value="1163">DANA Performance Boats (USA)</option>
-                                        <option value="1164">DarekCo (PL)</option>
-                                        <option value="1165">Darragh Boast (IE)</option>
-                                        <option value="1166">de Alm (NL)</option>
-                                        <option value="1167">De Boarnstream (NL)</option>
-                                        <option value="1168">De Breedendam (NL)</option>
-                                        <option value="1169">De Drait (NL)</option>
-                                        <option value="1170">De Gier (NL)</option>
-                                        <option value="1171">De Groot (NL)</option>
-                                        <option value="1172">de Jong</option>
-                                        <option value="1173">De Ruiter (NL)</option>
-                                        <option value="1174">De Vries (NL)</option>
-                                        <option value="1175">De Wiel te Heukelum</option>
-                                        <option value="1176">DeFever</option>
-                                        <option value="1177">Dell Adriatico (IT)</option>
-                                        <option value="1178">Dell Quay (GB)</option>
-                                        <option value="1179">Dellapasqua (IT)</option>
-                                        <option value="1180">Delta</option>
-                                        <option value="1181">Diana (NO)</option>
-                                        <option value="1182">Doering (DE)</option>
-                                        <option value="1183">Dominator (IT)</option>
-                                        <option value="1184">Donzi (USA)</option>
-                                        <option value="1185">Doppel</option>
-                                        <option value="1186">Doral (CA)</option>
-                                        <option value="1187">Doriff (DE)</option>
-                                        <option value="1188">Dory (USA)</option>
-                                        <option value="1189">Dory Wahoo (GB)</option>
-                                        <option value="1190">Draco (NO)</option>
-                                        <option value="1191">Drago Boats (GR)</option>
-                                        <option value="1192">Duarry (E)</option>
-                                        <option value="1193">Duffy Electric Boat Company - USA</option>
-                                        <option value="1194">Dutch Bay - TR</option>
-                                        <option value="1195">Duus Trading (NO)</option>
-                                        <option value="1196">Dyna (TW)</option>
-                                        <option value="1197">Dynasty (USA)</option>
-                                        <option value="1198">Dyno Plast (NO)</option>
-                                        <option value="1199">Ebbtide (USA)</option>
-                                        <option value="1200">Ecofiber (BE)</option>
-                                        <option value="1201">Edership (TW)</option>
-                                        <option value="1202">Egg Harbor</option>
-                                        <option value="1203">Eider (FR)</option>
-                                        <option value="1204">Eista (NL)</option>
-                                        <option value="1205">Elan (SI)</option>
-                                        <option value="1206">ElectraCraft - USA</option>
-                                        <option value="1207">Elegance (DE)</option>
-                                        <option value="1208">Eliminator (USA)</option>
-                                        <option value="1209">Elite Craft (USA)</option>
-                                        <option value="1210">EMP (DE)</option>
-                                        <option value="1211">Enterprise Marine (IT)</option>
-                                        <option value="1212">Essex  (GB)</option>
-                                        <option value="1213">Etap (BE)</option>
-                                        <option value="1214">Euro Star (DE)</option>
-                                        <option value="1215">Eurocrown</option>
-                                        <option value="1216">Eurolaunch (NL)</option>
-                                        <option value="1217">Euroyacht (HR)</option>
-                                        <option value="1218">EverSail (NL)</option>
-                                        <option value="1219">Evon (NL)</option>
-                                        <option value="1220">Excel (USA)</option>
-                                        <option value="1221">Excellent (NL)</option>
-                                        <option value="1222">Explorer (UK)</option>
-                                        <option value="1223">Faeton (ES)</option>
-                                        <option value="1224">Fairline (GB)</option>
-                                        <option value="1225">Falcon (GB)</option>
-                                        <option value="1226">FBB (NL)</option>
-                                        <option value="1227">Feltz (DE)</option>
-                                        <option value="1228">Fenix (SE)</option>
-                                        <option value="1229">Ferretti (IT)</option>
-                                        <option value="1230">Fevik (NO)</option>
-                                        <option value="1231">Fiart Mare (IT)</option>
-                                        <option value="1232">Fiberform</option>
-                                        <option value="1233">Fiberline (DE)</option>
-                                        <option value="1234">Fibrafort (BR)</option>
-                                        <option value="1235">Fidego (NL)</option>
-                                        <option value="1236">Fiesta Marine (USA)</option>
-                                        <option value="1237">Finmar (FI)</option>
-                                        <option value="1238">Finn-Marin (FI)</option>
-                                        <option value="1239">Finnmaster</option>
-                                        <option value="1240">Fipa Italiana (IT)</option>
-                                        <option value="1241">Fiskars (FI)</option>
-                                        <option value="1242">Fisker Zeevaer</option>
-                                        <option value="1243">Fjord (NO)</option>
-                                        <option value="1244">Fleming (USA)</option>
-                                        <option value="1245">Fletcher (GB)</option>
-                                        <option value="1246">Flipper (FI)</option>
-                                        <option value="1247">FM (NO)</option>
-                                        <option value="1248">Forbinabatar (SE)</option>
-                                        <option value="1249">Forester (USA)</option>
-                                        <option value="1250">Formula (USA)</option>
-                                        <option value="1251">Formula Boats (NZ)</option>
-                                        <option value="1252">Fountain (USA)</option>
-                                        <option value="1253">Fountaine Pajot (FR)</option>
-                                        <option value="1254">Four Winns (USA)</option>
-                                        <option value="1255">Fr. Schweers (DE)</option>
-                                        <option value="1256">Frauscher (AT)</option>
-                                        <option value="1257">Freedom (GB)</option>
-                                        <option value="1258">Freeman (GB)</option>
-                                        <option value="1259">Friesland Boat (NL)</option>
-                                        <option value="1260">Fuerstenberg (DE)</option>
-                                        <option value="1261">Gagliotta - IT</option>
-                                        <option value="1262">Galaxy (USA)</option>
-                                        <option value="1263">Galeon (GB)</option>
-                                        <option value="1264">Galeon Boats (PL)</option>
-                                        <option value="1265">Gallart (ES)</option>
-                                        <option value="1266">Garin (ES)</option>
-                                        <option value="1267">Gekko Sports (USA)</option>
-                                        <option value="1268">Gelderbloom Poseidon</option>
-                                        <option value="1269">Genesis (USA)</option>
-                                        <option value="1270">Gianetti (IT)</option>
-                                        <option value="1271">Gibert Marine (FR)</option>
-                                        <option value="1272">Gillissen</option>
-                                        <option value="1273">Gio Mare (IT)</option>
-                                        <option value="1274">Giorgetti &amp; Magrini (IT)</option>
-                                        <option value="1275">Giugliano (IT)</option>
-                                        <option value="1276">Glacer (DE)</option>
-                                        <option value="1277">Glassmaster (USA)</option>
-                                        <option value="1278">Glassport (USA)</option>
-                                        <option value="1279">Glasstream (USA)</option>
-                                        <option value="1280">Glastron (USA)</option>
-                                        <option value="1281">Glastron Laraya (ES)</option>
-                                        <option value="1282">Glen-L (USA)</option>
-                                        <option value="1283">Global (GB)</option>
-                                        <option value="1284">Gobbi (IT)</option>
-                                        <option value="1285">Goeree</option>
-                                        <option value="1286">Gorbon Yachts (TR)</option>
-                                        <option value="1287">Grainger (AUS)</option>
-                                        <option value="1288">Grand Azur</option>
-                                        <option value="1289">Grand Banks (SG)</option>
-                                        <option value="1290">Greatline - SE</option>
-                                        <option value="1291">Grew (CA)</option>
-                                        <option value="1292">Grimsoey /NO</option>
-                                        <option value="1293">Gruno (NL)</option>
-                                        <option value="1294">Gulf Craft (VAE)</option>
-                                        <option value="1295">Guy Couach (FR)</option>
-                                        <option value="1296">Hagenah</option>
-                                        <option value="1297">Haines Marine (GB)</option>
-                                        <option value="1298">Halvorsen Marine (HK)</option>
-                                        <option value="1299">Hammermeister (DE)</option>
-                                        <option value="1300">Hampton (RN)</option>
-                                        <option value="1301">Hansa-Nautik (DE)</option>
-                                        <option value="1302">Hardy Marine (GB)</option>
-                                        <option value="1303">Harris Flote Bote (USA)</option>
-                                        <option value="1304">Hatteras (USA)</option>
-                                        <option value="1305">Hausboot Wohnboot</option>
-                                        <option value="1306">Heesen Shipyards (NL)</option>
-                                        <option value="1307">Heistracher (DE)</option>
-                                        <option value="1308">Hellas (GR)</option>
-                                        <option value="1309">Hellwig (DE)</option>
-                                        <option value="1310">HERSHINE</option>
-                                        <option value="1311">Heyland (GB)</option>
-                                        <option value="1312">HI-Star (TW)</option>
-                                        <option value="1313">High Tech (USA)</option>
-                                        <option value="1314">Hille (DE)</option>
-                                        <option value="1315">Hiltergerke (DE)</option>
-                                        <option value="1316">Hochmuth (CH)</option>
-                                        <option value="1317">Hock (DE)</option>
-                                        <option value="1318">Holiday Boating (NL)</option>
-                                        <option value="1319">Holiday Mansion (USA)</option>
-                                        <option value="1320">Holland Boat (NL)</option>
-                                        <option value="1321">Hollandia (NL)</option>
-                                        <option value="1322">Holterman (NL)</option>
-                                        <option value="1323">Hoogezand (NL)</option>
-                                        <option value="1324">Horizon</option>
-                                        <option value="1325">Horizon Group</option>
-                                        <option value="1326">Horizon Yachts</option>
-                                        <option value="1327">Huber (CH)</option>
-                                        <option value="1328">Huisman (NL)</option>
-                                        <option value="1329">Hunton (GB)</option>
-                                        <option value="1330">HuntYachts - USA</option>
-                                        <option value="1331">Huseklepp (NO)</option>
-                                        <option value="1332">Hustler (USA)</option>
-                                        <option value="1333">Hydrolift (NO)</option>
-                                        <option value="1334">Ijlstervlet</option>
-                                        <option value="1335">Ilver (IT)</option>
-                                        <option value="1336">IMP Boats (USA)</option>
-                                        <option value="1337">Innovazione&amp;Progetti (IT)</option>
-                                        <option value="1338">Inrizzardi - IT</option>
-                                        <option value="1339">Inter (NO)</option>
-                                        <option value="1340">Intermare (IT)</option>
-                                        <option value="1341">Invader (USA)</option>
-                                        <option value="1342">Island Gypsy (HK)</option>
-                                        <option value="1343">Italcraft (IT)</option>
-                                        <option value="1344">Italmar (IT)</option>
-                                        <option value="1345">Italmotomare (IT)</option>
-                                        <option value="1346">Itama - IT</option>
-                                        <option value="1347">Jacabo</option>
-                                        <option value="1348">Jacobssons (SE)</option>
-                                        <option value="1349">Jade Banks (NL)</option>
-                                        <option value="1350">Jans (NO)</option>
-                                        <option value="1351">JCL Marine (GB)</option>
-                                        <option value="1352">Jeanneau (FR)</option>
-                                        <option value="1353">Jensch (DE)</option>
-                                        <option value="1354">Jet Craft (CH)</option>
-                                        <option value="1355">Jeteexx (DE)</option>
-                                        <option value="1356">Jets Marivent (ES)</option>
-                                        <option value="1357">Joda (NO)</option>
-                                        <option value="1358">Jofa / Triss (SE)</option>
-                                        <option value="1359">Jollenkreuzer Eigenumbau</option>
-                                        <option value="1360">Juncker (DE)</option>
-                                        <option value="1361">Junglas (DE)</option>
-                                        <option value="1362">Jupiter (FI)</option>
-                                        <option value="1363">Kammin (DE)</option>
-                                        <option value="1364">Karnic (CY)</option>
-                                        <option value="1365">Katana (CA)</option>
-                                        <option value="1366">Kelt (FR)</option>
-                                        <option value="1367">Keser Westbay (DE)</option>
-                                        <option value="1368">Keser-Hollandia (DE)</option>
-                                        <option value="1369">Kinetik (FI)</option>
-                                        <option value="1370">KKG (AT)</option>
-                                        <option value="1371">Klaassen</option>
-                                        <option value="1372">KLassieker</option>
-                                        <option value="1373">KMV (NO)</option>
-                                        <option value="1374">Knief (DE)</option>
-                                        <option value="1375">KnobbeJachtbouw - NL</option>
-                                        <option value="1376">Kompier</option>
-                                        <option value="1377">Kong &amp; Halversson (RC)</option>
-                                        <option value="1378">Koopmans</option>
-                                        <option value="1379">Korhonen (FI)</option>
-                                        <option value="1380">Korso Marin</option>
-                                        <option value="1381">Kral (TR)</option>
-                                        <option value="1382">Kraller (DE)</option>
-                                        <option value="1383">Kraps (DE)</option>
-                                        <option value="1384">Kroen (NL)</option>
-                                        <option value="1386">Krogerwerft</option>
-                                        <option value="1385">Kroon (NL)</option>
-                                        <option value="1387">Kuhnle Werft (DE)</option>
-                                        <option value="1388">Kulkuri-Veneet (FI)</option>
-                                        <option value="1389">Kunya-Werft (DE)</option>
-                                        <option value="1390">Lagoon (FR)</option>
-                                        <option value="1391">Lamberti (IT)</option>
-                                        <option value="1392">Lami (FI)</option>
-                                        <option value="1393">Laroc (DE)</option>
-                                        <option value="1394">Larson (USA)</option>
-                                        <option value="1395">Lauwersmeer (NL)</option>
-                                        <option value="1396">Leda Yachtbau (DE)</option>
-                                        <option value="1397">Leeraner Yachtwerft (DE)</option>
-                                        <option value="1398">Legend Boats (CA)</option>
-                                        <option value="1399">Lehmann + Yachten (DE)</option>
-                                        <option value="1400">LeisureCat - AU</option>
-                                        <option value="1401">Lema (ES)</option>
-                                        <option value="1402">Leopard</option>
-                                        <option value="1403">Lexmar (SI)</option>
-                                        <option value="1404">Lin Hwa - Kaohsiung Taiwan</option>
-                                        <option value="1405">Linden (NL)</option>
-                                        <option value="1406">Linder (SE)</option>
-                                        <option value="1407">Lindinger (DE)</option>
-                                        <option value="1408">Lindstroems (FI)</option>
-                                        <option value="1409">Linetti (IT)</option>
-                                        <option value="1410">Linex (FI)</option>
-                                        <option value="1411">Linssen (NL)</option>
-                                        <option value="1412">LLOYDS SHIP</option>
-                                        <option value="1413">Luerssen (DE)</option>
-                                        <option value="1414">LYC (GB)</option>
-                                        <option value="1415">M&amp;M (NL)</option>
-                                        <option value="1416">MacGregor (USA)</option>
-                                        <option value="1417">Magnum Marine - USA</option>
-                                        <option value="1418">Mainship (USA)</option>
-                                        <option value="1419">Majorca Nautica (ES)</option>
-                                        <option value="1420">Makma (NL)</option>
-                                        <option value="1421">Malard (ZA)</option>
-                                        <option value="1422">Malibu (USA)</option>
-                                        <option value="1423">Mano Marine (IT)</option>
-                                        <option value="1424">Marada (USA)</option>
-                                        <option value="1425">Marco-Plast (NL)</option>
-                                        <option value="1426">Marco-Succes</option>
-                                        <option value="1427">Mares (USA)</option>
-                                        <option value="1428">Marex (NO)</option>
-                                        <option value="1429">Mariah Boats (USA)</option>
-                                        <option value="1430">Maril (NL)</option>
-                                        <option value="1431">Marina Lanke (DE)</option>
-                                        <option value="1432">Marina85 - NL</option>
-                                        <option value="1433">Marinco (GR)</option>
-                                        <option value="1434">Marine</option>
-                                        <option value="1435">Marine Projects (GB)</option>
-                                        <option value="1436">Marine Sloep</option>
-                                        <option value="1437">Marine System (PL)</option>
-                                        <option value="1438">Marinello (IT)</option>
-                                        <option value="1439">Mariner (IT)</option>
-                                        <option value="1440">Marino Oy (FI)</option>
-                                        <option value="1441">Maritimo - AU</option>
-                                        <option value="1442">Mark Twain (USA)</option>
-                                        <option value="1443">Marmat (PL)</option>
-                                        <option value="1444">Marquis Yachts - USA</option>
-                                        <option value="1445">Marrow</option>
-                                        <option value="1446">Marubeni (TW)</option>
-                                        <option value="1447">Mas (IT)</option>
-                                        <option value="1448">Master (FI)</option>
-                                        <option value="1449">Master Craft (USA)</option>
-                                        <option value="1450">Maverick (USA)</option>
-                                        <option value="1451">Mawelo (DK)</option>
-                                        <option value="1452">Maxum (USA)</option>
-                                        <option value="1453">Mayland (GB)</option>
-                                        <option value="1454">MCP Kelt (FR)</option>
-                                        <option value="1455">MEGAN BOATS (PL)</option>
-                                        <option value="1456">Mekon (NL)</option>
-                                        <option value="1457">Menorquin Yachts (ES)</option>
-                                        <option value="1458">Merenpoort (NL)</option>
-                                        <option value="1459">Meridian Yachts (USA)</option>
-                                        <option value="1460">Merwede Kruiser</option>
-                                        <option value="1461">Meta (FR)</option>
-                                        <option value="1462">MG boats (PL)</option>
-                                        <option value="1463">Miami</option>
-                                        <option value="1464">Mignola (IT)</option>
-                                        <option value="1465">Mingolla (IT)</option>
-                                        <option value="1466">Minor</option>
-                                        <option value="1467">Mirage (USA)</option>
-                                        <option value="1468">Mittelmanns (DE)</option>
-                                        <option value="1469">MM Boote (PL)</option>
-                                        <option value="1470">Mochi Craft (IT)</option>
-                                        <option value="1471">Moewe Yachtbau (DE)</option>
-                                        <option value="1472">Mogano Laungh</option>
-                                        <option value="1473">Moland (NO)</option>
-                                        <option value="1474">Molenkreuzer</option>
-                                        <option value="1475">Molinari (IT)</option>
-                                        <option value="1476">Monte Fino (TW)</option>
-                                        <option value="1477">Monterey (USA)</option>
-                                        <option value="1478">Monty Bank</option>
-                                        <option value="1479">Monty Bank Erstwasserung 2005</option>
-                                        <option value="1480">Moomba (USA)</option>
-                                        <option value="1481">Moonen Shipyards (NL)</option>
-                                        <option value="1482">Mossig (DE)</option>
-                                        <option value="1483">Motiva (IT)</option>
-                                        <option value="1484">Mountain Yachts (CH)</option>
-                                        <option value="1485">MTI Marine Technology</option>
-                                        <option value="1486">Mulder (NL)</option>
-                                        <option value="1489">Muller-Werft Schweiz</option>
-                                        <option value="1487">Mundimar</option>
-                                        <option value="1488">MW-Line - CH</option>
-                                        <option value="1490">Myra (NO)</option>
-                                        <option value="1491">Mon (DK)</option>
-                                        <option value="1492">Nautica</option>
-                                        <option value="1493">Nauticat (FI)</option>
-                                        <option value="1494">Nautirama (IT)</option>
-                                        <option value="1495">Navcon (DE)</option>
-                                        <option value="1496">Naviga (FI)</option>
-                                        <option value="1497">NB Marine (NO)</option>
-                                        <option value="1498">Neptunus (NL)</option>
-                                        <option value="1499">Nexus (DE)</option>
-                                        <option value="1500">Nichols (USA)</option>
-                                        <option value="1501">Nicke Petter (IT)</option>
-                                        <option value="1502">Nicolini (IT)</option>
-                                        <option value="1503">Nidelv (NO)</option>
-                                        <option value="1504">Nimbus (SE)</option>
-                                        <option value="1505">Noblesse Yachts (NL)</option>
-                                        <option value="1506">Nor Star (NO)</option>
-                                        <option value="1507">Nor-Dan (NO)</option>
-                                        <option value="1508">Nord Star</option>
-                                        <option value="1509">Nord West (SE)</option>
-                                        <option value="1510">Nordia Yachts (NL)</option>
-                                        <option value="1511">Nordic (CA)</option>
-                                        <option value="1512">Nordic (CAN)</option>
-                                        <option value="1513">Nordisk (DK)</option>
-                                        <option value="1514">Norman (GB)</option>
-                                        <option value="1515">Norman (UA)</option>
-                                        <option value="1516">NorTech (USA)</option>
-                                        <option value="1517">Northman Yachts (PL)</option>
-                                        <option value="1518">Novoplast (SI)</option>
-                                        <option value="1519">Nowee Heeg (NL)</option>
-                                        <option value="1520">Numarine (TR)</option>
-                                        <option value="1521">Nuova Inter Are (IT)</option>
-                                        <option value="1522">Nya Oskarshamm Shipyard</option>
-                                        <option value="1523">O.M.J. (BE)</option>
-                                        <option value="1524">Ocean Alexander (TW)</option>
-                                        <option value="1525">Ocean Cruise (CH)</option>
-                                        <option value="1526">Ocean Master (PL)</option>
-                                        <option value="1527">Ocean Yachts (USA)</option>
-                                        <option value="1528">Oceano Sportivo (UA)</option>
-                                        <option value="1529">Ockelbo (SE)</option>
-                                        <option value="1530">Ocqueteau (FR)</option>
-                                        <option value="1531">Octagon (GB)</option>
-                                        <option value="1532">Oehlmann (DE)</option>
-                                        <option value="1533">Oernvik (SE)</option>
-                                        <option value="1534">Off-Course (IT)</option>
-                                        <option value="1535">Olympic (GR)</option>
-                                        <option value="1536">ONJ (NL)</option>
-                                        <option value="1537">Oost Jachtwerf (NL)</option>
-                                        <option value="1538">Orkney (GB)</option>
-                                        <option value="1539">Ormieres (CH)</option>
-                                        <option value="1540">OSM Boat (IE)</option>
-                                        <option value="1541">Ostroda (PL)</option>
-                                        <option value="1542">OTAM - IT</option>
-                                        <option value="1543">Otto Boats (NO)</option>
-                                        <option value="1544">Outhill (GB)</option>
-                                        <option value="1545">P Valk Franeker</option>
-                                        <option value="1546">Pacific Allure</option>
-                                        <option value="1592">Paijan (FI)</option>
-                                        <option value="1547">Palmer Johnson (USA)</option>
-                                        <option value="1548">Passengervessel</option>
-                                        <option value="1549">Passion Yacht </option>
-                                        <option value="1550">Pavel Shaposhnikov Design</option>
-                                        <option value="1551">Pearl (GB)</option>
-                                        <option value="1552">Pedrazzini (CH)</option>
-                                        <option value="1553">Pedro (NL)</option>
-                                        <option value="1554">Peiso (AT)</option>
-                                        <option value="1555">Pelican (CA)</option>
-                                        <option value="1556">Pelle Peterson (SE)</option>
-                                        <option value="1557">Pendennis Shipyard (GB)</option>
-                                        <option value="1558">Perfekt Yacht (PL)</option>
-                                        <option value="1559">Performance (IT)</option>
-                                        <option value="1560">Pershing (IT)</option>
-                                        <option value="1561">Pfeil (DE)</option>
-                                        <option value="1562">Phoenix (KR)</option>
-                                        <option value="1563">Phuket Yachts (TH)</option>
-                                        <option value="1564">Piantoni (IT)</option>
-                                        <option value="1565">Picchiotti (IT)</option>
-                                        <option value="1566">Picton (GB)</option>
-                                        <option value="1567">Piet Hein (NL)</option>
-                                        <option value="1568">Pikmeerkruiser (NL)</option>
-                                        <option value="1569">Pilot</option>
-                                        <option value="1570">Pioner (NO)</option>
-                                        <option value="1571">PL Qucksilver (PL)</option>
-                                        <option value="1572">Pocta Intern (CN)</option>
-                                        <option value="1573">poland</option>
-                                        <option value="1574">Polar Boats (NO)</option>
-                                        <option value="1575">Polaris (NL)</option>
-                                        <option value="1576">Polyboats (NL)</option>
-                                        <option value="1577">Porsche Marine (USA)</option>
-                                        <option value="1578">Portofino Marine (IT)</option>
-                                        <option value="1579">Poseidon (DE)</option>
-                                        <option value="1580">Posillipo (IT)</option>
-                                        <option value="1581">Post Yachts - USA</option>
-                                        <option value="1582">Power Play (USA)</option>
-                                        <option value="1583">President (TW)</option>
-                                        <option value="1584">Prima Yachts (TW)</option>
-                                        <option value="1585">Primaboot (DE)</option>
-                                        <option value="1586">Princess (GB)</option>
-                                        <option value="1587">Privateer (NL)</option>
-                                        <option value="1588">Pro-Line</option>
-                                        <option value="1589">Proficiat (NL)</option>
-                                        <option value="1590">Prout (GB)</option>
-                                        <option value="1591">Pursuit - USA</option>
-                                        <option value="1593">Qualine (USA)</option>
-                                        <option value="1594">Quicksilver (USA)</option>
-                                        <option value="1595">Raffaeli (IT)</option>
-                                        <option value="1596">Ramco Boats (NZ)</option>
-                                        <option value="1597">Ramin Boats (NO)</option>
-                                        <option value="1598">Rana</option>
-                                        <option value="1599">Ranieri (IT)</option>
-                                        <option value="1600">Rapsody (NL)</option>
-                                        <option value="1601">Rascala (IT)</option>
-                                        <option value="1602">Recla (DE)</option>
-                                        <option value="1603">Red Hawk (USA)</option>
-                                        <option value="1604">Regal (USA)</option>
-                                        <option value="1605">Reinell (USA)</option>
-                                        <option value="1606">Reinke (DE)</option>
-                                        <option value="1607">Relcraft (GB)</option>
-                                        <option value="1608">ReLine (NL)</option>
-                                        <option value="1609">Renken (USA)</option>
-                                        <option value="1610">Revenger (GB)</option>
-                                        <option value="1611">Riamar (PT)</option>
-                                        <option value="1612">Rias (FI)</option>
-                                        <option value="1613">Ridas (EE)</option>
-                                        <option value="1614">Rinker (USA)</option>
-                                        <option value="1615">Rio (IT)</option>
-                                        <option value="1616">Riva (IT)</option>
-                                        <option value="1617">Riviera- AU</option>
-                                        <option value="1618">Rizzardi (IT)</option>
-                                        <option value="1619">Roberts (AUS)</option>
-                                        <option value="1620">Rocca (FR)</option>
-                                        <option value="1621">Rocco Boats (SE)</option>
-                                        <option value="1622">Rodman (ES)</option>
-                                        <option value="1623">Rogger</option>
-                                        <option value="1624">Roland (NO)</option>
-                                        <option value="1625">Romar (IT)</option>
-                                        <option value="1626">Rona Yachts</option>
-                                        <option value="1627">Rose Island - IT</option>
-                                        <option value="1628">Roskam</option>
-                                        <option value="1629">Royal Denship (DK)</option>
-                                        <option value="1630">Rudkobing (DK)</option>
-                                        <option value="1631">Ryds (SE)</option>
-                                        <option value="1632">Saare-Paat (EE)</option>
-                                        <option value="1633">Sabre (US)A</option>
-                                        <option value="1634">Safir (DK)</option>
-                                        <option value="1635">Saga (NO)</option>
-                                        <option value="1636">Sailart (DE)</option>
-                                        <option value="1637">Salpa (IT)</option>
-                                        <option value="1638">San Lorenzo (IT)</option>
-                                        <option value="1639">Sandviks (NO)</option>
-                                        <option value="1640">Sanlorenzo Baleari</option>
-                                        <option value="1641">Sarins (FI)</option>
-                                        <option value="1642">SAS VEKTOR</option>
-                                        <option value="1643">Sasanka (PL)</option>
-                                        <option value="1644">Sasanka Yacht (PL)</option>
-                                        <option value="1645">Saver</option>
-                                        <option value="1646">SBM (DE)</option>
-                                        <option value="1647">SBPEM (FR)</option>
-                                        <option value="1648">Scand Boats (NO)</option>
-                                        <option value="1649">Scarani - ES</option>
-                                        <option value="1650">Schachner (AT)</option>
-                                        <option value="1651">Scharping (DE)</option>
-                                        <option value="1652">Schleswiger Werkstatten (DE)</option>
-                                        <option value="1653">Schlichting (DE)</option>
-                                        <option value="10004">Schochl (Sunbeam)</option>
-                                        <option value="1654">schubert</option>
-                                        <option value="1655">Schulz (AT)</option>
-                                        <option value="1656">Schweers Bardenfleth Weser</option>
-                                        <option value="1657">Schweizer Bateaux (CH)</option>
-                                        <option value="1658">Sciallino (IT)</option>
-                                        <option value="1659">SCOUT BOAT</option>
-                                        <option value="1660">Sea Fox (USA)</option>
-                                        <option value="1661">Sea Nymph (USA)</option>
-                                        <option value="1662">Sea Ray (USA)</option>
-                                        <option value="1663">SEA SPIRIT MARINE (CN)</option>
-                                        <option value="1664">Sea Sprite (USA)</option>
-                                        <option value="1665">Sea Star (FI)</option>
-                                        <option value="1666">Seabird (SE)</option>
-                                        <option value="1667">Seaco (NO)</option>
-                                        <option value="1668">Seaforce (TW)</option>
-                                        <option value="1669">Sealine (GB)</option>
-                                        <option value="1670">SeaMar (TR)</option>
-                                        <option value="1671">Seanest - IT</option>
-                                        <option value="1672">Seaswirl (USA)</option>
-                                        <option value="1673">Seawing (GB)</option>
-                                        <option value="1674">Segger-Boote (DE)</option>
-                                        <option value="1675">Selva (IT)</option>
-                                        <option value="1676">sep. WC / 1 Jahr Garantie</option>
-                                        <option value="1677">sep. WC/ 1 Jahr Garantie / neuer Motor</option>
-                                        <option value="1678">SeriousYachts - NL</option>
-                                        <option value="1679">Sessa (IT)</option>
-                                        <option value="1680">Shadow</option>
-                                        <option value="1681">Shakespeare (GB)</option>
-                                        <option value="1682">Shamrock (USA)</option>
-                                        <option value="1683">Shetland (GB)</option>
-                                        <option value="1684">Siemer (NL)</option>
-                                        <option value="1685">Silver (FI)</option>
-                                        <option value="1686">Silverline (USA)</option>
-                                        <option value="1687">Silverton (USA)</option>
-                                        <option value="1688">Skagen</option>
-                                        <option value="1689">Skagerrak (NO)</option>
-                                        <option value="1690">Skarpnes (NO)</option>
-                                        <option value="1691">Skibsplast (NO)</option>
-                                        <option value="1692">Skilso (NO)</option>
-                                        <option value="1693">Skorgenes (NO)</option>
-                                        <option value="1694">Slickcraft (USA)</option>
-                                        <option value="1695">SM Yacht Werft (PL)</option>
-                                        <option value="1696">Smelne (NL)</option>
-                                        <option value="1697">SMG Werft - DE</option>
-                                        <option value="1698">SNP (FR)</option>
-                                        <option value="1699">SoleMar (DE)</option>
-                                        <option value="1700">Sollux (NO)</option>
-                                        <option value="1701">SONSTIGE/OTHERS</option>
-                                        <option value="1702">Southern Wind (GB)</option>
-                                        <option value="1703">Spectrum</option>
-                                        <option value="1704">Speedy (PL)</option>
-                                        <option value="1705">SpinCraft Electric Boats - CA</option>
-                                        <option value="1706">Spirit (GB)</option>
-                                        <option value="1707">Sport Craft</option>
-                                        <option value="1708">Sportboot</option>
-                                        <option value="1709">Sportboot 340</option>
-                                        <option value="1710">Star Yachts (TH)</option>
-                                        <option value="1711">Starcraft (USA)</option>
-                                        <option value="1712">Stardust (USA)</option>
-                                        <option value="1713">Starfisher</option>
-                                        <option value="1714">Ste Mar Nautica (IT)</option>
-                                        <option value="1715">Stefyniur (PL)</option>
-                                        <option value="1716">Stelco (GB)</option>
-                                        <option value="1717">Stentor (NL)</option>
-                                        <option value="1718">Steven (NL)</option>
-                                        <option value="1719">Stevens Nautical</option>
-                                        <option value="1720">Stichnoth (DE)</option>
-                                        <option value="1721">Stingray (USA)</option>
-                                        <option value="1722">Storebro (SE)</option>
-                                        <option value="1723">Strike</option>
-                                        <option value="1724">Struerewerft (DK)</option>
-                                        <option value="1725">Sturier Trawler</option>
-                                        <option value="1726">Succes (NL)</option>
-                                        <option value="1727">Sun Cruiser (GB)</option>
-                                        <option value="1728">Sunbird (USA)</option>
-                                        <option value="1729">Sunliner</option>
-                                        <option value="1730">Sunmar (FI)</option>
-                                        <option value="1731">Sunray</option>
-                                        <option value="1732">Sunreef Yachts (PL)</option>
-                                        <option value="1733">SunRunner (USA)</option>
-                                        <option value="1734">Sunseeker (GB)</option>
-                                        <option value="1735">Super van Craft</option>
-                                        <option value="1736">Supra Sports (USA)</option>
-                                        <option value="1737">Swift Craft (ES)</option>
-                                        <option value="1738">Symbol (TW)</option>
-                                        <option value="1739">Syntechnics (DE)</option>
-                                        <option value="1740">T.A. Mare (IT)</option>
-                                        <option value="1741">t.a.mare (IT)</option>
-                                        <option value="1742">Ta Chiao (TW)</option>
-                                        <option value="1743">Tacar (TR)</option>
-                                        <option value="1744">Tacoma (USA)</option>
-                                        <option value="1745">Tahoe</option>
-                                        <option value="1746">Talon (USA)</option>
-                                        <option value="1747">Tango Yachts (AR)</option>
-                                        <option value="1748">Tania (TH)</option>
-                                        <option value="1749">Target</option>
-                                        <option value="1750">Tarquin (GB)</option>
-                                        <option value="1751">Tashing (TW)</option>
-                                        <option value="1752">Taurus (RC)</option>
-                                        <option value="1753">Tayana (TW)</option>
-                                        <option value="1754">Taylan Yacht (TR)</option>
-                                        <option value="1755">Techno Consult (DE)</option>
-                                        <option value="1756">Tecnofiber (IT)</option>
-                                        <option value="1757">Tecnomarine (IT)</option>
-                                        <option value="1758">TEKA (USA)</option>
-                                        <option value="1759">Tempest</option>
-                                        <option value="1760">Tenten-Boats (DE)</option>
-                                        <option value="1761">Terhi (FI)</option>
-                                        <option value="1762">Terminalboat - IT</option>
-                                        <option value="1763">TES YACHT</option>
-                                        <option value="1764">Texas</option>
-                                        <option value="1765">TG Boat (FI)</option>
-                                        <option value="1766">Thermo (NL)</option>
-                                        <option value="1767">Thoma (CH)</option>
-                                        <option value="1768">Thomasz Yachts</option>
-                                        <option value="1769">Thompson (USA)</option>
-                                        <option value="1770">Thunderbird (USA)</option>
-                                        <option value="1771">Thundercraft (CA)</option>
-                                        <option value="1772">Tiara Yachts - USA</option>
-                                        <option value="1773">Time-Out (NL)</option>
-                                        <option value="1774">Tjeukemer (NL)</option>
-                                        <option value="1775">Toensberg</option>
-                                        <option value="1776">Tollycraft (USA)</option>
-                                        <option value="1777">Tony Giugliano (IT)</option>
-                                        <option value="1778">Tornado</option>
-                                        <option value="1779">Toy Marine - IT</option>
-                                        <option value="1780">Trailer (SE)</option>
-                                        <option value="1781">Transpacific (TW)</option>
-                                        <option value="1782">Trawler</option>
-                                        <option value="1783">Tresfjord (NO)</option>
-                                        <option value="1784">Trier Hans Boost</option>
-                                        <option value="1785">Tristan Boats (FI)</option>
-                                        <option value="1786">TriStar (TR)</option>
-                                        <option value="1787">Troian</option>
-                                        <option value="1788">Trojan (USA)</option>
-                                        <option value="1789">Trophy (USA)</option>
-                                        <option value="1790">Tuccoli</option>
-                                        <option value="1791">Tullio Abbate (IT)</option>
-                                        <option value="1792">Tuna-Yachts - NL</option>
-                                        <option value="1793">Tung Hwa (TW)</option>
-                                        <option value="1794">unbekannt</option>
-                                        <option value="1795">Uniesse Marine (IT)</option>
-                                        <option value="1796">Unique (NO)</option>
-                                        <option value="1797">Uttern (SE)</option>
-                                        <option value="1798">v-type (UK)</option>
-                                        <option value="1799">Vacance (NL)</option>
-                                        <option value="1800">Valk</option>
-                                        <option value="1801">van der Heijden (NL)</option>
-                                        <option value="1802">van der Valk (NL)</option>
-                                        <option value="1803">van der Vlis (NL)</option>
-                                        <option value="1804">van der Werff (NL)</option>
-                                        <option value="1805">van Heck</option>
-                                        <option value="1806">van Lent (NL)</option>
-                                        <option value="1807">van Vlieth (NL)</option>
-                                        <option value="1808">van Waarde (NL)</option>
-                                        <option value="1809">van Wijk (NL)</option>
-                                        <option value="1810">Vansjo-Bat (NO)</option>
-                                        <option value="1811">Variant 606 / BJ 2009 / 25 PS EFI NEU / Schubert</option>
-                                        <option value="1812">Variant 606 HT / BJ 2004 / 20 PS NEU / Schubert</option>
-                                        <option value="1813">Variant 606 HT / BJ 2008 / 70 PS / Schubert</option>
-                                        <option value="1814">VDL Shipyards (NL)</option>
-                                        <option value="1815">VEB Muggelspree</option>
-                                        <option value="1816">Veha (NL)</option>
-                                        <option value="1817">Venatus Boats</option>
-                                        <option value="1818">Veneveistamo (FI)</option>
-                                        <option value="1819">Verhoefkruiser</option>
-                                        <option value="1820">Versil Craft (IT)</option>
-                                        <option value="1821">Viber (FI)</option>
-                                        <option value="1822">VICEM (TR)</option>
-                                        <option value="1823">Vieser (DE)</option>
-                                        <option value="1824">Viking (GB)</option>
-                                        <option value="1825">Viking (USA)</option>
-                                        <option value="1826">Viknes (NO)</option>
-                                        <option value="1827">Viksund (NO)</option>
-                                        <option value="1828">Vinkeveen Fleet</option>
-                                        <option value="1829">Vip Boats (USA)</option>
-                                        <option value="1830">Viper (DE)</option>
-                                        <option value="1831">Virgin del Mar (ES)</option>
-                                        <option value="1832">Vissers (NL)</option>
-                                        <option value="1833">viudes</option>
-                                        <option value="1834">Volharding (NL)</option>
-                                        <option value="1835">Voss (DE)</option>
-                                        <option value="1836">Vri-Jon (NL)</option>
-                                        <option value="1837">Vribuiter (NL)</option>
-                                        <option value="1838">Vripack Yachting (NL)</option>
-                                        <option value="1839">Vroegh &amp; Alblas (NL)</option>
-                                        <option value="1840">Vulture Ventura (GB)</option>
-                                        <option value="1841">Warlock (USA)</option>
-                                        <option value="1842">Warren Yachts - AU</option>
-                                        <option value="1843">Waswa (DE)</option>
-                                        <option value="1844">Water RooCraft - UK</option>
-                                        <option value="1845">Waterland (NL)</option>
-                                        <option value="1846">WeCo (NL)</option>
-                                        <option value="1847">Wellcraft (USA)</option>
-                                        <option value="1848">Werft unbekannt</option>
-                                        <option value="1849">Wester engh</option>
-                                        <option value="1850">Westerly (GB)</option>
-                                        <option value="1851">Weston (GB)</option>
-                                        <option value="1852">White Shark</option>
-                                        <option value="1853">Wicabo (NL)</option>
-                                        <option value="1854">Wieker (DE)</option>
-                                        <option value="1855">Wiking Boats (NL)</option>
-                                        <option value="1856">Willigen (NL)</option>
-                                        <option value="1857">Wim van der Valk (NL)</option>
-                                        <option value="1858">Windy (NO)</option>
-                                        <option value="1859">Winga (SE)</option>
-                                        <option value="1860">Winrace (NO)</option>
-                                        <option value="1861">Winsor Brothers (GB)</option>
-                                        <option value="1862">Wittley - AU</option>
-                                        <option value="1863">Wyboats (NL)</option>
-                                        <option value="1864">Xylon (DE)</option>
-                                        <option value="1865">Y.B.M. (PL)</option>
-                                        <option value="1866">Y.E.P. (DE)</option>
-                                        <option value="1867">Yachts Industries (FR)</option>
-                                        <option value="1868">Yachtwerft Wilhelmshaven (DE)</option>
-                                        <option value="1869">Yamaha (JP)</option>
-                                        <option value="1870">Yamarin (FI)</option>
-                                        <option value="1871">Yaretti (AT)</option>
-                                        <option value="1872">Z-Products</option>
-                                        <option value="1873">Zaniboni (IT)</option>
-                                        <option value="1874">ZET YACHTS - TR</option>
-                                        <option value="1875">Zeta Group (IT)</option>
-                                        <option value="1876">Zijlmans (NL)</option>
+                                    <select class="css_input" name="boat_yard">      
+                                        <option value="Other / Unknown">Other / Unknown</option>
+                                        <option value="3000 Marine">3000 Marine</option>
+                                        <option value="A.Mostes-IT">A.Mostes-IT</option>
+                                        <option value="Abbate, Bruno (IT)">Abbate, Bruno (IT)</option>
+                                        <option value="Abbate, Tullio (IT)">Abbate, Tullio (IT)</option>
+                                        <option value="Abeking & Rasmussen">Abeking & Rasmussen</option>
+                                        <option value="ABIM-NL">ABIM-NL</option>
+                                        <option value="Absolute">Absolute</option>
+                                        <option value="ACM Dufour (FR)">ACM Dufour (FR)</option>
+                                        <option value="Adagio (CN)">Adagio (CN)</option>
+                                        <option value="Adec (SE)">Adec (SE)</option>
+                                        <option value="Adler Storebro (SE)">Adler Storebro (SE)</option>
+                                        <option value="Admiral (GB)">Admiral (GB)</option>
+                                        <option value="Admirality Shipyards (RU)">Admirality Shipyards (RU)</option>
+                                        <option value="Adria Event (SLO)">Adria Event (SLO)</option>
+                                        <option value="Agder (NO)">Agder (NO)</option>
+                                        <option value="Agronaut (FI)">Agronaut (FI)</option>
+                                        <option value="AICON Yachts - IT">AICON Yachts - IT</option>
+                                        <option value="Airfoil (DE)">Airfoil (DE)</option>
+                                        <option value="Airon Marine (IT)">Airon Marine (IT)</option>
+                                        <option value="Akerboom">Akerboom</option>
+                                        <option value="Albemarle (USA)">Albemarle (USA)</option>
+                                        <option value="Albica (FI)">Albica (FI)</option>
+                                        <option value="Albin (SE)">Albin (SE)</option>
+                                        <option value="Albin Marine (USA)">Albin Marine (USA)</option>
+                                        <option value="alcan">alcan</option>
+                                        <option value="Alden (USA)">Alden (USA)</option>
+                                        <option value="Alfamarine (IT)">Alfamarine (IT)</option>
+                                        <option value="Ali Craft (NO)">Ali Craft (NO)</option>
+                                        <option value="Allermohe Bootswerft (DE)">Allermohe Bootswerft (DE)</option>
+                                        <option value="Allround (DE)">Allround (DE)</option>
+                                        <option value="Almarine (BE)">Almarine (BE)</option>
+                                        <option value="Alpha Marine (GR)">Alpha Marine (GR)</option>
+                                        <option value="Alphacraft (GB)">Alphacraft (GB)</option>
+                                        <option value="Alstom (FR)">Alstom (FR)</option>
+                                        <option value="Altena (NL)">Altena (NL)</option>
+                                        <option value="Aluminium Schiffswerft (DE)">Aluminium Schiffswerft (DE)</option>
+                                        <option value="Amerglass (NL)">Amerglass (NL)</option>
+                                        <option value="American Marine (SG)">American Marine (SG)</option>
+                                        <option value="AMT (FI)">AMT (FI)</option>
+                                        <option value="Ancora (DE)">Ancora (DE)</option>
+                                        <option value="Angel Marine (TW)">Angel Marine (TW)</option>
+                                        <option value="Antago (IT)">Antago (IT)</option>
+                                        <option value="Antaris (NL)">Antaris (NL)</option>
+                                        <option value="Aprea Mare (IT)">Aprea Mare (IT)</option>
+                                        <option value="Aprem (DE)">Aprem (DE)</option>
+                                        <option value="Aqua Star (GB)">Aqua Star (GB)</option>
+                                        <option value="Aquador (FI)">Aquador (FI)</option>
+                                        <option value="Aqualine">Aqualine</option>
+                                        <option value="Aquamar (IT)">Aquamar (IT)</option>
+                                        <option value="Aquamarine Yachts (CH)">Aquamarine Yachts (CH)</option>
+                                        <option value="Aquanaut (NL)">Aquanaut (NL)</option>
+                                        <option value="Aquatron (USA)">Aquatron (USA)</option>
+                                        <option value="Aquaviva (IT)">Aquaviva (IT)</option>
+                                        <option value="Aquawatt - AT">Aquawatt - AT</option>
+                                        <option value="Aquileia (IT)">Aquileia (IT)</option>
+                                        <option value="Arcoa (FR)">Arcoa (FR)</option>
+                                        <option value="Armada Yacht - TR">Armada Yacht - TR</option>
+                                        <option value="Aronow (USA)">Aronow (USA)</option>
+                                        <option value="Arredomar (IT)">Arredomar (IT)</option>
+                                        <option value="Arriva (USA)">Arriva (USA)</option>
+                                        <option value="Arvor (BE)">Arvor (BE)</option>
+                                        <option value="Askeladden (NO)">Askeladden (NO)</option>
+                                        <option value="Assos (TR)">Assos (TR)</option>
+                                        <option value="Astilleros Med. (ES)">Astilleros Med. (ES)</option>
+                                        <option value="Astilleros Menorca (ES)">Astilleros Menorca (ES)</option>
+                                        <option value="Astinor (ES)">Astinor (ES)</option>
+                                        <option value="Astondoa (ES)">Astondoa (ES)</option>
+                                        <option value="Astor (TW)">Astor (TW)</option>
+                                        <option value="Astromar (ES)">Astromar (ES)</option>
+                                        <option value="Atlantic (GR)">Atlantic (GR)</option>
+                                        <option value="Atlantic (NL)">Atlantic (NL)</option>
+                                        <option value="Atlantis (IT)">Atlantis (IT)</option>
+                                        <option value="ATP (PL)">ATP (PL)</option>
+                                        <option value="Azimut (IT)">Azimut (IT)</option>
+                                        <option value="Azimut 36 Fly">Azimut 36 Fly</option>
+                                        <option value="Azure (USA)">Azure (USA)</option>
+                                        <option value="B2 marine">B2 marine</option>
+                                        <option value="Baensch (DE)">Baensch (DE)</option>
+                                        <option value="Baess (DK)">Baess (DK)</option>
+                                        <option value="Baha cruiser">Baha cruiser</option>
+                                        <option value="Baja (USA)">Baja (USA)</option>
+                                        <option value="Bakker (NL)">Bakker (NL)</option>
+                                        <option value="Baltic Products (DE)">Baltic Products (DE)</option>
+                                        <option value="Baltic Trawler">Baltic Trawler</option>
+                                        <option value="BANDIDO">BANDIDO</option>
+                                        <option value="Barakuda (DE)">Barakuda (DE)</option>
+                                        <option value="Barkas">Barkas</option>
+                                        <option value="Barro (DE)">Barro (DE)</option>
+                                        <option value="Bartex (PL)">Bartex (PL)</option>
+                                        <option value="Bateaux Ocqueteau (F)">Bateaux Ocqueteau (F)</option>
+                                        <option value="Bavaria (DE)">Bavaria (DE)</option>
+                                        <option value="Bayerische Schiffbau GmbH">Bayerische Schiffbau GmbH</option>
+                                        <option value="Bayerische Schiffbau GmbH Erlenbach a. Main">Bayerische Schiffbau GmbH Erlenbach a. Main</option>
+                                        <option value="Bayliner (USA)">Bayliner (USA)</option>
+                                        <option value="Bayside (USA)">Bayside (USA)</option>
+                                        <option value="Beachcraft">Beachcraft</option>
+                                        <option value="Beekmann (NL)">Beekmann (NL)</option>
+                                        <option value="Beelitz (DE)">Beelitz (DE)</option>
+                                        <option value="Bekro (BE)">Bekro (BE)</option>
+                                        <option value="Bella (FI)">Bella (FI)</option>
+                                        <option value="Beluga (DE)">Beluga (DE)</option>
+                                        <option value="Benecci (IT)">Benecci (IT)</option>
+                                        <option value="Beneteau (FR)">Beneteau (FR)</option>
+                                        <option value="Benetti (IT)">Benetti (IT)</option>
+                                        <option value="Bertram (USA)">Bertram (USA)</option>
+                                        <option value="Besmer (DE)">Besmer (DE)</option>
+                                        <option value="Best (GR)">Best (GR)</option>
+                                        <option value="BESTEVAER (NL)">BESTEVAER (NL)</option>
+                                        <option value="Biam (NO)">Biam (NO)</option>
+                                        <option value="BijkoJachtbouw - NL">BijkoJachtbouw - NL</option>
+                                        <option value="Birchwood (GB)">Birchwood (GB)</option>
+                                        <option value="Birenheide (DE)">Birenheide (DE)</option>
+                                        <option value="Blauwe Hand (NL)">Blauwe Hand (NL)</option>
+                                        <option value="Blohm + Voss (DE)">Blohm + Voss (DE)</option>
+                                        <option value="BLUEGAME - IT">BLUEGAME - IT</option>
+                                        <option value="Blum (DE)">Blum (DE)</option>
+                                        <option value="Boarncruiser">Boarncruiser</option>
+                                        <option value="Boesch (CH)">Boesch (CH)</option>
+                                        <option value="Bond Yachts - PL">Bond Yachts - PL</option>
+                                        <option value="Bonum (SE)">Bonum (SE)</option>
+                                        <option value="Boote-Korpal (DE)">Boote-Korpal (DE)</option>
+                                        <option value="Bootsbau & Rugen&quot; GmbH (DE)">Bootsbau & Rugen&quot; GmbH (DE)</option>
+                                        <option value="Bootswerft Bad Zwischenahn (DE)">Bootswerft Bad Zwischenahn (DE)</option>
+                                        <option value="Bootswerft Bucher (CH)">Bootswerft Bucher (CH)</option>
+                                        <option value="Bossems (GB)">Bossems (GB)</option>
+                                        <option value="Boston Whaler (USA)">Boston Whaler (USA)</option>
+                                        <option value="Botec (DE)">Botec (DE)</option>
+                                        <option value="Botnia Marin (FI)">Botnia Marin (FI)</option>
+                                        <option value="Brandaris">Brandaris</option>
+                                        <option value="Brandsma (NL)">Brandsma (NL)</option>
+                                        <option value="Brekken Kruiser (NL)">Brekken Kruiser (NL)</option>
+                                        <option value="Broekmeulen (NL)">Broekmeulen (NL)</option>
+                                        <option value="Brooke (NZ)">Brooke (NZ)</option>
+                                        <option value="Broom (GB)">Broom (GB)</option>
+                                        <option value="Broward (USA)">Broward (USA)</option>
+                                        <option value="Bruijs Jachtbouw (NL)">Bruijs Jachtbouw (NL)</option>
+                                        <option value="Bryant Boats (USA)">Bryant Boats (USA)</option>
+                                        <option value="Bucher (CH)">Bucher (CH)</option>
+                                        <option value="Buetzfleth (DE)">Buetzfleth (DE)</option>
+                                        <option value="Bugari (IT)">Bugari (IT)</option>
+                                        <option value="Burger (USA)">Burger (USA)</option>
+                                        <option value="Buster (FI)">Buster (FI)</option>
+                                        <option value="BUTZFLETH (DE)">BUTZFLETH (DE)</option>
+                                        <option value="C.N.A. (IT)">C.N.A. (IT)</option>
+                                        <option value="C.R.N. (IT)">C.R.N. (IT)</option>
+                                        <option value="Cabo (USA)">Cabo (USA)</option>
+                                        <option value="Cadorette/Thundercraft (CA)">Cadorette/Thundercraft (CA)</option>
+                                        <option value="Campion (CA)">Campion (CA)</option>
+                                        <option value="Camuffo">Camuffo</option>
+                                        <option value="Can. del Canale (IT)">Can. del Canale (IT)</option>
+                                        <option value="Canados (IT)">Canados (IT)</option>
+                                        <option value="Canaventura (CA)">Canaventura (CA)</option>
+                                        <option value="Cant. Capelli (IT)">Cant. Capelli (IT)</option>
+                                        <option value="Cant. di Baia (IT)">Cant. di Baia (IT)</option>
+                                        <option value="Cant. di Sarnico (IT)">Cant. di Sarnico (IT)</option>
+                                        <option value="Cant. Diano - IT">Cant. Diano - IT</option>
+                                        <option value="Cant. Nautico VZ - IT">Cant. Nautico VZ - IT</option>
+                                        <option value="Cant. Solare - IT">Cant. Solare - IT</option>
+                                        <option value="Cantiere di tirreno">Cantiere di tirreno</option>
+                                        <option value="Cantiere Landsneer">Cantiere Landsneer</option>
+                                        <option value="Cantieri Navali (IT)">Cantieri Navali (IT)</option>
+                                        <option value="Capelli (IT)">Capelli (IT)</option>
+                                        <option value="Carat (DE)">Carat (DE)</option>
+                                        <option value="Caravelle (USA)">Caravelle (USA)</option>
+                                        <option value="Carnevali (IT)">Carnevali (IT)</option>
+                                        <option value="Carolina Skiff (USA)">Carolina Skiff (USA)</option>
+                                        <option value="Carver (USA)">Carver (USA)</option>
+                                        <option value="Cascaruda (NL)">Cascaruda (NL)</option>
+                                        <option value="Catana (FR)">Catana (FR)</option>
+                                        <option value="Celebrity (CA)">Celebrity (CA)</option>
+                                        <option value="CenturyBoats - USA">CenturyBoats - USA</option>
+                                        <option value="Challenger (DE)">Challenger (DE)</option>
+                                        <option value="Chaparral (USA)">Chaparral (USA)</option>
+                                        <option value="Chauson (TW)">Chauson (TW)</option>
+                                        <option value="Chavanne (CH)">Chavanne (CH)</option>
+                                        <option value="Check Marine (GB)">Check Marine (GB)</option>
+                                        <option value="Checkmate (USA)">Checkmate (USA)</option>
+                                        <option value="Cheer Men Marine (TW)">Cheer Men Marine (TW)</option>
+                                        <option value="Cheoy Lee (HK)">Cheoy Lee (HK)</option>
+                                        <option value="Chin Hwa 35 Trawler">Chin Hwa 35 Trawler</option>
+                                        <option value="Chris Craft (USA)">Chris Craft (USA)</option>
+                                        <option value="Cigala &amp; Bertini (IT)">Cigala &amp; Bertini (IT)</option>
+                                        <option value="Cigarette (USA)">Cigarette (USA)</option>
+                                        <option value="Citation (USA)">Citation (USA)</option>
+                                        <option value="Clark (GB)">Clark (GB)</option>
+                                        <option value="Coastal Commander">Coastal Commander</option>
+                                        <option value="Cobalt (USA)">Cobalt (USA)</option>
+                                        <option value="Cobalt Marine Electric Boats - USA">Cobalt Marine Electric Boats - USA</option>
+                                        <option value="Cobia (USA)">Cobia (USA)</option>
+                                        <option value="Cobrey Boats (PL)">Cobrey Boats (PL)</option>
+                                        <option value="Codecasa (IT)">Codecasa (IT)</option>
+                                        <option value="Colombo (IT)">Colombo (IT)</option>
+                                        <option value="Colvic (GB)">Colvic (GB)</option>
+                                        <option value="Comar (IT)">Comar (IT)</option>
+                                        <option value="Comarine Int. (NL)">Comarine Int. (NL)</option>
+                                        <option value="Comet-Plast (NO)">Comet-Plast (NO)</option>
+                                        <option value="Comitti - IT">Comitti - IT</option>
+                                        <option value="Comtec (EE)">Comtec (EE)</option>
+                                        <option value="Conam (IT)">Conam (IT)</option>
+                                        <option value="Conavroegh (NL)">Conavroegh (NL)</option>
+                                        <option value="concord">concord</option>
+                                        <option value="Condor Yachting (NL)">Condor Yachting (NL)</option>
+                                        <option value="Conquest (USA)">Conquest (USA)</option>
+                                        <option value="Consonant (NL)">Consonant (NL)</option>
+                                        <option value="Cornish Crabbers (GB)">Cornish Crabbers (GB)</option>
+                                        <option value="Coronet (DK)">Coronet (DK)</option>
+                                        <option value="Correct Craft (USA)">Correct Craft (USA)</option>
+                                        <option value="Costa Blanca (ES)">Costa Blanca (ES)</option>
+                                        <option value="Cougar (GB)">Cougar (GB)</option>
+                                        <option value="Cover (IT)">Cover (IT)</option>
+                                        <option value="Coverline (IT)">Coverline (IT)</option>
+                                        <option value="CraigCat (USA)">CraigCat (USA)</option>
+                                        <option value="Cranchi (IT)">Cranchi (IT)</option>
+                                        <option value="Cremo (SE)">Cremo (SE)</option>
+                                        <option value="Crestar (GB)">Crestar (GB)</option>
+                                        <option value="Crestliner (USA)">Crestliner (USA)</option>
+                                        <option value="Crisline (DE)">Crisline (DE)</option>
+                                        <option value="Crown">Crown</option>
+                                        <option value="Crownline (USA)">Crownline (USA)</option>
+                                        <option value="Crowther (AU)">Crowther (AU)</option>
+                                        <option value="Cruisers Yachts (USA)">Cruisers Yachts (USA)</option>
+                                        <option value="Cutter (CA)">Cutter (CA)</option>
+                                        <option value="Cytra (DE)">Cytra (DE)</option>
+                                        <option value="Dacapo (NO)">Dacapo (NO)</option>
+                                        <option value="Dalla Pieta (IT)">Dalla Pieta (IT)</option>
+                                        <option value="DANA Performance Boats (USA)">DANA Performance Boats (USA)</option>
+                                        <option value="DarekCo (PL)">DarekCo (PL)</option>
+                                        <option value="Darragh Boast (IE)">Darragh Boast (IE)</option>
+                                        <option value="de Alm (NL)">de Alm (NL)</option>
+                                        <option value="De Boarnstream (NL)">De Boarnstream (NL)</option>
+                                        <option value="De Breedendam (NL)">De Breedendam (NL)</option>
+                                        <option value="De Drait (NL)">De Drait (NL)</option>
+                                        <option value="De Gier (NL)">De Gier (NL)</option>
+                                        <option value="De Groot (NL)">De Groot (NL)</option>
+                                        <option value="de Jong">de Jong</option>
+                                        <option value="De Ruiter (NL)">De Ruiter (NL)</option>
+                                        <option value="De Vries (NL)">De Vries (NL)</option>
+                                        <option value="De Wiel te Heukelum">De Wiel te Heukelum</option>
+                                        <option value="DeFever">DeFever</option>
+                                        <option value="Dell Adriatico (IT)">Dell Adriatico (IT)</option>
+                                        <option value="Dell Quay (GB)">Dell Quay (GB)</option>
+                                        <option value="Dellapasqua (IT)">Dellapasqua (IT)</option>
+                                        <option value="Delta">Delta</option>
+                                        <option value="Diana (NO)">Diana (NO)</option>
+                                        <option value="Doering (DE)">Doering (DE)</option>
+                                        <option value="Dominator (IT)">Dominator (IT)</option>
+                                        <option value="Donzi (USA)">Donzi (USA)</option>
+                                        <option value="Doppel">Doppel</option>
+                                        <option value="Doral (CA)">Doral (CA)</option>
+                                        <option value="Doriff (DE)">Doriff (DE)</option>
+                                        <option value="Dory (USA)">Dory (USA)</option>
+                                        <option value="Dory Wahoo (GB)">Dory Wahoo (GB)</option>
+                                        <option value="Draco (NO)">Draco (NO)</option>
+                                        <option value="Drago Boats (GR)">Drago Boats (GR)</option>
+                                        <option value="Duarry (E)">Duarry (E)</option>
+                                        <option value="Duffy Electric Boat Company - USA">Duffy Electric Boat Company - USA</option>
+                                        <option value="Dutch Bay - TR">Dutch Bay - TR</option>
+                                        <option value="Duus Trading (NO)">Duus Trading (NO)</option>
+                                        <option value="Dyna (TW)">Dyna (TW)</option>
+                                        <option value="Dynasty (USA)">Dynasty (USA)</option>
+                                        <option value="Dyno Plast (NO)">Dyno Plast (NO)</option>
+                                        <option value="Ebbtide (USA)">Ebbtide (USA)</option>
+                                        <option value="Ecofiber (BE)">Ecofiber (BE)</option>
+                                        <option value="Edership (TW)">Edership (TW)</option>
+                                        <option value="Egg Harbor">Egg Harbor</option>
+                                        <option value="Eider (FR)">Eider (FR)</option>
+                                        <option value="Eista (NL)">Eista (NL)</option>
+                                        <option value="Elan (SI)">Elan (SI)</option>
+                                        <option value="ElectraCraft - USA">ElectraCraft - USA</option>
+                                        <option value="Elegance (DE)">Elegance (DE)</option>
+                                        <option value="Eliminator (USA)">Eliminator (USA)</option>
+                                        <option value="Elite Craft (USA)">Elite Craft (USA)</option>
+                                        <option value="EMP (DE)">EMP (DE)</option>
+                                        <option value="Enterprise Marine (IT)">Enterprise Marine (IT)</option>
+                                        <option value="Essex  (GB)">Essex  (GB)</option>
+                                        <option value="Etap (BE)">Etap (BE)</option>
+                                        <option value="Euro Star (DE)">Euro Star (DE)</option>
+                                        <option value="Eurocrown">Eurocrown</option>
+                                        <option value="Eurolaunch (NL)">Eurolaunch (NL)</option>
+                                        <option value="Euroyacht (HR)">Euroyacht (HR)</option>
+                                        <option value="EverSail (NL)">EverSail (NL)</option>
+                                        <option value="Evon (NL)">Evon (NL)</option>
+                                        <option value="Excel (USA)">Excel (USA)</option>
+                                        <option value="Excellent (NL)">Excellent (NL)</option>
+                                        <option value="Explorer (UK)">Explorer (UK)</option>
+                                        <option value="Faeton (ES)">Faeton (ES)</option>
+                                        <option value="Fairline (GB)">Fairline (GB)</option>
+                                        <option value="Falcon (GB)">Falcon (GB)</option>
+                                        <option value="FBB (NL)">FBB (NL)</option>
+                                        <option value="Feltz (DE)">Feltz (DE)</option>
+                                        <option value="Fenix (SE)">Fenix (SE)</option>
+                                        <option value="Ferretti (IT)">Ferretti (IT)</option>
+                                        <option value="Fevik (NO)">Fevik (NO)</option>
+                                        <option value="Fiart Mare (IT)">Fiart Mare (IT)</option>
+                                        <option value="Fiberform">Fiberform</option>
+                                        <option value="Fiberline (DE)">Fiberline (DE)</option>
+                                        <option value="Fibrafort (BR">Fibrafort (BR)</option>
+                                        <option value="Fidego (NL)">Fidego (NL)</option>
+                                        <option value="Fiesta Marine (USA)">Fiesta Marine (USA)</option>
+                                        <option value="Finmar (FI)">Finmar (FI)</option>
+                                        <option value="Finn-Marin (FI)">Finn-Marin (FI)</option>
+                                        <option value="Finnmaster">Finnmaster</option>
+                                        <option value="Fipa Italiana (IT)">Fipa Italiana (IT)</option>
+                                        <option value="Fiskars (FI)">Fiskars (FI)</option>
+                                        <option value="Fisker Zeevaer">Fisker Zeevaer</option>
+                                        <option value="Fjord (NO)">Fjord (NO)</option>
+                                        <option value="Fleming (USA)">Fleming (USA)</option>
+                                        <option value="Fletcher (GB)">Fletcher (GB)</option>
+                                        <option value="Flipper (FI)">Flipper (FI)</option>
+                                        <option value="FM (NO)">FM (NO)</option>
+                                        <option value="Forbinabatar (SE)">Forbinabatar (SE)</option>
+                                        <option value="Forester (USA)">Forester (USA)</option>
+                                        <option value="Formula (USA)">Formula (USA)</option>
+                                        <option value="Formula Boats (NZ)">Formula Boats (NZ)</option>
+                                        <option value="Fountain (USA)">Fountain (USA)</option>
+                                        <option value="Fountaine Pajot (FR)">Fountaine Pajot (FR)</option>
+                                        <option value="Four Winns (USA)">Four Winns (USA)</option>
+                                        <option value="Fr. Schweers (DE)">Fr. Schweers (DE)</option>
+                                        <option value="Frauscher (AT)">Frauscher (AT)</option>
+                                        <option value="Freedom (GB)">Freedom (GB)</option>
+                                        <option value="Freeman (GB)">Freeman (GB)</option>
+                                        <option value="Friesland Boat (NL)">Friesland Boat (NL)</option>
+                                        <option value="Fuerstenberg (DE)">Fuerstenberg (DE)</option>
+                                        <option value="Gagliotta - IT">Gagliotta - IT</option>
+                                        <option value="Galaxy (USA)">Galaxy (USA)</option>
+                                        <option value="Galeon (GB)">Galeon (GB)</option>
+                                        <option value="Galeon Boats (PL)">Galeon Boats (PL)</option>
+                                        <option value="Gallart (ES)">Gallart (ES)</option>
+                                        <option value="Garin (ES)">Garin (ES)</option>
+                                        <option value="Gekko Sports (USA)">Gekko Sports (USA)</option>
+                                        <option value="Gelderbloom Poseidon">Gelderbloom Poseidon</option>
+                                        <option value="Genesis (USA)">Genesis (USA)</option>
+                                        <option value="Gianetti (IT)">Gianetti (IT)</option>
+                                        <option value="Gibert Marine (FR)">Gibert Marine (FR)</option>
+                                        <option value="Gillissen">Gillissen</option>
+                                        <option value="Gio Mare (IT)">Gio Mare (IT)</option>
+                                        <option value="Giorgetti &amp; Magrini (IT)">Giorgetti &amp; Magrini (IT)</option>
+                                        <option value="Giugliano (IT)">Giugliano (IT)</option>
+                                        <option value="Glacer (DE)">Glacer (DE)</option>
+                                        <option value="Glassmaster (USA)">Glassmaster (USA)</option>
+                                        <option value="Glassport (USA)">Glassport (USA)</option>
+                                        <option value="Glasstream (USA)">Glasstream (USA)</option>
+                                        <option value="Glastron (USA)">Glastron (USA)</option>
+                                        <option value="Glastron Laraya (ES)">Glastron Laraya (ES)</option>
+                                        <option value="Glen-L (USA)">Glen-L (USA)</option>
+                                        <option value="Global (GB)">Global (GB)</option>
+                                        <option value="Gobbi (IT)">Gobbi (IT)</option>
+                                        <option value="Goeree">Goeree</option>
+                                        <option value="Gorbon Yachts (TR)">Gorbon Yachts (TR)</option>
+                                        <option value="Grainger (AUS)">Grainger (AUS)</option>
+                                        <option value="Grand Azur">Grand Azur</option>
+                                        <option value="Grand Banks (SG)">Grand Banks (SG)</option>
+                                        <option value="Greatline - SE">Greatline - SE</option>
+                                        <option value="Grew (CA)">Grew (CA)</option>
+                                        <option value="Grimsoey /NO">Grimsoey /NO</option>
+                                        <option value="Gruno (NL)">Gruno (NL)</option>
+                                        <option value="Gulf Craft (VAE)">Gulf Craft (VAE)</option>
+                                        <option value="Guy Couach (FR)">Guy Couach (FR)</option>
+                                        <option value="Hagenah">Hagenah</option>
+                                        <option value="Haines Marine (GB)">Haines Marine (GB)</option>
+                                        <option value="Halvorsen Marine (HK)">Halvorsen Marine (HK)</option>
+                                        <option value="Hammermeister (DE)">Hammermeister (DE)</option>
+                                        <option value="Hampton (RN)">Hampton (RN)</option>
+                                        <option value="Hansa-Nautik (DE)">Hansa-Nautik (DE)</option>
+                                        <option value="Hardy Marine (GB)">Hardy Marine (GB)</option>
+                                        <option value="Harris Flote Bote (USA)">Harris Flote Bote (USA)</option>
+                                        <option value="Hatteras (USA)">Hatteras (USA)</option>
+                                        <option value="Hausboot Wohnboot">Hausboot Wohnboot</option>
+                                        <option value="Heesen Shipyards (NL)">Heesen Shipyards (NL)</option>
+                                        <option value="Heistracher (DE)">Heistracher (DE)</option>
+                                        <option value="Hellas (GR)">Hellas (GR)</option>
+                                        <option value="Hellwig (DE)">Hellwig (DE)</option>
+                                        <option value="HERSHINE">HERSHINE</option>
+                                        <option value="Heyland (GB)">Heyland (GB)</option>
+                                        <option value="HI-Star (TW)">HI-Star (TW)</option>
+                                        <option value="High Tech (USA)">High Tech (USA)</option>
+                                        <option value="Hille (DE)">Hille (DE)</option>
+                                        <option value="Hiltergerke (DE)">Hiltergerke (DE)</option>
+                                        <option value="Hochmuth (CH)">Hochmuth (CH)</option>
+                                        <option value="Hock (DE)">Hock (DE)</option>
+                                        <option value="Holiday Boating (NL)">Holiday Boating (NL)</option>
+                                        <option value="Holiday Mansion (USA)">Holiday Mansion (USA)</option>
+                                        <option value="Holland Boat (NL)">Holland Boat (NL)</option>
+                                        <option value="Hollandia (NL)">Hollandia (NL)</option>
+                                        <option value="Holterman (NL)">Holterman (NL)</option>
+                                        <option value="Hoogezand (NL)">Hoogezand (NL)</option>
+                                        <option value="Horizon">Horizon</option>
+                                        <option value="Horizon Group">Horizon Group</option>
+                                        <option value="Horizon Yachts">Horizon Yachts</option>
+                                        <option value="Huber (CH)">Huber (CH)</option>
+                                        <option value="Huisman (NL)">Huisman (NL)</option>
+                                        <option value="Hunton (GB)">Hunton (GB)</option>
+                                        <option value="HuntYachts - USA">HuntYachts - USA</option>
+                                        <option value="Huseklepp (NO)">Huseklepp (NO)</option>
+                                        <option value="Hustler (USA)">Hustler (USA)</option>
+                                        <option value="Hydrolift (NO)">Hydrolift (NO)</option>
+                                        <option value="Ijlstervlet">Ijlstervlet</option>
+                                        <option value="Ilver (IT)">Ilver (IT)</option>
+                                        <option value="IMP Boats (USA)">IMP Boats (USA)</option>
+                                        <option value="Innovazione&amp;Progetti (IT)">Innovazione&amp;Progetti (IT)</option>
+                                        <option value="Inrizzardi - IT">Inrizzardi - IT</option>
+                                        <option value="Inter (NO)">Inter (NO)</option>
+                                        <option value="Intermare (IT)">Intermare (IT)</option>
+                                        <option value="Invader (USA)">Invader (USA)</option>
+                                        <option value="Island Gypsy (HK)">Island Gypsy (HK)</option>
+                                        <option value="Italcraft (IT)">Italcraft (IT)</option>
+                                        <option value="Italmar (IT)">Italmar (IT)</option>
+                                        <option value="Italmotomare (IT)">Italmotomare (IT)</option>
+                                        <option value="Itama - IT">Itama - IT</option>
+                                        <option value="Jacabo">Jacabo</option>
+                                        <option value="Jacobssons (SE)">Jacobssons (SE)</option>
+                                        <option value="Jade Banks (NL)">Jade Banks (NL)</option>
+                                        <option value="Jans (NO)">Jans (NO)</option>
+                                        <option value="JCL Marine (GB)">JCL Marine (GB)</option>
+                                        <option value="Jeanneau (FR)">Jeanneau (FR)</option>
+                                        <option value="Jensch (DE)">Jensch (DE)</option>
+                                        <option value="Jet Craft (CH)">Jet Craft (CH)</option>
+                                        <option value="Jeteexx (DE)">Jeteexx (DE)</option>
+                                        <option value="Jets Marivent (ES)">Jets Marivent (ES)</option>
+                                        <option value="Joda (NO)">Joda (NO)</option>
+                                        <option value="Jofa / Triss (SE)">Jofa / Triss (SE)</option>
+                                        <option value="Jollenkreuzer Eigenumbau">Jollenkreuzer Eigenumbau</option>
+                                        <option value="Juncker (DE)">Juncker (DE)</option>
+                                        <option value="Junglas (DE)">Junglas (DE)</option>
+                                        <option value="Jupiter (FI)">Jupiter (FI)</option>
+                                        <option value="Kammin (DE)">Kammin (DE)</option>
+                                        <option value="Karnic (CY)">Karnic (CY)</option>
+                                        <option value="Katana (CA)">Katana (CA)</option>
+                                        <option value="Kelt (FR)">Kelt (FR)</option>
+                                        <option value="Keser Westbay (DE)">Keser Westbay (DE)</option>
+                                        <option value="Keser-Hollandia (DE)">Keser-Hollandia (DE)</option>
+                                        <option value="Kinetik (FI)">Kinetik (FI)</option>
+                                        <option value="KKG (AT)">KKG (AT)</option>
+                                        <option value="Klaassen">Klaassen</option>
+                                        <option value="KLassieker">KLassieker</option>
+                                        <option value="KMV (NO)">KMV (NO)</option>
+                                        <option value="Knief (DE)">Knief (DE)</option>
+                                        <option value="KnobbeJachtbouw - NL">KnobbeJachtbouw - NL</option>
+                                        <option value="Kompier">Kompier</option>
+                                        <option value="Kong &amp; Halversson (RC)">Kong &amp; Halversson (RC)</option>
+                                        <option value="Koopmans">Koopmans</option>
+                                        <option value="Korhonen (FI)">Korhonen (FI)</option>
+                                        <option value="Korso Marin">Korso Marin</option>
+                                        <option value="Kral (TR)">Kral (TR)</option>
+                                        <option value="Kraller (DE)">Kraller (DE)</option>
+                                        <option value="Kraps (DE)">Kraps (DE)</option>
+                                        <option value="Kroen (NL)">Kroen (NL)</option>
+                                        <option value="Krogerwerft">Krogerwerft</option>
+                                        <option value="Kroon (NL)">Kroon (NL)</option>
+                                        <option value="Kuhnle Werft (DE)">Kuhnle Werft (DE)</option>
+                                        <option value="Kulkuri-Veneet (FI)">Kulkuri-Veneet (FI)</option>
+                                        <option value="Kunya-Werft (DE)">Kunya-Werft (DE)</option>
+                                        <option value="Lagoon (FR)">Lagoon (FR)</option>
+                                        <option value="Lamberti (IT)">Lamberti (IT)</option>
+                                        <option value="Lami (FI)">Lami (FI)</option>
+                                        <option value="Laroc (DE)">Laroc (DE)</option>
+                                        <option value="Larson (USA)">Larson (USA)</option>
+                                        <option value="Lauwersmeer (NL)">Lauwersmeer (NL)</option>
+                                        <option value="Leda Yachtbau (DE)">Leda Yachtbau (DE)</option>
+                                        <option value="Leeraner Yachtwerft (DE)">Leeraner Yachtwerft (DE)</option>
+                                        <option value="Legend Boats (CA)">Legend Boats (CA)</option>
+                                        <option value="Lehmann + Yachten (DE)">Lehmann + Yachten (DE)</option>
+                                        <option value="LeisureCat - AU">LeisureCat - AU</option>
+                                        <option value="Lema (ES)">Lema (ES)</option>
+                                        <option value="Leopard">Leopard</option>
+                                        <option value="Lexmar (SI)">Lexmar (SI)</option>
+                                        <option value="Lin Hwa - Kaohsiung Taiwan">Lin Hwa - Kaohsiung Taiwan</option>
+                                        <option value="Linden (NL)">Linden (NL)</option>
+                                        <option value="Linder (SE)">Linder (SE)</option>
+                                        <option value="Lindinger (DE)">Lindinger (DE)</option>
+                                        <option value="Lindstroems (FI)">Lindstroems (FI)</option>
+                                        <option value="Linetti (IT)">Linetti (IT)</option>
+                                        <option value="Linex (FI)">Linex (FI)</option>
+                                        <option value="Linssen (NL)">Linssen (NL)</option>
+                                        <option value="LLOYDS SHIP">LLOYDS SHIP</option>
+                                        <option value="Luerssen (DE)">Luerssen (DE)</option>
+                                        <option value="LYC (GB)">LYC (GB)</option>
+                                        <option value="M&amp;M (NL)">M&amp;M (NL)</option>
+                                        <option value="MacGregor (USA)">MacGregor (USA)</option>
+                                        <option value="Magnum Marine - USA">Magnum Marine - USA</option>
+                                        <option value="Mainship (USA)">Mainship (USA)</option>
+                                        <option value="Majorca Nautica (ES)">Majorca Nautica (ES)</option>
+                                        <option value="Makma (NL)">Makma (NL)</option>
+                                        <option value="Malard (ZA)">Malard (ZA)</option>
+                                        <option value="Malibu (USA)">Malibu (USA)</option>
+                                        <option value="Mano Marine (IT)">Mano Marine (IT)</option>
+                                        <option value="Marada (USA)">Marada (USA)</option>
+                                        <option value="Marco-Plast (NL)">Marco-Plast (NL)</option>
+                                        <option value="Marco-Succes">Marco-Succes</option>
+                                        <option value="Mares (USA)">Mares (USA)</option>
+                                        <option value="Marex (NO)">Marex (NO)</option>
+                                        <option value="Mariah Boats (USA)">Mariah Boats (USA)</option>
+                                        <option value="Maril (NL)">Maril (NL)</option>
+                                        <option value="Marina Lanke (DE)">Marina Lanke (DE)</option>
+                                        <option value="Marina85 - NL">Marina85 - NL</option>
+                                        <option value="Marinco (GR)">Marinco (GR)</option>
+                                        <option value="Marine">Marine</option>
+                                        <option value="Marine Projects (GB)">Marine Projects (GB)</option>
+                                        <option value="Marine Sloep">Marine Sloep</option>
+                                        <option value="Marine System (PL)">Marine System (PL)</option>
+                                        <option value="Marinello (IT)">Marinello (IT)</option>
+                                        <option value="Mariner (IT)">Mariner (IT)</option>
+                                        <option value="Marino Oy (FI)">Marino Oy (FI)</option>
+                                        <option value="Maritimo - AU">Maritimo - AU</option>
+                                        <option value="Mark Twain (USA)">Mark Twain (USA)</option>
+                                        <option value="Marmat (PL)">Marmat (PL)</option>
+                                        <option value="Marquis Yachts - USA">Marquis Yachts - USA</option>
+                                        <option value="Marrow">Marrow</option>
+                                        <option value="Marubeni (TW)">Marubeni (TW)</option>
+                                        <option value="Mas (IT)">Mas (IT)</option>
+                                        <option value="Master (FI)">Master (FI)</option>
+                                        <option value="Master Craft (USA)">Master Craft (USA)</option>
+                                        <option value="Maverick (USA)">Maverick (USA)</option>
+                                        <option value="Mawelo (DK)">Mawelo (DK)</option>
+                                        <option value="Maxum (USA)">Maxum (USA)</option>
+                                        <option value="Mayland (GB)">Mayland (GB)</option>
+                                        <option value="MCP Kelt (FR)">MCP Kelt (FR)</option>
+                                        <option value="MEGAN BOATS (PL)">MEGAN BOATS (PL)</option>
+                                        <option value="Mekon (NL)">Mekon (NL)</option>
+                                        <option value="Menorquin Yachts (ES)">Menorquin Yachts (ES)</option>
+                                        <option value="Merenpoort (NL)">Merenpoort (NL)</option>
+                                        <option value="Meridian Yachts (USA)">Meridian Yachts (USA)</option>
+                                        <option value="Merwede Kruiser">Merwede Kruiser</option>
+                                        <option value="Meta (FR)">Meta (FR)</option>
+                                        <option value="MG boats (PL)">MG boats (PL)</option>
+                                        <option value="Miami">Miami</option>
+                                        <option value="Mignola (IT)">Mignola (IT)</option>
+                                        <option value="Mingolla (IT)">Mingolla (IT)</option>
+                                        <option value="Minor">Minor</option>
+                                        <option value="Mirage (USA)">Mirage (USA)</option>
+                                        <option value="Mittelmanns (DE)">Mittelmanns (DE)</option>
+                                        <option value="MM Boote (PL)">MM Boote (PL)</option>
+                                        <option value="Mochi Craft (IT)">Mochi Craft (IT)</option>
+                                        <option value="Moewe Yachtbau (DE)">Moewe Yachtbau (DE)</option>
+                                        <option value="Mogano Laungh">Mogano Laungh</option>
+                                        <option value="Moland (NO)">Moland (NO)</option>
+                                        <option value="Molenkreuzer">Molenkreuzer</option>
+                                        <option value="Molinari (IT)">Molinari (IT)</option>
+                                        <option value="Monte Fino (TW)">Monte Fino (TW)</option>
+                                        <option value="Monterey (USA)">Monterey (USA)</option>
+                                        <option value="Monty Bank">Monty Bank</option>
+                                        <option value="Monty Bank Erstwasserung 2005">Monty Bank Erstwasserung 2005</option>
+                                        <option value="Moomba (USA)">Moomba (USA)</option>
+                                        <option value="Moonen Shipyards (NL)">Moonen Shipyards (NL)</option>
+                                        <option value="Mossig (DE)">Mossig (DE)</option>
+                                        <option value="Motiva (IT)">Motiva (IT)</option>
+                                        <option value="Mountain Yachts (CH)">Mountain Yachts (CH)</option>
+                                        <option value="MTI Marine Technology">MTI Marine Technology</option>
+                                        <option value="Mulder (NL)">Mulder (NL)</option>
+                                        <option value="Muller-Werft Schweiz">Muller-Werft Schweiz</option>
+                                        <option value="Mundimar">Mundimar</option>
+                                        <option value="MW-Line - CH">MW-Line - CH</option>
+                                        <option value="Myra (NO)">Myra (NO)</option>
+                                        <option value="Mon (DK)">Mon (DK)</option>
+                                        <option value="Nautica">Nautica</option>
+                                        <option value="Nauticat (FI)">Nauticat (FI)</option>
+                                        <option value="Nautirama (IT)">Nautirama (IT)</option>
+                                        <option value="Navcon (DE)">Navcon (DE)</option>
+                                        <option value="Naviga (FI)">Naviga (FI)</option>
+                                        <option value="NB Marine (NO)">NB Marine (NO)</option>
+                                        <option value="Neptunus (NL)">Neptunus (NL)</option>
+                                        <option value="Nexus (DE)">Nexus (DE)</option>
+                                        <option value="Nichols (USA)">Nichols (USA)</option>
+                                        <option value="Nicke Petter (IT)">Nicke Petter (IT)</option>
+                                        <option value="Nicolini (IT)">Nicolini (IT)</option>
+                                        <option value="Nidelv (NO)">Nidelv (NO)</option>
+                                        <option value="Nimbus (SE)">Nimbus (SE)</option>
+                                        <option value="Noblesse Yachts (NL)">Noblesse Yachts (NL)</option>
+                                        <option value="Nor Star (NO)">Nor Star (NO)</option>
+                                        <option value="Nor-Dan (NO)">Nor-Dan (NO)</option>
+                                        <option value="Nord Star">Nord Star</option>
+                                        <option value="Nord West (SE)">Nord West (SE)</option>
+                                        <option value="Nordia Yachts (NL)">Nordia Yachts (NL)</option>
+                                        <option value="Nordic (CA)">Nordic (CA)</option>
+                                        <option value="Nordic (CAN)">Nordic (CAN)</option>
+                                        <option value="Nordisk (DK)">Nordisk (DK)</option>
+                                        <option value="Norman (GB)">Norman (GB)</option>
+                                        <option value="Norman (UA)">Norman (UA)</option>
+                                        <option value="NorTech (USA)">NorTech (USA)</option>
+                                        <option value="Northman Yachts (PL)">Northman Yachts (PL)</option>
+                                        <option value="Novoplast (SI)">Novoplast (SI)</option>
+                                        <option value="Nowee Heeg (NL)">Nowee Heeg (NL)</option>
+                                        <option value="Numarine (TR)">Numarine (TR)</option>
+                                        <option value="Nuova Inter Are (IT)">Nuova Inter Are (IT)</option>
+                                        <option value="Nya Oskarshamm Shipyard">Nya Oskarshamm Shipyard</option>
+                                        <option value="O.M.J. (BE)">O.M.J. (BE)</option>
+                                        <option value="Ocean Alexander (TW)">Ocean Alexander (TW)</option>
+                                        <option value="Ocean Cruise (CH)">Ocean Cruise (CH)</option>
+                                        <option value="Ocean Master (PL)">Ocean Master (PL)</option>
+                                        <option value="Ocean Yachts (USA)">Ocean Yachts (USA)</option>
+                                        <option value="Oceano Sportivo (UA)">Oceano Sportivo (UA)</option>
+                                        <option value="Ockelbo (SE)">Ockelbo (SE)</option>
+                                        <option value="Ocqueteau (FR)">Ocqueteau (FR)</option>
+                                        <option value="Octagon (GB)">Octagon (GB)</option>
+                                        <option value="Oehlmann (DE)">Oehlmann (DE)</option>
+                                        <option value="Oernvik (SE)">Oernvik (SE)</option>
+                                        <option value="Off-Course (IT)">Off-Course (IT)</option>
+                                        <option value="Olympic (GR)">Olympic (GR)</option>
+                                        <option value="ONJ (NL)">ONJ (NL)</option>
+                                        <option value="Oost Jachtwerf (NL)">Oost Jachtwerf (NL)</option>
+                                        <option value="Orkney (GB)">Orkney (GB)</option>
+                                        <option value="Ormieres (CH)">Ormieres (CH)</option>
+                                        <option value="OSM Boat (IE)">OSM Boat (IE)</option>
+                                        <option value="Ostroda (PL)">Ostroda (PL)</option>
+                                        <option value="OTAM - IT">OTAM - IT</option>
+                                        <option value="Otto Boats (NO)">Otto Boats (NO)</option>
+                                        <option value="Outhill (GB)">Outhill (GB)</option>
+                                        <option value="P Valk Franeker">P Valk Franeker</option>
+                                        <option value="Pacific Allure">Pacific Allure</option>
+                                        <option value="Paijan (FI)">Paijan (FI)</option>
+                                        <option value="Palmer Johnson (USA)">Palmer Johnson (USA)</option>
+                                        <option value="Passengervessel">Passengervessel</option>
+                                        <option value="Passion Yacht">Passion Yacht</option>
+                                        <option value="Pavel Shaposhnikov Design">Pavel Shaposhnikov Design</option>
+                                        <option value="Pearl (GB)">Pearl (GB)</option>
+                                        <option value="Pedrazzini (CH)">Pedrazzini (CH)</option>
+                                        <option value="Pedro (NL)">Pedro (NL)</option>
+                                        <option value="Peiso (AT)">Peiso (AT)</option>
+                                        <option value="Pelican (CA)">Pelican (CA)</option>
+                                        <option value="Pelle Peterson (SE)">Pelle Peterson (SE)</option>
+                                        <option value="Pendennis Shipyard (GB)">Pendennis Shipyard (GB)</option>
+                                        <option value="Perfekt Yacht (PL)">Perfekt Yacht (PL)</option>
+                                        <option value="Performance (IT)">Performance (IT)</option>
+                                        <option value="Pershing (IT)">Pershing (IT)</option>
+                                        <option value="Pfeil (DE)">Pfeil (DE)</option>
+                                        <option value="Phoenix (KR)">Phoenix (KR)</option>
+                                        <option value="Phuket Yachts (TH)">Phuket Yachts (TH)</option>
+                                        <option value="Piantoni (IT)">Piantoni (IT)</option>
+                                        <option value="Picchiotti (IT)">Picchiotti (IT)</option>
+                                        <option value="Picton (GB)">Picton (GB)</option>
+                                        <option value="Piet Hein (NL)">Piet Hein (NL)</option>
+                                        <option value="Pikmeerkruiser (NL)">Pikmeerkruiser (NL)</option>
+                                        <option value="Pilot">Pilot</option>
+                                        <option value="Pioner (NO)">Pioner (NO)</option>
+                                        <option value="PL Qucksilver (PL)">PL Qucksilver (PL)</option>
+                                        <option value="Pocta Intern (CN)">Pocta Intern (CN)</option>
+                                        <option value="poland">poland</option>
+                                        <option value="Polar Boats (NO)">Polar Boats (NO)</option>
+                                        <option value="Polaris (NL)">Polaris (NL)</option>
+                                        <option value="Polyboats (NL)">Polyboats (NL)</option>
+                                        <option value="Porsche Marine (USA)">Porsche Marine (USA)</option>
+                                        <option value="Portofino Marine (IT)">Portofino Marine (IT)</option>
+                                        <option value="Poseidon (DE)">Poseidon (DE)</option>
+                                        <option value="Posillipo (IT)">Posillipo (IT)</option>
+                                        <option value="Post Yachts - USA">Post Yachts - USA</option>
+                                        <option value="Power Play (USA)">Power Play (USA)</option>
+                                        <option value="President (TW)">President (TW)</option>
+                                        <option value="Prima Yachts (TW)">Prima Yachts (TW)</option>
+                                        <option value="Primaboot (DE)">Primaboot (DE)</option>
+                                        <option value="Princess (GB)">Princess (GB)</option>
+                                        <option value="Privateer (NL)">Privateer (NL)</option>
+                                        <option value="Pro-Line">Pro-Line</option>
+                                        <option value="Proficiat (NL)">Proficiat (NL)</option>
+                                        <option value="Prout (GB)">Prout (GB)</option>
+                                        <option value="Pursuit - USA">Pursuit - USA</option>
+                                        <option value="Qualine (USA)">Qualine (USA)</option>
+                                        <option value="Quicksilver (USA)">Quicksilver (USA)</option>
+                                        <option value="Raffaeli (IT)">Raffaeli (IT)</option>
+                                        <option value="Ramco Boats (NZ)">Ramco Boats (NZ)</option>
+                                        <option value="Ramin Boats (NO)">Ramin Boats (NO)</option>
+                                        <option value="Rana">Rana</option>
+                                        <option value="Ranieri (IT)">Ranieri (IT)</option>
+                                        <option value="Rapsody (NL)">Rapsody (NL)</option>
+                                        <option value="Rascala (IT)">Rascala (IT)</option>
+                                        <option value="Recla (DE)">Recla (DE)</option>
+                                        <option value="Red Hawk (USA)">Red Hawk (USA)</option>
+                                        <option value="Regal (USA)">Regal (USA)</option>
+                                        <option value="Reinell (USA)">Reinell (USA)</option>
+                                        <option value="Reinke (DE)">Reinke (DE)</option>
+                                        <option value="Relcraft (GB)">Relcraft (GB)</option>
+                                        <option value="ReLine (NL)">ReLine (NL)</option>
+                                        <option value="Renken (USA)">Renken (USA)</option>
+                                        <option value="Revenger (GB)">Revenger (GB)</option>
+                                        <option value="Riamar (PT)">Riamar (PT)</option>
+                                        <option value="Rias (FI)">Rias (FI)</option>
+                                        <option value="Ridas (EE)">Ridas (EE)</option>
+                                        <option value="Rinker (USA)">Rinker (USA)</option>
+                                        <option value="Rio (IT)">Rio (IT)</option>
+                                        <option value="Riva (IT)">Riva (IT)</option>
+                                        <option value="Riviera- AU">Riviera- AU</option>
+                                        <option value="Rizzardi (IT)">Rizzardi (IT)</option>
+                                        <option value="Roberts (AUS)">Roberts (AUS)</option>
+                                        <option value="Rocca (FR)">Rocca (FR)</option>
+                                        <option value="Rocco Boats (SE)">Rocco Boats (SE)</option>
+                                        <option value="Rodman (ES)">Rodman (ES)</option>
+                                        <option value="Rogger">Rogger</option>
+                                        <option value="Roland (NO)">Roland (NO)</option>
+                                        <option value="Romar (IT)">Romar (IT)</option>
+                                        <option value="Rona Yachts">Rona Yachts</option>
+                                        <option value="Rose Island - IT">Rose Island - IT</option>
+                                        <option value="Roskam">Roskam</option>
+                                        <option value="Royal Denship (DK)">Royal Denship (DK)</option>
+                                        <option value="Rudkobing (DK)">Rudkobing (DK)</option>
+                                        <option value="Ryds (SE)">Ryds (SE)</option>
+                                        <option value="Saare-Paat (EE)">Saare-Paat (EE)</option>
+                                        <option value="Sabre (USA)">Sabre (USA)</option>
+                                        <option value="Sabre (USA)">Safir (DK)</option>
+                                        <option value="Saga (NO)">Saga (NO)</option>
+                                        <option value="Sailart (DE)">Sailart (DE)</option>
+                                        <option value="Salpa (IT)">Salpa (IT)</option>
+                                        <option value="San Lorenzo (IT)">San Lorenzo (IT)</option>
+                                        <option value="Sandviks (NO)">Sandviks (NO)</option>
+                                        <option value="Sanlorenzo Baleari">Sanlorenzo Baleari</option>
+                                        <option value="Sarins (FI)">Sarins (FI)</option>
+                                        <option value="SAS VEKTOR">SAS VEKTOR</option>
+                                        <option value="Sasanka (PL)">Sasanka (PL)</option>
+                                        <option value="Sasanka Yacht (PL)">Sasanka Yacht (PL)</option>
+                                        <option value="Saver">Saver</option>
+                                        <option value="SBM (DE)">SBM (DE)</option>
+                                        <option value="SBPEM (FR)">SBPEM (FR)</option>
+                                        <option value="Scand Boats (NO)">Scand Boats (NO)</option>
+                                        <option value="Scarani - ES">Scarani - ES</option>
+                                        <option value="Schachner (AT)">Schachner (AT)</option>
+                                        <option value="Scharping (DE)">Scharping (DE)</option>
+                                        <option value="Schleswiger Werkstatten (DE)">Schleswiger Werkstatten (DE)</option>
+                                        <option value="Schlichting (DE)">Schlichting (DE)</option>
+                                        <option value="Schochl (Sunbeam)">Schochl (Sunbeam)</option>
+                                        <option value="schubert">schubert</option>
+                                        <option value="Schulz (AT)">Schulz (AT)</option>
+                                        <option value="Schweers Bardenfleth Weser">Schweers Bardenfleth Weser</option>
+                                        <option value="Schweizer Bateaux (CH)">Schweizer Bateaux (CH)</option>
+                                        <option value="Sciallino (IT)">Sciallino (IT)</option>
+                                        <option value="SCOUT BOAT">SCOUT BOAT</option>
+                                        <option value="Sea Fox (USA)">Sea Fox (USA)</option>
+                                        <option value="Sea Nymph (USA)">Sea Nymph (USA)</option>
+                                        <option value="Sea Ray (USA)">Sea Ray (USA)</option>
+                                        <option value="SEA SPIRIT MARINE (CN)">SEA SPIRIT MARINE (CN)</option>
+                                        <option value="Sea Sprite (USA)">Sea Sprite (USA)</option>
+                                        <option value="Sea Star (FI)">Sea Star (FI)</option>
+                                        <option value="Seabird (SE)">Seabird (SE)</option>
+                                        <option value="Seaco (NO)">Seaco (NO)</option>
+                                        <option value="Seaforce (TW)">Seaforce (TW)</option>
+                                        <option value="Sealine (GB)">Sealine (GB)</option>
+                                        <option value="SeaMar (TR)">SeaMar (TR)</option>
+                                        <option value="Seanest - IT">Seanest - IT</option>
+                                        <option value="Seaswirl (USA)">Seaswirl (USA)</option>
+                                        <option value="Seawing (GB)">Seawing (GB)</option>
+                                        <option value="Segger-Boote (DE)">Segger-Boote (DE)</option>
+                                        <option value="Selva (IT)">Selva (IT)</option>
+                                        <option value="sep. WC / 1 Jahr Garantie">sep. WC / 1 Jahr Garantie</option>
+                                        <option value="sep. WC/ 1 Jahr Garantie / neuer Motor">sep. WC/ 1 Jahr Garantie / neuer Motor</option>
+                                        <option value="SeriousYachts - NL">SeriousYachts - NL</option>
+                                        <option value="Sessa (IT)">Sessa (IT)</option>
+                                        <option value="Shadow">Shadow</option>
+                                        <option value="Shakespeare (GB)">Shakespeare (GB)</option>
+                                        <option value="Shamrock (USA)">Shamrock (USA)</option>
+                                        <option value="Shetland (GB)">Shetland (GB)</option>
+                                        <option value="Siemer (NL)">Siemer (NL)</option>
+                                        <option value="Silver (FI)">Silver (FI)</option>
+                                        <option value="Silverline (USA)">Silverline (USA)</option>
+                                        <option value="Silverton (USA)">Silverton (USA)</option>
+                                        <option value="Skagen">Skagen</option>
+                                        <option value="Skagerrak (NO)">Skagerrak (NO)</option>
+                                        <option value="Skarpnes (NO)">Skarpnes (NO)</option>
+                                        <option value="Skibsplast (NO)">Skibsplast (NO)</option>
+                                        <option value="Skilso (NO)">Skilso (NO)</option>
+                                        <option value="Skorgenes (NO)">Skorgenes (NO)</option>
+                                        <option value="Slickcraft (USA)">Slickcraft (USA)</option>
+                                        <option value="SM Yacht Werft (PL)">SM Yacht Werft (PL)</option>
+                                        <option value="Smelne (NL)">Smelne (NL)</option>
+                                        <option value="SMG Werft - DE">SMG Werft - DE</option>
+                                        <option value="SNP (FR)">SNP (FR)</option>
+                                        <option value="SoleMar (DE)">SoleMar (DE)</option>
+                                        <option value="Sollux (NO)">Sollux (NO)</option>
+                                        <option value="SONSTIGE/OTHERS">SONSTIGE/OTHERS</option>
+                                        <option value="Southern Wind (GB)">Southern Wind (GB)</option>
+                                        <option value="Spectrum">Spectrum</option>
+                                        <option value="Speedy (PL)">Speedy (PL)</option>
+                                        <option value="SpinCraft Electric Boats - CA">SpinCraft Electric Boats - CA</option>
+                                        <option value="Spirit (GB)">Spirit (GB)</option>
+                                        <option value="Sport Craft">Sport Craft</option>
+                                        <option value="Sportboot">Sportboot</option>
+                                        <option value="Sportboot 340">Sportboot 340</option>
+                                        <option value="Star Yachts (TH)">Star Yachts (TH)</option>
+                                        <option value="Starcraft (USA)">Starcraft (USA)</option>
+                                        <option value="Stardust (USA)">Stardust (USA)</option>
+                                        <option value="Starfisher">Starfisher</option>
+                                        <option value="Ste Mar Nautica (IT)">Ste Mar Nautica (IT)</option>
+                                        <option value="Stefyniur (PL)">Stefyniur (PL)</option>
+                                        <option value="Stelco (GB)">Stelco (GB)</option>
+                                        <option value="Stentor (NL)">Stentor (NL)</option>
+                                        <option value="Steven (NL)">Steven (NL)</option>
+                                        <option value="Stevens Nautical">Stevens Nautical</option>
+                                        <option value="Stichnoth (DE)">Stichnoth (DE)</option>
+                                        <option value="Stingray (USA)">Stingray (USA)</option>
+                                        <option value="Storebro (SE)">Storebro (SE)</option>
+                                        <option value="Strike">Strike</option>
+                                        <option value="Struerewerft (DK)">Struerewerft (DK)</option>
+                                        <option value="Sturier Trawler">Sturier Trawler</option>
+                                        <option value="Succes (NL)">Succes (NL)</option>
+                                        <option value="Sun Cruiser (GB)">Sun Cruiser (GB)</option>
+                                        <option value="Sunbird (USA)">Sunbird (USA)</option>
+                                        <option value="Sunliner">Sunliner</option>
+                                        <option value="Sunmar (FI)">Sunmar (FI)</option>
+                                        <option value="Sunray">Sunray</option>
+                                        <option value="Sunreef Yachts (PL)">Sunreef Yachts (PL)</option>
+                                        <option value="SunRunner (USA)">SunRunner (USA)</option>
+                                        <option value="Sunseeker (GB)">Sunseeker (GB)</option>
+                                        <option value="Super van Craft">Super van Craft</option>
+                                        <option value="Supra Sports (USA)">Supra Sports (USA)</option>
+                                        <option value="Swift Craft (ES)">Swift Craft (ES)</option>
+                                        <option value="Symbol (TW)">Symbol (TW)</option>
+                                        <option value="Syntechnics (DE)">Syntechnics (DE)</option>
+                                        <option value="T.A. Mare (IT)">T.A. Mare (IT)</option>
+                                        <option value="t.a.mare (IT)">t.a.mare (IT)</option>
+                                        <option value="Ta Chiao (TW)">Ta Chiao (TW)</option>
+                                        <option value="Tacar (TR)">Tacar (TR)</option>
+                                        <option value="Tacoma (USA)">Tacoma (USA)</option>
+                                        <option value="Tahoe">Tahoe</option>
+                                        <option value="Talon (USA)">Talon (USA)</option>
+                                        <option value="Tango Yachts (AR)">Tango Yachts (AR)</option>
+                                        <option value="Tania (TH)">Tania (TH)</option>
+                                        <option value="Target">Target</option>
+                                        <option value="Tarquin (GB)">Tarquin (GB)</option>
+                                        <option value="Tashing (TW)">Tashing (TW)</option>
+                                        <option value="Taurus (RC)">Taurus (RC)</option>
+                                        <option value="Tayana (TW)">Tayana (TW)</option>
+                                        <option value="Taylan Yacht (TR)">Taylan Yacht (TR)</option>
+                                        <option value="Techno Consult (DE)">Techno Consult (DE)</option>
+                                        <option value="Tecnofiber (IT)">Tecnofiber (IT)</option>
+                                        <option value="Tecnomarine (IT)">Tecnomarine (IT)</option>
+                                        <option value="TEKA (USA)">TEKA (USA)</option>
+                                        <option value="Tempest">Tempest</option>
+                                        <option value="Tenten-Boats (DE)">Tenten-Boats (DE)</option>
+                                        <option value="Terhi (FI)">Terhi (FI)</option>
+                                        <option value="Terminalboat - IT">Terminalboat - IT</option>
+                                        <option value="TES YACHT">TES YACHT</option>
+                                        <option value="Texas">Texas</option>
+                                        <option value="TG Boat (FI)">TG Boat (FI)</option>
+                                        <option value="Thermo (NL)">Thermo (NL)</option>
+                                        <option value="Thoma (CH)">Thoma (CH)</option>
+                                        <option value="Thomasz Yachts">Thomasz Yachts</option>
+                                        <option value="Thompson (USA)">Thompson (USA)</option>
+                                        <option value="Thunderbird (USA)">Thunderbird (USA)</option>
+                                        <option value="Thundercraft (CA)">Thundercraft (CA)</option>
+                                        <option value="Tiara Yachts - USA">Tiara Yachts - USA</option>
+                                        <option value="Time-Out (NL)">Time-Out (NL)</option>
+                                        <option value="Tjeukemer (NL)">Tjeukemer (NL)</option>
+                                        <option value="Toensberg">Toensberg</option>
+                                        <option value="Tollycraft (USA)">Tollycraft (USA)</option>
+                                        <option value="Tony Giugliano (IT)">Tony Giugliano (IT)</option>
+                                        <option value="Tornado">Tornado</option>
+                                        <option value="Toy Marine - IT">Toy Marine - IT</option>
+                                        <option value="Trailer (SE)">Trailer (SE)</option>
+                                        <option value="Transpacific (TW)">Transpacific (TW)</option>
+                                        <option value="Trawler">Trawler</option>
+                                        <option value="Tresfjord (NO)">Tresfjord (NO)</option>
+                                        <option value="Trier Hans Boost">Trier Hans Boost</option>
+                                        <option value="Tristan Boats (FI)">Tristan Boats (FI)</option>
+                                        <option value="TriStar (TR)">TriStar (TR)</option>
+                                        <option value="Troian">Troian</option>
+                                        <option value="Trojan (USA)">Trojan (USA)</option>
+                                        <option value="Trophy (USA)">Trophy (USA)</option>
+                                        <option value="Tuccoli">Tuccoli</option>
+                                        <option value="Tullio Abbate (IT)">Tullio Abbate (IT)</option>
+                                        <option value="Tuna-Yachts - NL">Tuna-Yachts - NL</option>
+                                        <option value="Tung Hwa (TW)">Tung Hwa (TW)</option>
+                                        <option value="unbekannt">unbekannt</option>
+                                        <option value="Uniesse Marine (IT)">Uniesse Marine (IT)</option>
+                                        <option value="Unique (NO)">Unique (NO)</option>
+                                        <option value="Uttern (SE)">Uttern (SE)</option>
+                                        <option value="v-type (UK)">v-type (UK)</option>
+                                        <option value="Vacance (NL)">Vacance (NL)</option>
+                                        <option value="Valk">Valk</option>
+                                        <option value="van der Heijden (NL)">van der Heijden (NL)</option>
+                                        <option value="van der Valk (NL)">van der Valk (NL)</option>
+                                        <option value="van der Vlis (NL)">van der Vlis (NL)</option>
+                                        <option value="van der Werff (NL)">van der Werff (NL)</option>
+                                        <option value="van Heck">van Heck</option>
+                                        <option value="van Lent (NL)">van Lent (NL)</option>
+                                        <option value="van Vlieth (NL)">van Vlieth (NL)</option>
+                                        <option value="van Waarde (NL)">van Waarde (NL)</option>
+                                        <option value="van Wijk (NL)">van Wijk (NL)</option>
+                                        <option value="Vansjo-Bat (NO)">Vansjo-Bat (NO)</option>
+                                        <option value="Variant 606 / BJ 2009 / 25 PS EFI NEU / Schubert">Variant 606 / BJ 2009 / 25 PS EFI NEU / Schubert</option>
+                                        <option value="Variant 606 HT / BJ 2004 / 20 PS NEU / Schubert">Variant 606 HT / BJ 2004 / 20 PS NEU / Schubert</option>
+                                        <option value="Variant 606 HT / BJ 2008 / 70 PS / Schubert">Variant 606 HT / BJ 2008 / 70 PS / Schubert</option>
+                                        <option value="VDL Shipyards (NL)">VDL Shipyards (NL)</option>
+                                        <option value="VEB Muggelspree">VEB Muggelspree</option>
+                                        <option value="Veha (NL)">Veha (NL)</option>
+                                        <option value="Venatus Boats">Venatus Boats</option>
+                                        <option value="Veneveistamo (FI)">Veneveistamo (FI)</option>
+                                        <option value="Verhoefkruiser">Verhoefkruiser</option>
+                                        <option value="Versil Craft (IT)">Versil Craft (IT)</option>
+                                        <option value="Viber (FI)">Viber (FI)</option>
+                                        <option value="VICEM (TR)">VICEM (TR)</option>
+                                        <option value="Vieser (DE)">Vieser (DE)</option>
+                                        <option value="Viking (GB)">Viking (GB)</option>
+                                        <option value="Viking (USA)">Viking (USA)</option>
+                                        <option value="Viknes (NO)">Viknes (NO)</option>
+                                        <option value="Viksund (NO)">Viksund (NO)</option>
+                                        <option value="Vinkeveen Fleet">Vinkeveen Fleet</option>
+                                        <option value="Vip Boats (USA)">Vip Boats (USA)</option>
+                                        <option value="Viper (DE)">Viper (DE)</option>
+                                        <option value="Virgin del Mar (ES)">Virgin del Mar (ES)</option>
+                                        <option value="Vissers (NL)">Vissers (NL)</option>
+                                        <option value="viudes">viudes</option>
+                                        <option value="Volharding (NL)">Volharding (NL)</option>
+                                        <option value="Voss (DE)">Voss (DE)</option>
+                                        <option value="Vri-Jon (NL)">Vri-Jon (NL)</option>
+                                        <option value="Vribuiter (NL)">Vribuiter (NL)</option>
+                                        <option value="Vripack Yachting (NL)">Vripack Yachting (NL)</option>
+                                        <option value="Vroegh &amp; Alblas (NL)">Vroegh &amp; Alblas (NL)</option>
+                                        <option value="Vulture Ventura (GB)">Vulture Ventura (GB)</option>
+                                        <option value="Warlock (USA)">Warlock (USA)</option>
+                                        <option value="Warren Yachts - AU">Warren Yachts - AU</option>
+                                        <option value="Waswa (DE)">Waswa (DE)</option>
+                                        <option value="Water RooCraft - UK">Water RooCraft - UK</option>
+                                        <option value="Waterland (NL)">Waterland (NL)</option>
+                                        <option value="WeCo (NL)">WeCo (NL)</option>
+                                        <option value="Wellcraft (USA)">Wellcraft (USA)</option>
+                                        <option value="Werft unbekannt">Werft unbekannt</option>
+                                        <option value="Wester engh">Wester engh</option>
+                                        <option value="Westerly (GB)">Westerly (GB)</option>
+                                        <option value="Weston (GB)">Weston (GB)</option>
+                                        <option value="White Shark">White Shark</option>
+                                        <option value="Wicabo (NL)">Wicabo (NL)</option>
+                                        <option value="Wieker (DE)">Wieker (DE)</option>
+                                        <option value="Wiking Boats (NL)">Wiking Boats (NL)</option>
+                                        <option value="Willigen (NL)">Willigen (NL)</option>
+                                        <option value="Wim van der Valk (NL)">Wim van der Valk (NL)</option>
+                                        <option value="Windy (NO)">Windy (NO)</option>
+                                        <option value="Winga (SE)">Winga (SE)</option>
+                                        <option value="Winrace (NO)">Winrace (NO)</option>
+                                        <option value="Winsor Brothers (GB)">Winsor Brothers (GB)</option>
+                                        <option value="Wittley - AU">Wittley - AU</option>
+                                        <option value="Wyboats (NL)">Wyboats (NL)</option>
+                                        <option value="Xylon (DE)">Xylon (DE)</option>
+                                        <option value="Y.B.M. (PL)">Y.B.M. (PL)</option>
+                                        <option value="Y.E.P. (DE)">Y.E.P. (DE)</option>
+                                        <option value="Yachts Industries (FR)">Yachts Industries (FR)</option>
+                                        <option value="Yachtwerft Wilhelmshaven (DE)">Yachtwerft Wilhelmshaven (DE)</option>
+                                        <option value="Yamaha (JP)">Yamaha (JP)</option>
+                                        <option value="Yamarin (FI)">Yamarin (FI)</option>
+                                        <option value="Yaretti (AT)">Yaretti (AT)</option>
+                                        <option value="Z-Products">Z-Products</option>
+                                        <option value="Zaniboni (IT)">Zaniboni (IT)</option>
+                                        <option value="ZET YACHTS - TR">ZET YACHTS - TR</option>
+                                        <option value="Zeta Group (IT)">Zeta Group (IT)</option>
+                                        <option value="Zijlmans (NL)">Zijlmans (NL)</option>
                                     </select>
                                 </div>
                                 <div class="span-6">
                                     </br>
                                    <a class="fancybox fancybox.iframe button15" href="<?php echo URL; ?>BoatSeller_map.html">Please set the current location of the boat >></a>
                                 </div>
-                                   <div class="span-6 last">
-                                    <label for="lat">Latitude</label></br><input class="css_input2" id="lat" type="text"  value="0" disabled>
-                                    <label for="lng">Longitude</label></br><input class="css_input2" id="lng" type="text"  value="0" disabled>
+                                   <div class="span-6 last" align="right" style="margin-top:20px;">
+                                    <label for="latitude">Latitude</label><span class="hint"></span><input class="css_input2" id="lat" name="latitude" type="text" value="0" />
+                                    <label for="longitude">Longitude</label><span class="hint"></span><input class="css_input2" id="lng" name="longitude" type="text" value="0" />
                                 </div>               
                             </div>
                             <div class="span-12 last">
@@ -1154,49 +1155,50 @@
                                </br>
                                 <label>Length</label>
                                 <div contenteditable="true" id="div_length" class="css_input3" dimension="length" data-ph="0.00"></div>
-                                <div class="css_input_m">m</div>
-                                <input id="length" type="hidden" value="0.00">
+                                <label class="css_input_m">m</label>
+                                <input id="length" name="length" type="hidden" value="0.00"/>
                                 <br/>
                                  <label>Width</label>
                                  <div contenteditable="true" id="div_width" class="css_input3" dimension="width" data-ph="0.00"></div> 
-                                 <div class="css_input_m">m</div>
-                                <input id="width" type="hidden" value="0.00">
+                                 <label class="css_input_m">m</label>
+                                <input id="width" name="width" type="hidden" value="0.00"/>
                                 <br/>
                                 <label>Bridge Clearance</label>
                                  <div contenteditable="true" id="div_clearance" class="css_input3" dimension="clearance" data-ph="0.00"></div>
-                                 <div class="css_input_m">m</div>
-                                <input id="clearance" type="hidden" value="0.00">
+                                 <label class="css_input_m">m</label>
+                                <input id="clearance" name="clearance" type="hidden" value="0.00"/>
                                 <br/>
                                 <label>Draft</label>
                                  <div contenteditable="true" id="div_draft" class="css_input3" dimension="draft" data-ph="0.00"></div> 
-                                 <div class="css_input_m">m</div>
-                                <input id="draft" type="hidden" value="0.00">
+                                 <label class="css_input_m">m</label>
+                                <input id="draft" name="draft" type="hidden" value="0.00"/>
                                 <br/>
                                 <label>Weight</label>
                                 <div contenteditable="true" id="div_weight" class="css_input3" dimension="weight" data-ph="0.00"></div> 
-                                <div class="css_input_m">kg</div>
-                                <input id="weight" type="hidden" value="0.00">
+                                <label class="css_input_m">kg</label>
+                                <input id="weight" name="weight" type="hidden" value="0.00"/>
+                                <br/>
                           </div>
                         
                          <div  class="span-9" align="right">
                                <h2 align="left">Places and accommodation</h2>
-                               </br>
+                               <br/>
                                 <label>Max. Persons/Passengers</label>
                                 <div contenteditable="true" id="div_length" class="css_input4" dimension="passengers" data-ph="Enter passengers"></div>
-                                <input id="passengers" type="hidden" value="0">
+                                <input id="passengers" name="passengers" type="hidden" value="0"/>
                                 <br/>
                                  <label>Cabins</label>
                                  <div contenteditable="true" id="div_width" class="css_input4" dimension="cabins" data-ph="Enter cabins"></div> 
-                                <input id="cabins" type="hidden" value="0">
+                                <input id="cabins" name="cabins" type="hidden" value="0"/>
                                 <br/>
                                 <label>Berth</label>
-                                 <div contenteditable="true" id="div_clearance" class="css_input4" dimension="births" data-ph="Enter count of berths"></div>
-                                 <input id="births" type="hidden" value="0">
+                                 <div contenteditable="true" id="div_clearance" class="css_input4" dimension="berth" data-ph="Enter count of berths"></div>
+                                 <input id="berth" name="berth" type="hidden" value="0"/>
                                 <br/>
                         </div>
                   <div class="span-7" align="right">
                              <h2 align="left">Appearance and texture</h2>
-                               </br>
+                               <br/>
 <label style="margin-right: 30px;">Color of the deck</label>
 <div contenteditable="false" id="color" class="fox_body3" dimension="color" data-ph="color"></div>
 <div class="dropdown"> 
@@ -1267,89 +1269,89 @@
 </ul>
 </div>  
       
-                            <select id="select1" style="display:none">
-                                   <option value="1" data-color="#ffffff">White</option>
-                                   <option value="2" data-color="#f8f8ff">Ghost White</option>
-                                   <option value="3" data-color="#dcdcdc">Gainsboro</option>
-                                   <option value="4" data-color="#d3d3d3">Light Grey</option>
-                                   <option value="5" data-color="#a7a7a7">Dark Grey</option>
-                                   <option value="6" data-color="#bebebe">Gray</option>
-                                   <option value="7" data-color="#000000">Black</option>
-                                   <option value="8" data-color="#b0e0e6">Powder Blue</option>
-                                   <option value="9" data-color="#add8e6">Light Blue</option>
-                                   <option value="10" data-color="#87ceeb">Sky Blue</option>
-                                   <option value="11" data-color="#00bfff">Deep Sky Blue</option>
-                                   <option value="12" data-color="#1e90ff">Dodger Blue</option>
-                                   <option value="13" data-color="#4169e1">Royal Blue</option>
-                                   <option value="14" data-color="#0000ff">Blue</option>
-                                   <option value="15" data-color="#191970">Midnight Blue</option>
-                                   <option value="16" data-color="#00fa9a">Medium Spring Green</option>
-                                   <option value="17" data-color="#00ff7f">Spring Green</option>
-                                   <option value="18" data-color="#3cb371">Medium Sea Green</option>
-                                   <option value="19" data-color="#2e8b57">Sea Green</option>
-                                   <option value="20" data-color="#228b22">Forest Green</option>
-                                   <option value="21" data-color="#008000">Green</option>
-                                   <option value="22" data-color="#6b8e23">Olive Drab</option>
-                                   <option value="23" data-color="#006400">Dark Green</option>
-                                   <option value="24" data-color="#f5f5dc">Beige</option>
-                                   <option value="25" data-color="#fafad2">Light Golden Rod Yellow</option>
-                                   <option value="26" data-color="#eee8aa">Pale Golden Rod</option>
-                                   <option value="27" data-color="#ffff00">Yellow</option>
-                                   <option value="28" data-color="#ffd700">Gold</option>
-                                   <option value="29" data-color="#ffa500">Orange</option>
-                                   <option value="30" data-color="#ff8c00">Dark Orange</option>
-                                   <option value="31" data-color="#b8860b">Dark Golden Rod</option>
-                                   <option value="32" data-color="#ffe4c4">Bisque</option>
-                                   <option value="33" data-color="#ffe4b5">Moccasin</option>
-                                   <option value="34" data-color="#ffa07a">Light Salmon</option>
-                                   <option value="35" data-color="#fa8072">Salmon</option>
-                                   <option value="36" data-color="#f08080">Light Coral</option>
-                                   <option value="37" data-color="#cd5c5c">Indian Red</option>
-                                   <option value="38" data-color="#a52a2a">Brown</option>
-                                   <option value="39" data-color="#b22222">Fire Brick</option>
-                                   <option value="40" data-color="#ffdab9">Peach Puff</option>
-                                   <option value="41" data-color="#f5deb3">Wheat</option>
-                                   <option value="42" data-color="#f4a460">Sandy Brown</option>
-                                   <option value="43" data-color="#ff6347">Tomato</option>
-                                   <option value="44" data-color="#ff4500">Orange Red</option>
-                                   <option value="45" data-color="#ff0000">Red</option>
-                                   <option value="46" data-color="#d2691e">Chocolate</option>
-                                   <option value="47" data-color="#800000">Maroon</option>
-                                   <option value="48" data-color="#ffc0cb">Pink</option>
-                                   <option value="49" data-color="#ffb6c1">Light Pink</option>
-                                   <option value="50" data-color="#db7093">Pale Violet Red</option>
-                                   <option value="51" data-color="#ff00ff">Magenta</option>
-                                   <option value="52" data-color="#ff69b4">Hot Pink</option>
-                                   <option value="53" data-color="#ff1493">Deep Pink</option>
-                                   <option value="54" data-color="#d02090">Violet Red</option>
-                                   <option value="55" data-color="#8b008b">Dark Magenta</option>
-                                   <option value="56" data-color="#e6e6fa">Lavender</option>
-                                   <option value="57" data-color="#d8bfd8">Thistle</option>
-                                   <option value="58" data-color="#dda0dd">Plum</option>
-                                   <option value="59" data-color="#da70d6">Orchid</option>
-                                   <option value="60" data-color="#ba55d3">Medium Orchid</option>
-                                   <option value="61" data-color="#8a2be2">Blue Violet</option>
-                                   <option value="62" data-color="#9932cc">Dark Orchid</option>
-                                   <option value="63" data-color="#800080">Purple</option>
-                                  </select>
+                            <select id="select1"  name="deck_color" style="display:none">
+                                   <option value="#ffffff" data-color="#ffffff">White</option>
+                                   <option value="#f8f8ff" data-color="#f8f8ff">Ghost White</option>
+                                   <option value="#dcdcdc" data-color="#dcdcdc">Gainsboro</option>
+                                   <option value="#d3d3d3" data-color="#d3d3d3">Light Grey</option>
+                                   <option value="#a7a7a7" data-color="#a7a7a7">Dark Grey</option>
+                                   <option value="#bebebe" data-color="#bebebe">Gray</option>
+                                   <option value="#000000" data-color="#000000">Black</option>
+                                   <option value="#b0e0e6" data-color="#b0e0e6">Powder Blue</option>
+                                   <option value="#add8e6" data-color="#add8e6">Light Blue</option>
+                                   <option value="#87ceeb" data-color="#87ceeb">Sky Blue</option>
+                                   <option value="#00bfff" data-color="#00bfff">Deep Sky Blue</option>
+                                   <option value="#1e90ff" data-color="#1e90ff">Dodger Blue</option>
+                                   <option value="#4169e1" data-color="#4169e1">Royal Blue</option>
+                                   <option value="#0000ff" data-color="#0000ff">Blue</option>
+                                   <option value="#191970" data-color="#191970">Midnight Blue</option>
+                                   <option value="#00fa9a" data-color="#00fa9a">Medium Spring Green</option>
+                                   <option value="#00ff7f" data-color="#00ff7f">Spring Green</option>
+                                   <option value="#3cb371" data-color="#3cb371">Medium Sea Green</option>
+                                   <option value="#2e8b57" data-color="#2e8b57">Sea Green</option>
+                                   <option value="#228b22" data-color="#228b22">Forest Green</option>
+                                   <option value="#008000" data-color="#008000">Green</option>
+                                   <option value="#6b8e23" data-color="#6b8e23">Olive Drab</option>
+                                   <option value="#006400" data-color="#006400">Dark Green</option>
+                                   <option value="#f5f5dc" data-color="#f5f5dc">Beige</option>
+                                   <option value="#fafad2" data-color="#fafad2">Light Golden Rod Yellow</option>
+                                   <option value="#eee8aa" data-color="#eee8aa">Pale Golden Rod</option>
+                                   <option value="#ffff00" data-color="#ffff00">Yellow</option>
+                                   <option value="#ffd700" data-color="#ffd700">Gold</option>
+                                   <option value="#ffa500" data-color="#ffa500">Orange</option>
+                                   <option value="#ff8c00" data-color="#ff8c00">Dark Orange</option>
+                                   <option value="#b8860b" data-color="#b8860b">Dark Golden Rod</option>
+                                   <option value="#ffe4c4" data-color="#ffe4c4">Bisque</option>
+                                   <option value="#ffe4b5" data-color="#ffe4b5">Moccasin</option>
+                                   <option value="#ffa07a" data-color="#ffa07a">Light Salmon</option>
+                                   <option value="#fa8072" data-color="#fa8072">Salmon</option>
+                                   <option value="#f08080" data-color="#f08080">Light Coral</option>
+                                   <option value="#cd5c5c" data-color="#cd5c5c">Indian Red</option>
+                                   <option value="#a52a2a" data-color="#a52a2a">Brown</option>
+                                   <option value="#b22222" data-color="#b22222">Fire Brick</option>
+                                   <option value="#ffdab9" data-color="#ffdab9">Peach Puff</option>
+                                   <option value="#f5deb3" data-color="#f5deb3">Wheat</option>
+                                   <option value="#f4a460" data-color="#f4a460">Sandy Brown</option>
+                                   <option value="#ff6347" data-color="#ff6347">Tomato</option>
+                                   <option value="#ff4500" data-color="#ff4500">Orange Red</option>
+                                   <option value="#ff0000" data-color="#ff0000">Red</option>
+                                   <option value="#d2691e" data-color="#d2691e">Chocolate</option>
+                                   <option value="#800000" data-color="#800000">Maroon</option>
+                                   <option value="#ffc0cb" data-color="#ffc0cb">Pink</option>
+                                   <option value="#ffb6c1" data-color="#ffb6c1">Light Pink</option>
+                                   <option value="#db7093" data-color="#db7093">Pale Violet Red</option>
+                                   <option value="#ff00ff" data-color="#ff00ff">Magenta</option>
+                                   <option value="#ff69b4" data-color="#ff69b4">Hot Pink</option>
+                                   <option value="#ff1493" data-color="#ff1493">Deep Pink</option>
+                                   <option value="#d02090" data-color="#d02090">Violet Red</option>
+                                   <option value="#8b008b" data-color="#8b008b">Dark Magenta</option>
+                                   <option value="#e6e6fa" data-color="#e6e6fa">Lavender</option>
+                                   <option value="#d8bfd8" data-color="#d8bfd8">Thistle</option>
+                                   <option value="#dda0dd" data-color="#dda0dd">Plum</option>
+                                   <option value="#da70d6" data-color="#da70d6">Orchid</option>
+                                   <option value="#ba55d3" data-color="#ba55d3">Medium Orchid</option>
+                                   <option value="#8a2be2" data-color="#8a2be2">Blue Violet</option>
+                                   <option value="#9932cc" data-color="#9932cc">Dark Orchid</option>
+                                   <option value="#800080" data-color="#800080">Purple</option>
+                              </select>
                                 <br/>   
                            
                                  <label>Deck Material</label>
-                                    <select class="css_input">      
-                                        <option value="A">Aluminium</option>
-                                        <option value="B">Cement</option>
-                                        <option value="C">CRP-glass-fibre reinforced plastic</option>
-                                        <option value="D">Steel</option> 
-                                        <option value="E">Unknown</option> 
-                                        <option value="F">Wood</option> 
+                                    <select class="css_input" name="deck_mat">      
+                                        <option value="Aluminium">Aluminium</option>
+                                        <option value="Cement">Cement</option>
+                                        <option value="CRP-glass-fibre reinforced plastic">CRP-glass-fibre reinforced plastic</option>
+                                        <option value="Steel">Steel</option> 
+                                        <option value="Unknown">Unknown</option> 
+                                        <option value="Wood">Wood</option> 
                                     </select>
                                 <br/>
                                    <br/>
                                       <br/>
 <label style="margin-right: 30px;">Color of the hull</label>                                                             
 <div contenteditable="false" id="color2" class="fox_body4" dimension="color" data-ph="color"></div>
-<div class="dropdown"> 
-<ul id="col2" class="dropdown-menu">
+            <div class="dropdown"> 
+            <ul id="col2" class="dropdown-menu">
   <li><a class="color-btn1" href="#col2" data-color="#ffffff" data-value="1" title="White" style="background-color: rgb(255, 255, 255);"></a></li>
   <li><a class="color-btn1" href="#col2" data-color="#f8f8ff" data-value="2" title="Ghost White" style="background-color: rgb(248, 248, 255);"></a></li>
   <li><a class="color-btn1" href="#col2" data-color="#dcdcdc" data-value="3" title="Gainsboro" style="background-color: rgb(220, 220, 220);"></a></li>
@@ -1413,89 +1415,372 @@
   <li><a class="color-btn1" href="#col2" data-color="#9932cc" data-value="62" title="Dark Orchid" style="background-color: rgb(153, 50, 204);"></a></li>
   <li><a class="color-btn1" href="#col2" data-color="#800080" data-value="63" title="Purple" style="background-color: rgb(128, 0, 128);"></a></li>
 </ul>
-</div>  
-  <select id="select2" style="display:none">
-                                   <option value="1" data-color="#ffffff">White</option>
-                                   <option value="2" data-color="#f8f8ff">Ghost White</option>
-                                   <option value="3" data-color="#dcdcdc">Gainsboro</option>
-                                   <option value="4" data-color="#d3d3d3">Light Grey</option>
-                                   <option value="5" data-color="#a7a7a7">Dark Grey</option>
-                                   <option value="6" data-color="#bebebe">Gray</option>
-                                   <option value="7" data-color="#000000">Black</option>
-                                   <option value="8" data-color="#b0e0e6">Powder Blue</option>
-                                   <option value="9" data-color="#add8e6">Light Blue</option>
-                                   <option value="10" data-color="#87ceeb">Sky Blue</option>
-                                   <option value="11" data-color="#00bfff">Deep Sky Blue</option>
-                                   <option value="12" data-color="#1e90ff">Dodger Blue</option>
-                                   <option value="13" data-color="#4169e1">Royal Blue</option>
-                                   <option value="14" data-color="#0000ff">Blue</option>
-                                   <option value="15" data-color="#191970">Midnight Blue</option>
-                                   <option value="16" data-color="#00fa9a">Medium Spring Green</option>
-                                   <option value="17" data-color="#00ff7f">Spring Green</option>
-                                   <option value="18" data-color="#3cb371">Medium Sea Green</option>
-                                   <option value="19" data-color="#2e8b57">Sea Green</option>
-                                   <option value="20" data-color="#228b22">Forest Green</option>
-                                   <option value="21" data-color="#008000">Green</option>
-                                   <option value="22" data-color="#6b8e23">Olive Drab</option>
-                                   <option value="23" data-color="#006400">Dark Green</option>
-                                   <option value="24" data-color="#f5f5dc">Beige</option>
-                                   <option value="25" data-color="#fafad2">Light Golden Rod Yellow</option>
-                                   <option value="26" data-color="#eee8aa">Pale Golden Rod</option>
-                                   <option value="27" data-color="#ffff00">Yellow</option>
-                                   <option value="28" data-color="#ffd700">Gold</option>
-                                   <option value="29" data-color="#ffa500">Orange</option>
-                                   <option value="30" data-color="#ff8c00">Dark Orange</option>
-                                   <option value="31" data-color="#b8860b">Dark Golden Rod</option>
-                                   <option value="32" data-color="#ffe4c4">Bisque</option>
-                                   <option value="33" data-color="#ffe4b5">Moccasin</option>
-                                   <option value="34" data-color="#ffa07a">Light Salmon</option>
-                                   <option value="35" data-color="#fa8072">Salmon</option>
-                                   <option value="36" data-color="#f08080">Light Coral</option>
-                                   <option value="37" data-color="#cd5c5c">Indian Red</option>
-                                   <option value="38" data-color="#a52a2a">Brown</option>
-                                   <option value="39" data-color="#b22222">Fire Brick</option>
-                                   <option value="40" data-color="#ffdab9">Peach Puff</option>
-                                   <option value="41" data-color="#f5deb3">Wheat</option>
-                                   <option value="42" data-color="#f4a460">Sandy Brown</option>
-                                   <option value="43" data-color="#ff6347">Tomato</option>
-                                   <option value="44" data-color="#ff4500">Orange Red</option>
-                                   <option value="45" data-color="#ff0000">Red</option>
-                                   <option value="46" data-color="#d2691e">Chocolate</option>
-                                   <option value="47" data-color="#800000">Maroon</option>
-                                   <option value="48" data-color="#ffc0cb">Pink</option>
-                                   <option value="49" data-color="#ffb6c1">Light Pink</option>
-                                   <option value="50" data-color="#db7093">Pale Violet Red</option>
-                                   <option value="51" data-color="#ff00ff">Magenta</option>
-                                   <option value="52" data-color="#ff69b4">Hot Pink</option>
-                                   <option value="53" data-color="#ff1493">Deep Pink</option>
-                                   <option value="54" data-color="#d02090">Violet Red</option>
-                                   <option value="55" data-color="#8b008b">Dark Magenta</option>
-                                   <option value="56" data-color="#e6e6fa">Lavender</option>
-                                   <option value="57" data-color="#d8bfd8">Thistle</option>
-                                   <option value="58" data-color="#dda0dd">Plum</option>
-                                   <option value="59" data-color="#da70d6">Orchid</option>
-                                   <option value="60" data-color="#ba55d3">Medium Orchid</option>
-                                   <option value="61" data-color="#8a2be2">Blue Violet</option>
-                                   <option value="62" data-color="#9932cc">Dark Orchid</option>
-                                   <option value="63" data-color="#800080">Purple</option>
+            </div>
+                       <select id="select2" name="hull_color" style="display:none">
+                                   <option value="#ffffff" data-color="#ffffff">White</option>
+                                   <option value="#f8f8ff" data-color="#f8f8ff">Ghost White</option>
+                                   <option value="#dcdcdc" data-color="#dcdcdc">Gainsboro</option>
+                                   <option value="#d3d3d3" data-color="#d3d3d3">Light Grey</option>
+                                   <option value="#a7a7a7" data-color="#a7a7a7">Dark Grey</option>
+                                   <option value="#bebebe" data-color="#bebebe">Gray</option>
+                                   <option value="#000000" data-color="#000000">Black</option>
+                                   <option value="#b0e0e6" data-color="#b0e0e6">Powder Blue</option>
+                                   <option value="#add8e6" data-color="#add8e6">Light Blue</option>
+                                   <option value="#87ceeb" data-color="#87ceeb">Sky Blue</option>
+                                   <option value="#00bfff" data-color="#00bfff">Deep Sky Blue</option>
+                                   <option value="#1e90ff" data-color="#1e90ff">Dodger Blue</option>
+                                   <option value="#4169e1" data-color="#4169e1">Royal Blue</option>
+                                   <option value="#0000ff" data-color="#0000ff">Blue</option>
+                                   <option value="#191970" data-color="#191970">Midnight Blue</option>
+                                   <option value="#00fa9a" data-color="#00fa9a">Medium Spring Green</option>
+                                   <option value="#00ff7f" data-color="#00ff7f">Spring Green</option>
+                                   <option value="#3cb371" data-color="#3cb371">Medium Sea Green</option>
+                                   <option value="#2e8b57" data-color="#2e8b57">Sea Green</option>
+                                   <option value="#228b22" data-color="#228b22">Forest Green</option>
+                                   <option value="#008000" data-color="#008000">Green</option>
+                                   <option value="#6b8e23" data-color="#6b8e23">Olive Drab</option>
+                                   <option value="#006400" data-color="#006400">Dark Green</option>
+                                   <option value="#f5f5dc" data-color="#f5f5dc">Beige</option>
+                                   <option value="#fafad2" data-color="#fafad2">Light Golden Rod Yellow</option>
+                                   <option value="#eee8aa" data-color="#eee8aa">Pale Golden Rod</option>
+                                   <option value="#ffff00" data-color="#ffff00">Yellow</option>
+                                   <option value="#ffd700" data-color="#ffd700">Gold</option>
+                                   <option value="#ffa500" data-color="#ffa500">Orange</option>
+                                   <option value="#ff8c00" data-color="#ff8c00">Dark Orange</option>
+                                   <option value="#b8860b" data-color="#b8860b">Dark Golden Rod</option>
+                                   <option value="#ffe4c4" data-color="#ffe4c4">Bisque</option>
+                                   <option value="#ffe4b5" data-color="#ffe4b5">Moccasin</option>
+                                   <option value="#ffa07a" data-color="#ffa07a">Light Salmon</option>
+                                   <option value="#fa8072" data-color="#fa8072">Salmon</option>
+                                   <option value="#f08080" data-color="#f08080">Light Coral</option>
+                                   <option value="#cd5c5c" data-color="#cd5c5c">Indian Red</option>
+                                   <option value="#a52a2a" data-color="#a52a2a">Brown</option>
+                                   <option value="#b22222" data-color="#b22222">Fire Brick</option>
+                                   <option value="#ffdab9" data-color="#ffdab9">Peach Puff</option>
+                                   <option value="#f5deb3" data-color="#f5deb3">Wheat</option>
+                                   <option value="#f4a460" data-color="#f4a460">Sandy Brown</option>
+                                   <option value="#ff6347" data-color="#ff6347">Tomato</option>
+                                   <option value="#ff4500" data-color="#ff4500">Orange Red</option>
+                                   <option value="#ff0000" data-color="#ff0000">Red</option>
+                                   <option value="#d2691e" data-color="#d2691e">Chocolate</option>
+                                   <option value="#800000" data-color="#800000">Maroon</option>
+                                   <option value="#ffc0cb" data-color="#ffc0cb">Pink</option>
+                                   <option value="#ffb6c1" data-color="#ffb6c1">Light Pink</option>
+                                   <option value="#db7093" data-color="#db7093">Pale Violet Red</option>
+                                   <option value="#ff00ff" data-color="#ff00ff">Magenta</option>
+                                   <option value="#ff69b4" data-color="#ff69b4">Hot Pink</option>
+                                   <option value="#ff1493" data-color="#ff1493">Deep Pink</option>
+                                   <option value="#d02090" data-color="#d02090">Violet Red</option>
+                                   <option value="#8b008b" data-color="#8b008b">Dark Magenta</option>
+                                   <option value="#e6e6fa" data-color="#e6e6fa">Lavender</option>
+                                   <option value="#d8bfd8" data-color="#d8bfd8">Thistle</option>
+                                   <option value="#dda0dd" data-color="#dda0dd">Plum</option>
+                                   <option value="#da70d6" data-color="#da70d6">Orchid</option>
+                                   <option value="#ba55d3" data-color="#ba55d3">Medium Orchid</option>
+                                   <option value="#8a2be2" data-color="#8a2be2">Blue Violet</option>
+                                   <option value="#9932cc" data-color="#9932cc">Dark Orchid</option>
+                                   <option value="#800080" data-color="#800080">Purple</option>
                                   </select>
 
                                 <br/>
                                 <label>Hull Material</label>
-                                    <select class="css_input">      
-                                        <option value="A">Aluminium</option>
-                                        <option value="B">Cement</option>
-                                        <option value="C">CRP-glass-fibre reinforced plastic</option>
-                                        <option value="D">Steel</option> 
-                                        <option value="E">Unknown</option> 
-                                        <option value="F">Wood</option>  
+                                    <select class="css_input" name="hull_mat">      
+                                        <option value="Aluminium">Aluminium</option>
+                                        <option value="Cement">Cement</option>
+                                        <option value="CRP-glass-fibre reinforced plastic">CRP-glass-fibre reinforced plastic</option>
+                                        <option value="Steel">Steel</option> 
+                                        <option value="Unknown">Unknown</option> 
+                                        <option value="Wood">Wood</option>   
                                     </select>
                                                       
                                
                         </div>
+                 <hr> 
+              <div>
+               <div class="span-8">
+            <h2 align="left">Details about the engine</h2>
+                     <br/>
+                     <label><input id=engine_no name="engine" value="no" type="radio" checked=""/>I don't have an engine</label>
+                     <label><input id=engine_yes name="engine" value="yes" type="radio"/>I have engine(s)</label>
+                      <br/>
+                </div>      
+           <div class="span-8">
+                         <h2 align="left">Engine description</h2>
+                <label for="descript">Optional description of engine and power train</label>
+                <textarea class="form-control" COLS="60" ROWS="5" name="descript" class="descript" id="descript"></textarea>
+                
+            <br/>  
+        </div>           
+                      
+                      
+        <div class="engine span-24" style="display: none">
+           <div class="span-9" align="right">
+               <label for="boat_engine">Engine Name</label>
+                <br>
+                <input class="css_input" id="boat_engine" name="boat_engine" size="25" title="Please enter a Engine Name" type="text" placeholder="Please insert a name"/>
+               <br>
+                <label for="horsepower">Horsepower (sum of all engines)</label><span class="hint"></span>
+                     <div contenteditable="true" id="div_horsepower" class="css_input3" dimension="horsepower" data-ph="0"></div> 
+                     <label  class="css_input_m">PS</label>
+                     <input id="horsepower" name="horsepower" type="hidden" value="0"/>
+                  <br>
+                 <label for="cylinders">Cylinders (number of one engine)</label><span class="hint"></span>
+                     <div contenteditable="true" id="div_cylinders" class="css_input3" dimension="cylinders" data-ph="0"></div> 
+                     
+                     <input id="cylinders" name="cylinders" type="hidden" value="0"/>
+                  <br>  
+                     <label for="hours_use">Hours in use</label><span class="hint"></span>
+                     <div contenteditable="true" id="div_hoursuse" class="css_input3" dimension="hours_use" data-ph="0"></div> 
                     
-
-                    <div class="span-23 errorForsteps">
+                     <input id="hours_use" name="hours_use" type="hidden" value="0"/>
+                 <br>
+                <label for="consumption">Consumption l/h</label><span class="hint"></span>
+                     <div contenteditable="true" id="div_consumption" class="css_input3" dimension="consumption" data-ph="0"></div>
+                     <label class="css_input_m">L</label>
+                     <input id="consumption" name="consumption" type="hidden" value="0"/>
+                 <br>
+                <label for="fuel_tank">Fuel tank capacity</label><span class="hint"></span>
+                       <div contenteditable="true" id="div_fueltank" class="css_input3" dimension="fuel_tank" data-ph="0"></div>
+                       <label class="css_input_m">L</label>
+                       <input id="fuel_tank" name="fuel_tank" type="hidden" value="0"/>
+                 <br/>
+                   <br/>
+            </div>
+           <div class="span-7" align="left">
+               <label for="manufacturer">Manufacturer</label><span class="hint"></span>
+          
+                <select class="css_input" name="manufacturer">      
+                        <option value="10KW Elektromotor">10KW Elektromotor</option>
+                        <option value="2x Suzuki DF 80A">2x Suzuki DF 80A</option>
+                        <option value="5,0 MPI">5,0 MPI</option>
+                        <option value="7 Marine">7 Marine</option>
+                        <option value="Aifo">Aifo</option>
+                        <option value="aifo iveco">aifo iveco</option>
+                        <option value="ALBIN">ALBIN</option>
+                        <option value="Albin Marine">Albin Marine</option>
+                        <option value="Atomic 4">Atomic 4</option>
+                        <option value="Beta Marine">Beta Marine</option>
+                        <option value="BETA-Marine">BETA-Marine</option>
+                        <option value="bladt">bladt</option>
+                        <option value="BMC Leyland">BMC Leyland</option>
+                        <option value="BMC Tempest">BMC Tempest</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Bond Jachts">Bond Jachts</option>
+                        <option value="Buch">Buch</option>
+                        <option value="Buckh">Buckh</option>
+                        <option value="Bugh DK">Bugh DK</option>
+                        <option value="Bukh">Bukh</option>
+                        <option value="Cammings">Cammings</option>
+                        <option value="Catarpillar">Catarpillar</option>
+                        <option value="Caterpillar">Caterpillar</option>
+                        <option value="CHREISLER">CHREISLER</option>
+                        <option value="chriscraft">chriscraft</option>
+                        <option value="Craftsman">Craftsman</option>
+                        <option value="Cummins">Cummins</option>
+                        <option value="Cummins Mercruiser">Cummins Mercruiser</option>
+                        <option value="Cummins Qsd 4,2">Cummins Qsd 4,2</option>
+                        <option value="Cummins-Diesel">Cummins-Diesel</option>
+                        <option value="DAF">DAF</option>
+                        <option value="Daimler-Benz">Daimler-Benz</option>
+                        <option value="delta lloyd">delta lloyd</option>
+                        <option value="Detroit Diesel">Detroit Diesel</option>
+                        <option value="Deutz">Deutz</option>
+                        <option value="Doosan">Doosan</option>
+                        <option value="Ducati">Ducati</option>
+                        <option value="Eigenbau">Eigenbau</option>
+                        <option value="Evinrude">Evinrude</option>
+                        <option value="Excursion">Excursion</option>
+                        <option value="Farymann">Farymann</option>
+                        <option value="Fiat">Fiat</option>
+                        <option value="Flamme ARona D 182">Flamme ARona D 182</option>
+                        <option value="For 2722e">For 2722e</option>
+                        <option value="Force">Force</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Ford Lehmann">Ford Lehmann</option>
+                        <option value="Ford Sabre">Ford Sabre</option>
+                        <option value="Ford-Lehmann">Ford-Lehmann</option>
+                        <option value="Golf">Golf</option>
+                        <option value="Hanomag">Hanomag</option>
+                        <option value="HINO">HINO</option>
+                        <option value="Homelite">Homelite</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Honda u. Evinrude">Honda u. Evinrude</option>
+                        <option value="Hundested Motorfabrik">Hundested Motorfabrik</option>
+                        <option value="IFA">IFA</option>
+                        <option value="Indenoor-Peugeot">Indenoor-Peugeot</option>
+                        <option value="Intermotor 2,6 KW">Intermotor 2,6 KW</option>
+                        <option value="Isuzu">Isuzu</option>
+                        <option value="Iveco">Iveco</option>
+                        <option value="Iveco Aifo">Iveco Aifo</option>
+                        <option value="John Deere">John Deere</option>
+                        <option value="Johnson">Johnson</option>
+                        <option value="Junkers MHK103">Junkers MHK103</option>
+                        <option value="Kräutler">Kräutler</option>
+                        <option value="Kubota">Kubota</option>
+                        <option value="Leyland">Leyland</option>
+                        <option value="Lindner - Elektro">Lindner-Elektro</option>
+                        <option value="Lister-Petter">Lister-Petter</option>
+                        <option value="Lombardini">Lombardini</option>
+                        <option value="MAN">MAN</option>
+                        <option value="Mariner">Mariner</option>
+                        <option value="Marstal">Marstal</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+                        <option value="Mercruiser">Mercruiser</option>
+                        <option value="Mercury">Mercury</option>
+                        <option value="Mert">Mert</option>
+                        <option value="Mini SF-7">Mini SF-7</option>
+                        <option value="Minn Kota">Minn Kota</option>
+                        <option value="Mitsubishi">Mitsubishi</option>
+                        <option value="Multicar">Multicar</option>
+                        <option value="MWM">MWM</option>
+                        <option value="Nanni">Nanni</option>
+                        <option value="OMC">OMC</option>
+                        <option value="Pegueot">Pegueot</option>
+                        <option value="Penta">Penta</option>
+                        <option value="Pentax">Pentax</option>
+                        <option value="Perkins">Perkins</option>
+                        <option value="Peugeot">Peugeot</option>
+                        <option value="Peugot">Peugot</option>
+                        <option value="Porsche">Porsche</option>
+                        <option value="Renault">Renault</option>
+                        <option value="Renault Marine">Renault Marine</option>
+                        <option value="Renault Quach">Renault Quach</option>
+                        <option value="Rhino">Rhino</option>
+                        <option value="Rotax 4 takt">Rotax 4 takt</option>
+                        <option value="Ruggerini">Ruggerini</option>
+                        <option value="Sabb">Sabb</option>
+                        <option value="Samofa">Samofa</option>
+                        <option value="Sannst">Sannst</option>
+                        <option value="SD330">SD330</option>
+                        <option value="Seenergie Citroen">Seenergie Citroen</option>
+                        <option value="Seenergie/Peugeot">Seenergie/Peugeot</option>
+                        <option value="Selva">Selva</option>
+                        <option value="Solé">Solé</option>
+                        <option value="Steyr">Steyr</option>
+                        <option value="Suzuki">Suzuki</option>
+                        <option value="Suzuki DF 2">Suzuki DF 2</option>
+                        <option value="Taidong">Taidong</option>
+                        <option value="Thornycroft">Thornycroft</option>
+                        <option value="Tohatsu">Tohatsu</option>
+                        <option value="Torqeedo">Torqeedo</option>
+                        <option value="V-P">V-P</option>
+                        <option value="Valmet 420 DSM Finnland">Valmet 420 DSM Finnland</option>
+                        <option value="Vetus">Vetus</option>
+                        <option value="Vetus - Peugeot">Vetus - Peugeot</option>
+                        <option value="Vetus Deutz">Vetus Deutz</option>
+                        <option value="Vire">Vire</option>
+                        <option value="Volkswagen Marine">Volkswagen Marine</option>
+                        <option value="Volvo">Volvo</option>
+                        <option value="Volvo Penta">Volvo Penta</option>
+                        <option value="Volvo-Perkins">Volvo-Perkins</option>
+                        <option value="VP">VP</option>
+                        <option value="VW">VW</option>
+                        <option value="Wartburg">Wartburg</option>
+                        <option value="Watermota">Watermota</option>
+                        <option value="westebeke">westebeke</option>
+                        <option value="Wickman 4L">Wickman 4L</option>
+                        <option value="Yamaha">Yamaha</option>
+                        <option value="Yanmar">Yanmar</option>
+                   </select>
+                <label for="powertrain">Powertrain</label><span class="hint"></span>
+              
+                    <select class="css_input" name="powertrain"> 
+                        <option value="IPS/POD-Drive">IPS/POD-Drive</option>
+                        <option value="Jet-Drive">Jet-Drive</option>
+                        <option value="S-Drive">S-Drive</option>
+                        <option value="Shaft driven">Shaft driven</option>
+                        <option value="Z-Drive">Z-Drive</option>
+                    </select> 
+               <br/>
+                   <label for="consumption_type">Consumption-Type</label><span class="hint"></span>
+                   
+                   <select class="css_input" name="consumption_type"> 
+                       <option value="Diesel">Diesel</option>
+                       <option value="Electric">Electric</option>
+                       <option value="Hybrid">Hybrid</option>
+                       <option value="Natural gas">Natural gas</option>
+                       <option value="Petrol">Petrol</option>
+                    </select>
+                   <br/>
+                    <label for="propeller_type">Propeller-Type</label><span class="hint"></span>
+                   
+                    <select class="css_input" name="propeller_type">
+                       <option value="1">2-Leaf</option>
+                       <option value="2">3-Leaf</option>
+                       <option value="3">4-Leaf</option>
+                       <option value="4">5-Leaf</option>
+                       <option value="7">Adjustable propeller</option>
+                       <option value="6">Foldpropeller</option>
+                       <option value="8">Others</option>
+                       <option value="5">Swing</option>
+                    </select>   
+          
+           </div>
+            <br/><br/><br/>
+           <div class="span-6" align="center">
+               
+                          <label>Type</label><span class="hint"></span>
+          <br/>
+                 <div class="btn-group btn-toggle" data-toggle="buttons">
+                     <label class="btn1 btn btn-default"><input id="CockPitInside" class="button1" name="pos_cokpit" value="inside" type="radio"/>Inboard</label>
+                     <label class="btn2 btn btn-default"><input id="CockPitOutside" class="button2" name="pos_cokpit" value="outside" type="radio"/>Outboard</label>
+                 </div>
+          <br/>
+           <label>Position</label><span class="hint"></span>
+           <br/>
+                 <div class="btn-group btn-toggle" data-toggle="buttons">
+                     <label class="btn1 btn btn-default"><input id="CockPitInside" class="button1" name="pos_cokpit" value="inside" type="radio"/>Front</label>
+                     <label class="btn2 btn btn-default"><input id="CockPitOutside" class="button2" name="pos_cokpit" value="outside" type="radio"/>Rear</label>
+                 </div>
+           <br/> 
+          <label>Cooling system</label><span class="hint"></span>
+          <br/>
+                 <div class="btn-group btn-toggle" data-toggle="buttons">
+                     <label class="btn1 btn btn-default"><input id="CockPitInside" class="button1" name="pos_cokpit" value="inside" type="radio"/>One circuit</label>
+                     <label class="btn2 btn btn-default"><input id="CockPitOutside" class="button2" name="pos_cokpit" value="outside" type="radio"/>Two circuits</label>
+                 </div>
+               
+              </div>
+            </div>
+         
+           <br/>
+        </div>
+               
+          <hr>    
+        <div class="span-8" align="left">
+                           <h2 align="left">Details about the cockpit</h2>
+                               <br/>
+                                <label>Steering</label><span class="hint"></span>
+                                <select class="css_input" name="steering">      
+                                        <option value=""></option>
+                                        <option value=""</option>
+                                </select>
+                                <br/>
+         <label>Position of the cockpit</label><span class="hint"></span>
+ <div class="btn-group btn-toggle" data-toggle="buttons">
+    <label class="btn1 btn btn-default"><input id="CockPitInside" class="button1" name="pos_cokpit" value="inside" type="radio"/>Inside</label>
+    <label class="btn2 btn btn-default"><input id="CockPitOutside" class="button2" name="pos_cokpit" value="outside" type="radio"/>Outside</label>
+ </div>
+         </div> 
+          
+           <h2 align="left">Capacity</h2>
+                   </br>
+                       <div class="span-6">
+                                <label for="fresh_water">Fresh Water</label><span class="hint"></span>
+                 <br/>
+                     <div contenteditable="true" id="div_freshwater" class="css_input3" dimension="fresh_water" data-ph="0"></div>
+                     <div class="css_input_m">L</div>
+                     <input id="fresh_water" name="fresh_water" type="hidden" value="0"/>
+            </div>
+             <div class="span-6">
+                     <label for="grey_water">Grey water tank</label><span class="hint"></span>
+                 <br/>
+                     <div contenteditable="true" id="div_greywater" class="css_input3" dimension="grey_water" data-ph="0"></div>
+                     <div class="css_input_m">L</div>
+                     <input id="grey_water" name="grey_water" type="hidden" value="0"/>
+            </div>
+              <div class="span-23 errorForsteps">
 
                     </div>
 

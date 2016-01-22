@@ -56,7 +56,25 @@ class postjob extends controller {
             $data['construction_year'] = $_POST['year'];
             $data['ce_category'] = $_POST['boat_category'];
             $data['yard'] = $_POST['boat_yard'];
-           // $data['ce_category'] = $_POST['boat_category'];
+            $data['boat_model'] = $_POST['boat_model'];
+            
+            $data['latitude'] = $_POST['latitude'];
+            $data['longitude'] = $_POST['longitude'];
+            
+            $data['length'] = $_POST['length'];
+            $data['width'] = $_POST['width'];
+            $data['clearance'] = $_POST['clearance'];
+            $data['draft'] = $_POST['draft'];
+            $data['weight'] = $_POST['weight'];
+            
+            $data['passengers'] = $_POST['passengers'];
+            $data['cabins'] = $_POST['cabins'];
+            $data['berth'] = $_POST['berth'];
+            
+            $data['deck_color'] = $_POST['deck_color'];
+            $data['hull_color'] = $_POST['hull_color'];
+            $data['deck_mat'] = $_POST['deck_mat'];
+            $data['hull_mat'] = $_POST['hull_mat'];
             
             $data['type'] = $_POST['featured_status'];
             $data['userid'] = session::get('userId');
